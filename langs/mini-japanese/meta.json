@@ -1,0 +1,9 @@
+{
+  "name": "Mini-Japanese",
+  "native": "簡易日本語",
+  "unit": "word",
+  "script": "kana",
+  "romanization": "romaji",
+  "target_reader": "母語不是日文的外國人",
+  "source": "原創設計"
+}

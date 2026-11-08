@@ -1,0 +1,1257 @@
+unit	level	pos	gloss	category	example	ipa
+I	C	pron	我	代詞・指示	I am a student	aɪ
+me	C	pron	我（賓語）	代詞・指示		ˈmiː
+my	C	det	我的	代詞・指示		maɪ
+myself	C	pron	我自己	代詞・指示		ˌmaɪˈsɛlf
+you	C	pron	你；你們	代詞・指示		juː
+your	C	det	你的	代詞・指示		ˈjɔɹ
+yourself	C	pron	你自己	代詞・指示		jɚˈsɛlf
+he	C	pron	他	代詞・指示	he is my brother	hiː
+him	C	pron	他（賓語）	代詞・指示		ˈhɪm
+his	C	det	他的	代詞・指示		ˈhɪz
+she	C	pron	她	代詞・指示	she is my sister	ʃiː
+her	C	det/poss	她的	代詞・指示		ˈhɝ
+hers	E	pron	她的（所有格）	代詞・指示		hɚz
+it	C	pron	它	代詞・指示	it is a good day	ɪt
+its	C	det	它的	代詞・指示		ˈɪts
+we	C	pron	我們	代詞・指示	we are good friends	wiː
+us	C	pron	我們（賓格）	代詞・指示		ˈʌs
+our	C	det	我們的	代詞・指示		ˈaʊɚ
+they	C	pron	他們	代詞・指示	they are at home	ðeɪ
+them	C	pron	他們（賓格）	代詞・指示		ðɛm
+their	C	det/poss	他們的	代詞・指示		ðɛr
+this	C	det	這	代詞・指示	this is my book	ðɪs
+that	C	det/pron	那	代詞・指示	that is my house	ðæt
+these	C	det	這些	代詞・指示	these are my books	ˈðiːz
+those	C	det	那些	代詞・指示	those are my friends	ˈðoʊz
+who	C	pron	誰	代詞・指示	who is that?	ˈhuː
+whom	C	pron	誰（賓格）	代詞・指示		ˈhuːm
+whose	C	det/poss	誰的	代詞・指示		ˈhuːz
+what	C	pron/det	什麼	代詞・指示	what is that?	ˈwʌt
+which	C	det/pron	哪一個	代詞・指示	which one do you want?	ˈwɪtʃ
+someone	C	pron	某人	代詞・指示		ˈsʌˌmwʌn
+somebody	C	pron	某人	代詞・指示	somebody is here	ˈsʌˌmbɑdi
+something	C	pron	某事	代詞・指示	something is wrong	ˈsʌmθɪŋ
+anyone	C	pron	任何人	代詞・指示		ˈɛniˌwʌn
+anybody	C	pron	任何人	代詞・指示		ˈɛnibədi
+anything	C	pron	任何事	代詞・指示		ˈɛniˌθɪŋ
+everyone	C	pron	每個人	代詞・指示	everyone is here	ˈɛvɹiˌwʌn
+everybody	C	pron	每個人	代詞・指示		ˈɛvɹiˌbɑdi
+everything	C	pron	每件事	代詞・指示		ˈɛvɹiˌθɪŋ
+nobody	C	pron	沒有人	代詞・指示	nobody knows	ˈnoʊˌbɑˌdiː
+nothing	C	pron	沒什麼	代詞・指示	nothing happened	ˈnʌθɪŋ
+one	C	pron/num	一個；其中之一	代詞・指示		wʌn
+other	C	adj/pron	另一個	代詞・指示	very other	ˈʌðər
+another	C	det	另一個	代詞・指示		əˈnʌðɚ
+both	C	det/pron	兩者都	代詞・指示		ˈboʊθ
+either	C	det/pron	任一	代詞・指示		ˈiːðɚ
+neither	C	det/pron	兩者都不	代詞・指示		ˈniːðɚ
+each	C	det	每一個	代詞・指示		ˈiːtʃ
+all	C	det/pron	全部	代詞・指示		ˈɔl
+some	C	det	一些	代詞・指示		ˈsʌm
+any	C	det	任何	代詞・指示		ˈɛni
+none	C	pron	沒有一個	代詞・指示		ˈnʌn
+many	C	det	許多	代詞・指示		ˈmɛni
+much	C	det/adv	許多	代詞・指示	very much	ˈmʌtʃ
+few	C	det	很少	代詞・指示		fjuː
+several	C	det	幾個	代詞・指示		ˈsɛvɹəl
+more	C	det/adv	更多	代詞・指示	very more	ˈmɔɹ
+most	C	det/adv	大部分	代詞・指示	very most	ˈmoʊst
+such	C	adj	這樣的	代詞・指示	very such	ˈsʌtʃ
+same	C	adj	同一個	代詞・指示	very same	ˈseɪm
+own	C	adj/pron	自己的	代詞・指示	very own	ˈoʊn
+yours	E	pron	你的（所有格）	代詞・指示		ˈjʊɹz
+himself	E	pron	他自己	代詞・指示		hɪˈmsɛlf
+herself	E	pron	她自己	代詞・指示		hɚˈsɛlf
+itself	E	pron	它自己	代詞・指示		ˌɪˈtsɛlf
+themselves	E	pron	他們自己	代詞・指示		ðɛˈmsɛlvz
+ourselves	E	pron	我們自己	代詞・指示		aʊɚˈsɛlvz
+a	C	det	一個（不特定的）	語法（功能詞）		ə
+an	C	det	一個（元音前）	語法（功能詞）		ən
+the	C	det	這個（特定的）	語法（功能詞）		ðə
+be	C	v	是；存在	語法（功能詞）	be careful	ˈbiː
+am	C	v	是（I）	語法（功能詞）	I am ready	ˈæm
+is	C	v	是（he/she/it）	語法（功能詞）	he is ready	ɪz
+are	C	v	是（you/we/they）	語法（功能詞）	you are ready	ˈɑɹ
+was	C	v	是（過去，單數）	語法（功能詞）	he was late	wəz
+were	C	v	是（過去，複數）	語法（功能詞）	they were late	wɜːr
+been	C	v	是（過去分詞）	語法（功能詞）	to been	bɪn
+being	C	v	正在是	語法（功能詞）	to being	biːɪŋ
+do	C	v	做	語法（功能詞）	do your work	duː
+does	C	v	做（第三人稱單數）	語法（功能詞）	he does his work	dʌz
+did	C	v	做（過去）	語法（功能詞）	did you call?	dɪd
+have	C	v	有；吃	語法（功能詞）	have a good day	hæv
+has	C	v	有（第三人稱單數）	語法（功能詞）	he has a car	hæz
+had	C	v	有（過去）	語法（功能詞）	I had a car	hæd
+will	C	v	將會	語法（功能詞）	I will go	wɪl
+would	C	v	會（委婉語／過去式）	語法（功能詞）	I would go	wʊd
+can	C	v	能	語法（功能詞）	I can swim	kæn
+could	C	v	能（過去式；委婉語）	語法（功能詞）	I could swim	kʊd
+shall	C	v	將（少用）	語法（功能詞）	shall we go?	ˈʃæl
+should	C	v	應該	語法（功能詞）	you should go	ʃʊd
+may	C	v	可能	語法（功能詞）	you may go	meɪ
+might	C	v	可能（過去式）	語法（功能詞）	it might rain	maɪt
+must	C	v	必須	語法（功能詞）	you must go	mʌst
+need	C	v	需要	語法（功能詞）	to need	ˈniːd
+let	C	v	讓	語法（功能詞）	to let	ˈlɛt
+not	C	adv	不	語法（功能詞）	do not go	nɑːt
+no	C	det/adv	不；沒有	語法（功能詞）	no water	noʊ
+yes	C	adv	是	語法（功能詞）	yes, I do	ˈjɛs
+than	C	conj	比	語法（功能詞）	taller than my brother	ˈðæn
+as	C	conj/prep	像；作為	語法（功能詞）	as fast as you	æz
+if	C	conj	如果	語法（功能詞）	if it rains	ˈɪf
+because	C	conj	因為	語法（功能詞）	because I am busy	bɪˈkɔːz
+so	C	conj	所以	語法（功能詞）	so I go home	ˈsoʊ
+and	C	conj	和	語法（功能詞）	you and I	ænd
+or	C	conj	或	語法（功能詞）	tea or coffee	ɔːr
+but	C	conj	但是	語法（功能詞）	but I am busy	ˈbʌt
+when	C	conj	當…時	語法（功能詞）	when I arrive	ˈwɛn
+while	C	conj	當…時；然而	語法（功能詞）	while I work	ˈwaɪl
+before	C	conj/prep	在…之前	語法（功能詞）	before I go	bɪˈfɔɹ
+after	C	conj/prep	在…之後	語法（功能詞）	after I go	ˈæftɚ
+until	C	conj/prep	直到	語法（功能詞）	until tomorrow	əˈntɪl
+since	C	conj/prep	自從	語法（功能詞）	since last year	ˈsɪns
+although	E	conj	雖然	語法（功能詞）		ˌɔˈlðoʊ
+however	E	adv	然而	語法（功能詞）	very however	ˌhaʊˈɛvɚ
+therefore	C	adv	因此	語法（功能詞）	therefore I go	ˈðɛˌɹfɔɹ
+also	C	adv	也	語法（功能詞）	also my friend	ˈɔlsoʊ
+too	C	adv	也	語法（功能詞）	me too	ˈtuː
+very	C	adv	很	語法（功能詞）	very good	ˈvɛɹi
+quite	C	adv	相當	語法（功能詞）	quite good	ˈkwaɪt
+really	C	adv	真的	語法（功能詞）	really good	ˈɹɪli
+just	C	adv	剛好；只	語法（功能詞）	just now	ˈdʒʌst
+still	C	adv	仍然	語法（功能詞）	still here	ˈstɪl
+only	C	adv	只	語法（功能詞）	only one	ˈoʊnli
+even	C	adv	甚至	語法（功能詞）	even at night	ˈiːvɪn
+almost	C	adv	幾乎	語法（功能詞）	almost finished	ˈɔˌlmoʊst
+already	C	adv	已經	語法（功能詞）	already finished	ɔˈlɹɛdi
+always	C	adv	總是	語法（功能詞）	always at home	ˈɔˌlweɪz
+never	C	adv	從不	語法（功能詞）	never at home	ˈnɛvɚ
+often	C	adv	常常	語法（功能詞）	often at home	ˈɔfən
+sometimes	C	adv	有時候	語法（功能詞）	sometimes at home	səˈmtaɪmz
+usually	C	adv	通常	語法（功能詞）	usually at home	ˈjuːʒəwəli
+again	C	adv	又；再	語法（功能詞）	say it again	əˈɡɛn
+soon	C	adv	很快	語法（功能詞）	soon	ˈsuːn
+now	C	adv	現在	語法（功能詞）	right now	ˈnaʊ
+then	C	adv	那時；然後	語法（功能詞）	and then	ˈðɛn
+yet	C	adv	還（尚未）	語法（功能詞）	not yet	ˈjɛt
+here	C	adv	這裡	語法（功能詞）	come here	ˈhiːɹ
+there	C	adv	那裡	語法（功能詞）	over there	ðɛr
+up	C	adv/prep	向上	語法（功能詞）	go up	ˈʌp
+down	C	adv/prep	向下	語法（功能詞）	go down	ˈdaʊn
+out	C	adv/prep	出去	語法（功能詞）	go out	ˈaʊt
+off	C	adv/prep	離開；關掉	語法（功能詞）	turn it off	ˈɔf
+over	C	adv/prep	在…上方；超過	語法（功能詞）	come over	ˈoʊvɚ
+under	C	adv/prep	在…下面	語法（功能詞）	under the table	ˈʌndɚ
+away	C	adv	離開	語法（功能詞）	go away	əˈweɪ
+back	C	adv	回	語法（功能詞）	come back	ˈbæk
+together	C	adv	一起	語法（功能詞）	do it together	təˈɡɛðər
+less	C	det/adv	較少	語法（功能詞）	less money	ˈlɛs
+least	C	det/adv	最少	語法（功能詞）	at least one	ˈliːst
+enough	C	det/adv	足夠	語法（功能詞）	enough time	ɪˈnʌf
+first	C	num/adv	第一	語法（功能詞）	the first day	ˈfɝst
+last	C	adj/adv	最後的	語法（功能詞）	the last day	ˈlæst
+next	C	adj/adv	下一個	語法（功能詞）	the next day	ˈnɛkst
+second	C	num/adv/n	第二；秒	語法（功能詞）	very second	ˈsɛkənd
+every	C	det	每一個	語法（功能詞）	every morning	ˈɛvɚi
+of	C	prep	…的	語法（功能詞）	a cup of tea	əv
+in	C	prep	在…裡	語法（功能詞）	in the room	ɪn
+on	C	prep	在…上	語法（功能詞）	on the table	ɑn
+at	C	prep	在（地點、時間）	語法（功能詞）	at the door	æt
+to	C	prep	到；為了	語法（功能詞）	go to school	tuː
+for	C	prep	為了；給	語法（功能詞）	for me	fɔːr
+with	C	prep	和…一起	語法（功能詞）	with my friend	ˈwɪð
+from	C	prep	從	語法（功能詞）	from my home	ˈfɹʌm
+by	C	prep	靠…；被	語法（功能詞）	by bus	baɪ
+about	C	prep/adv	關於；大約	語法（功能詞）	about the work	əˈbaʊt
+above	C	prep	在…上面	語法（功能詞）	above the door	əˈbʌv
+below	C	prep	在…下面	語法（功能詞）	below the table	bɪˈloʊ
+across	C	prep	橫過	語法（功能詞）	across the road	əˈkɹɔs
+along	E	prep	沿著	語法（功能詞）		əˈlɔŋ
+around	C	prep	在…周圍	語法（功能詞）	around the corner	ɚˈaʊnd
+behind	C	prep	在…後面	語法（功能詞）	behind the door	bɪˈhaɪnd
+between	C	prep	在…之間	語法（功能詞）	between 2 people	bɪˈtwiːn
+among	E	prep	在…之中	語法（功能詞）	among my friends	əˈmʌŋ
+into	C	prep	進入	語法（功能詞）	into the room	ˈɪntu
+onto	C	prep	到…上	語法（功能詞）	onto the table	ˈɑntu
+through	E	prep	穿過	語法（功能詞）	through the door	ˈθɹuː
+during	E	prep	在…期間	語法（功能詞）	during the day	ˈdʊɹɪŋ
+against	E	prep	反對；靠著	語法（功能詞）	against the wall	əˈɡɛnst
+beside	E	prep	在…旁邊	語法（功能詞）	beside the door	bɪˈsaɪd
+toward	C	prep	朝著	語法（功能詞）	toward the door	təˈwɔɹd
+without	C	prep	沒有	語法（功能詞）	without water	wɪˈθaʊt
+near	C	prep/adj	在…附近	語法（功能詞）	near my home	ˈnɪɹ
+like	C	prep/v	像；喜歡	語法（功能詞）	like my mother	ˈlaɪk
+whether	E	conj	是否	語法（功能詞）	I do not know whether	ˈwɛðɚ
+unless	E	conj	除非	語法（功能詞）	unless it rains	əˈnlɛs
+well	C	adv	好地	語法（功能詞）	I am well	ˈwɛl
+maybe	C	adv	也許	語法（功能詞）	maybe tomorrow	ˈmeɪbi
+instead	E	adv	代替	語法（功能詞）	instead of that	ˌɪˈnstɛd
+little	C	adj/adv	少量；小的	語法（功能詞）	a little water	ˈlɪtəl
+okay	C	adv/adj	好吧；可以	語法（功能詞）	okay, thanks	ˌoʊˈkeɪ
+actually	C	adv	實際上	語法（功能詞）	actually I like it	ˈæˌktʃuːəli
+where	C	pron/det	哪裡	語法（功能詞）		ˈwɛɹ
+why	C	adv	為什麼	語法（功能詞）	very why	waɪ
+how	C	adv	怎麼	語法（功能詞）	very how	ˈhaʊ
+completely	E	adv	完全地	語法（功能詞）	very completely	kəˈmpliːtli
+easily	E	adv	容易地	語法（功能詞）	very easily	ˈiːzəli
+especially	E	adv	特別地	語法（功能詞）	very especially	əˈspɛʃli
+forward	E	adv	向前	語法（功能詞）	very forward	ˈfɔɹwɚd
+anyway	E	adv	總之	語法（功能詞）	very anyway	ˈɛniˌweɪ
+number	C	n	數字；號碼	數量・比例	my phone number	ˈnʌmbɚ
+half	C	num	一半	數量・比例	half of the work	ˈhæf
+whole	C	adj	整個的	數量・比例	the whole day	ˈhoʊl
+double	C	adj/v	兩倍的；加倍	數量・比例	double the price	ˈdʌbəl
+percent	C	n	百分比	數量・比例	10 percent	pɚˈsɛnt
+zero	C	num	零	數量・比例		ˈzɪɹoʊ
+once	C	adv	一次	數量・比例	very once	ˈwʌns
+twice	C	adv	兩次	數量・比例	very twice	ˈtwaɪs
+hundred	E	num	一百	數量・比例		ˈhʌndɹəd
+third	E	num/adv	第三	數量・比例	very third	ˈθɝd
+time	C	n	時間	時間	a long time	ˈtaɪm
+year	C	n	年	時間	last year	ˈjɪɹ
+month	C	n	月	時間	next month	ˈmʌnθ
+week	C	n	星期	時間	next week	ˈwiːk
+day	C	n	天	時間	a good day	ˈdeɪ
+hour	C	n	小時	時間	one hour	ˈaʊɚ
+minute	C	n	分鐘	時間	5 minutes	ˈmɪnɪt
+morning	C	n	早上	時間	in the morning	ˈmɔɹnɪŋ
+afternoon	C	n	下午	時間	in the afternoon	ˌæftɚˈnuːn
+evening	C	n	傍晚	時間	in the evening	ˈiːvnɪŋ
+night	C	n	夜晚	時間	at night	ˈnaɪt
+noon	E	n	中午	時間	the noon	ˈnuːn
+midnight	E	n	午夜	時間	the midnight	ˈmɪˌdnaɪt
+today	C	n	今天	時間	today	təˈdeɪ
+tomorrow	C	n	明天	時間	tomorrow	təˈmɑˌɹoʊ
+yesterday	C	n	昨天	時間	yesterday	ˈjɛstɚˌdeɪ
+tonight	C	n	今天晚上	時間	tonight	təˈnaɪt
+weekend	C	n	週末	時間	this weekend	ˈwiːˌkɛnd
+birthday	C	n	生日	時間	my birthday	ˈbɝˌθdeɪ
+holiday	C	n	假日	時間	a long holiday	ˈhɑləˌdeɪ
+season	E	n	季節	時間	the season	ˈsiːzən
+spring	E	n	春天	時間	the spring	ˈspɹɪŋ
+summer	E	n	夏天	時間	the summer	ˈsʌmɚ
+autumn	E	n	秋天	時間	the autumn	ˈɔtəm
+winter	E	n	冬天	時間	the winter	ˈwɪntɚ
+date	C	n	日期	時間	today is the date	ˈdeɪt
+clock	C	n	鐘	時間	look at the clock	ˈklɑk
+calendar	E	n	日曆	時間	the calendar	ˈkæləndɚ
+moment	E	n	片刻	時間	the moment	ˈmoʊmənt
+future	E	n	將來	時間	the future	ˈfjuːtʃɚ
+past	E	n/adj	過去	時間	very past	ˈpæst
+present	E	n/adj	現在；禮物	時間	very present	ˈpɹɛzənt
+early	C	adj/adv	早	時間	get up early	ˈɝli
+late	C	adj/adv	晚；遲	時間	come late	ˈleɪt
+ago	C	adv	以前	時間	2 days ago	əˈɡoʊ
+daily	E	adj	每天的	時間	very daily	ˈdeɪli
+weekly	E	adj	每週的	時間	very weekly	ˈwiːkli
+monthly	E	adj	每月的	時間	very monthly	ˈmʌnθli
+yearly	E	adj	每年的	時間	very yearly	ˈjɪɹli
+recently	E	adv	最近	時間	very recently	ˈɹiːsəntli
+schedule	E	n	時刻表	時間	the schedule	ˈskɛdʒuːl
+Monday	C	n	星期	時間	the Monday	ˈmʌndi
+Tuesday	C	n	星期	時間	the Tuesday	ˈtuːzdi
+Wednesday	C	n	星期	時間	the Wednesday	ˈwɛnzdi
+Thursday	C	n	星期	時間	the Thursday	ˈθɝˌzdeɪ
+Friday	C	n	星期	時間	the Friday	ˈfɹaɪdi
+Saturday	C	n	星期	時間	the Saturday	ˈsætɚdi
+Sunday	C	n	星期	時間	the Sunday	ˈsʌˌndeɪ
+o'clock	E	adv	…點鐘	時間	very o'clock	əˈklɑk
+sunrise	E	n	日出	時間	the sunrise	ˈsʌˌnɹaɪz
+sunset	E	n	日落	時間	the sunset	ˈsʌˌnsɛt
+century	E	n	世紀	時間	the century	ˈsɛntʃɚi
+place	C	n/v	地方；放置	方位・地點	a place to eat	ˈpleɪs
+house	C	n	房子	方位・地點	my house	ˈhaʊs
+home	C	n	家	方位・地點	at home	ˈhoʊm
+room	C	n	房間	方位・地點	a small room	ˈɹuːm
+door	C	n	門	方位・地點	open the door	ˈdɔɹ
+window	C	n	窗	方位・地點	the window	ˈwɪndoʊ
+floor	C	n	地板；樓層	方位・地點	the top floor	ˈflɔɹ
+wall	C	n	牆	方位・地點	a white wall	ˈwɔl
+road	C	n	道路	方位・地點	a long road	ˈɹoʊd
+street	C	n	街道	方位・地點	a busy street	ˈstɹiːt
+way	C	n	路；方式	方位・地點	on the way	ˈweɪ
+corner	C	n	角落	方位・地點	the corner of the street	ˈkɔɹnɚ
+side	C	n	邊	方位・地點	on the other side	ˈsaɪd
+city	C	n	城市	方位・地點	a big city	ˈsɪti
+town	C	n	城鎮	方位・地點	a small town	ˈtaʊn
+village	E	n	村莊	方位・地點	the village	ˈvɪlədʒ
+country	C	n	國家	方位・地點	my country	ˈkʌntɹi
+world	C	n	世界	方位・地點	around the world	ˈwɝld
+shop	C	n	商店	方位・地點	a small shop	ˈʃɑp
+store	C	n	店	方位・地點	a big store	ˈstɔɹ
+market	E	n	市場	方位・地點	the market	ˈmɑɹkət
+restaurant	E	n	餐廳	方位・地點	the restaurant	ˈɹɛstɚˌɑnt
+hotel	E	n	旅館	方位・地點	the hotel	hoʊˈtɛl
+station	C	n	車站	方位・地點	the train station	ˈsteɪʃən
+airport	E	n	機場	方位・地點	the airport	ˈɛˌɹpɔɹt
+school	C	n	學校	方位・地點	go to school	ˈskuːl
+office	C	n	辦公室	方位・地點	a small office	ˈɔfɪs
+hospital	E	n	醫院	方位・地點	the hospital	ˈhɑˌspɪtəl
+bank	C	n	銀行	方位・地點	the bank on the street	ˈbæŋk
+park	C	n	公園	方位・地點	in the park	ˈpɑɹk
+library	E	n	圖書館	方位・地點	the library	ˈlaɪbɹɛˌɹiː
+museum	E	n	博物館	方位・地點	the museum	mjuˈziːəm
+cinema	E	n	電影院	方位・地點	the cinema	ˈsɪnəmə
+theater	E	n	劇場	方位・地點	the theater	ˈθiːətɚ
+stadium	E	n	體育場	方位・地點	the stadium	ˈsteɪdiəm
+factory	E	n	工廠	方位・地點	the factory	ˈfæktɚi
+church	E	n	教堂	方位・地點	the church	ˈtʃɝtʃ
+building	E	n	建築物	方位・地點	the building	ˈbɪldɪŋ
+area	E	n	地區	方位・地點	the area	ˈɛriːə
+region	E	n	區域	方位・地點	the region	ˈɹiːdʒən
+north	C	n	北方	方位・地點	the north side	ˈnɔɹθ
+south	C	n	南方	方位・地點	the south side	ˈsaʊθ
+east	C	n	東方	方位・地點	the east side	ˈiːst
+west	C	n	西方	方位・地點	the west side	ˈwɛst
+left	C	adj/adv	左	方位・地點	on the left	ˈlɛft
+right	C	adj/adv	右；對的；對	方位・地點	on the right	ˈɹaɪt
+front	C	n	前面	方位・地點	in front of the door	ˈfɹʌnt
+far	E	adj	遠的	方位・地點	very far	ˈfɑɹ
+inside	C	prep/adv	裡面	方位・地點	inside the house	ˌɪˈnsaɪd
+outside	C	prep/adv	外面	方位・地點	outside the house	ˈaʊˈtsaɪd
+map	C	n	地圖	方位・地點	read a map	ˈmæp
+sign	E	n/v	標誌；簽名	方位・地點	sign your name	ˈsaɪn
+bus stop	C	n	公車站	方位・地點	at the bus stop	
+subway	E	n	地下鐵	方位・地點	the subway	ˈsʌˌbweɪ
+block	E	n	街區	方位・地點	the block	ˈblɑk
+neighborhood	E	n	社區	方位・地點	the neighborhood	ˈneɪbɚˌhʊd
+gate	E	n	門口	方位・地點	the gate	ˈɡeɪt
+yard	E	n	院子	方位・地點	the yard	ˈjɑɹd
+roof	E	n	屋頂	方位・地點	the roof	ˈɹuːf
+address	E	n	地址	方位・地點	the address	ˈæˌdɹɛs
+downtown	E	adv	市中心	方位・地點	very downtown	ˈdaʊˈntaʊn
+abroad	E	adv	在國外	方位・地點	very abroad	əˈbɹɔd
+capital	E	n	首都	方位・地點	the capital	ˈkæpətəl
+continent	E	n	大洲	方位・地點	the continent	ˈkɑntənənt
+space	E	n	空間；太空	方位・地點	the space	ˈspeɪs
+distance	E	n	距離	方位・地點	the distance	ˈdɪstəns
+direction	E	n	方向	方位・地點	the direction	dɚˈɛkʃən
+position	E	n	位置	方位・地點	the position	pəˈzɪʃən
+middle	E	n	中間	方位・地點	the middle	ˈmɪdəl
+edge	E	n	邊緣	方位・地點	the edge	ˈɛdʒ
+top	C	n	頂部	方位・地點	on the top	ˈtɑp
+bottom	E	n	底部	方位・地點	the bottom	ˈbɑtəm
+entrance	E	n	入口	方位・地點	the entrance	ˈɛntɹəns
+exit	E	n	出口	方位・地點	the exit	ˈɛɡzɪt
+platform	E	n	月台	方位・地點	the platform	ˈplæˌtfɔɹm
+line	C	n	線；排隊	方位・地點	stand in line	ˈlaɪn
+queue	E	n	隊伍	方位・地點	the queue	ˈkjuː
+ticket	C	n	票	方位・地點	a bus ticket	ˈtɪkət
+counter	E	n	櫃檯	方位・地點	the counter	ˈkaʊntɚ
+mall	E	n	購物中心	方位・地點	the mall	ˈmɔl
+clinic	E	n	診所	方位・地點	the clinic	ˈklɪnɪk
+pharmacy	E	n	藥局	方位・地點	the pharmacy	ˈfɑɹməsi
+police	E	n	警察	方位・地點	the police	pəˈliːs
+bus	C	n	公車	方位・地點	take the bus	bʌs
+train	C	n	火車	方位・地點	take the train	ˈtɹeɪn
+plane	C	n	飛機	方位・地點	take the plane	ˈpleɪn
+boat	E	n	船	方位・地點	the boat	ˈboʊt
+ship	E	n	船	方位・地點	the ship	ˈʃɪp
+taxi	E	n	計程車	方位・地點	the taxi	ˈtæksi
+car	C	n	車	方位・地點	my car	ˈkɑɹ
+bike	C	n	自行車	方位・地點	ride a bike	ˈbaɪk
+gym	C	n	健身房	方位・地點	the gym	ˈdʒɪm
+pool	E	n	游泳池	方位・地點	the pool	ˈpuːl
+africa	E	n	非洲	方位・地點	the africa	ˈæfɹəkɑ
+america	E	n	美國	方位・地點	the america	əˈmɛɹəkə
+australia	E	n	澳洲	方位・地點	the australia	ɔˈstɹeɪljə
+bathroom	E	n	浴室	方位・地點	the bathroom	ˈbæˌθɹuːm
+bridge	E	n	橋	方位・地點	the bridge	ˈbɹɪdʒ
+center	E	n	中心	方位・地點	the center	ˈsɛntɚ
+china	E	n	中國	方位・地點	the china	ˈtʃaɪnə
+college	E	n	學院	方位・地點	the college	ˈkɑlɪdʒ
+court	E	n	法院	方位・地點	the court	ˈkɔɹt
+desert	E	n	沙漠	方位・地點	the desert	ˈdɛzɚt
+germany	E	n	德國	方位・地點	the germany	ˈdʒɝməni
+ground	E	n	地面	方位・地點	the ground	ˈɡɹaʊnd
+italy	E	n	義大利	方位・地點	the italy	ˈɪtəli
+japan	E	n	日本	方位・地點	the japan	dʒəˈpæn
+korea	E	n	韓國	方位・地點	the korea	ˌkɔˈɹiːə
+path	E	n	小路	方位・地點	the path	ˈpæθ
+rail	E	n	鐵軌	方位・地點	the rail	ˈɹeɪl
+seat	E	n	座位	方位・地點	the seat	ˈsiːt
+slope	E	n	斜坡	方位・地點	the slope	ˈsloʊp
+spain	E	n	西班牙	方位・地點	the spain	ˈspeɪn
+temple	E	n	神殿	方位・地點	the temple	ˈtɛmpəl
+truck	E	n	卡車	方位・地點	the truck	ˈtɹʌk
+university	E	n	大學	方位・地點	the university	ˌjuːnəˈvɝsəti
+vehicle	E	n	車輛	方位・地點	the vehicle	ˈviːhɪkəl
+accident	E	n	意外	方位・地點	the accident	ˈæksədənt
+toilet	E	n	廁所	方位・地點	the toilet	ˈtɔɪlət
+lake	E	n	湖	方位・地點	the lake	ˈleɪk
+playground	E	n	遊樂場	方位・地點	the playground	ˈpleɪˌɡɹaʊnd
+garden	E	n	花園	方位・地點	the garden	ˈɡɑɹdən
+bicycle	E	n	腳踏車	方位・地點	the bicycle	ˈbaɪsɪkəl
+weather	C	n	天氣	自然・天氣	the weather today	ˈwɛðɚ
+sun	C	n	太陽	自然・天氣	the sun is hot	ˈsʌn
+moon	E	n	月亮	自然・天氣	the moon at night	ˈmuːn
+star	E	n	星星	自然・天氣	the star	ˈstɑɹ
+sky	C	n	天空	自然・天氣	a blue sky	ˈskaɪ
+cloud	E	n	雲	自然・天氣	a white cloud	ˈklaʊd
+rain	C	n/v	雨；下雨	自然・天氣	it is going to rain	ˈɹeɪn
+snow	C	n/v	雪；下雪	自然・天氣	snow in winter	ˈsnoʊ
+wind	C	n	風	自然・天氣	strong wind	wɪnd
+sea	C	n	海	自然・天氣	the sea is big	ˈsiː
+river	C	n	河	自然・天氣	a long river	ˈɹɪvɚ
+mountain	E	n	山	自然・天氣	the mountain	ˈmaʊntən
+hill	E	n	小山	自然・天氣	the hill	ˈhɪl
+tree	C	n	樹	自然・天氣	a tall tree	ˈtɹiː
+flower	C	n	花	自然・天氣	a yellow flower	ˈflaʊɚ
+grass	E	n	草	自然・天氣	the grass	ˈɡɹæs
+leaf	E	n	葉子	自然・天氣	the leaf	ˈliːf
+plant	C	n/v	植物；種植	自然・天氣	a green plant	ˈplænt
+animal	C	n	動物	自然・天氣	a small animal	ˈænəməl
+dog	C	n	狗	自然・天氣	a big dog	ˈdɔɡ
+cat	C	n	貓	自然・天氣	a black cat	ˈkæt
+bird	C	n	鳥	自然・天氣	a small bird	ˈbɝd
+fish	C	n/v	魚	自然・天氣	many fish	ˈfɪʃ
+earth	C	n	地球；土	自然・天氣	the earth	ˈɝθ
+fire	C	n/v	火；著火	自然・天氣	a big fire	ˈfaɪɚ
+ice	E	n	冰	自然・天氣	the ice	ˈaɪs
+sand	E	n	沙子	自然・天氣	the sand	ˈsænd
+stone	E	n	石頭	自然・天氣	the stone	ˈstoʊn
+rock	E	n	岩石	自然・天氣	the rock	ˈɹɑk
+wood	C	n	木頭	自然・天氣	a piece of wood	ˈwʊd
+oil	C	n	油	自然・天氣	much oil	ˈɔɪl
+gas	C	n	氣體；瓦斯	自然・天氣	the gas in the car	ˈɡæs
+air	C	n	空氣	自然・天氣	clean air	ˈɛɹ
+land	C	n	土地	自然・天氣	dry land	ˈlænd
+field	C	n	田地	自然・天氣	a green field	ˈfiːld
+farm	C	n	農場	自然・天氣	a small farm	ˈfɑɹm
+forest	E	n	森林	自然・天氣	the forest	ˈfɔɹəst
+island	E	n	島	自然・天氣	the island	ˈaɪlənd
+beach	E	n	海灘	自然・天氣	the beach	ˈbiːtʃ
+light	C	n/adj	光；燈；輕	自然・天氣	turn on the light	ˈlaɪt
+heat	E	n/v	熱；加熱	自然・天氣	to heat	ˈhiːt
+storm	E	n	暴風雨	自然・天氣	the storm	ˈstɔɹm
+temperature	E	n	溫度	自然・天氣	the temperature	ˈtɛmpɹətʃɚ
+nature	E	n	自然	自然・天氣	the nature	ˈneɪtʃɚ
+environment	E	n	環境	自然・天氣	the environment	ɪˈnvaɪɹənmənt
+pollution	E	n	污染	自然・天氣	the pollution	pəˈluːʃən
+climate	E	n	氣候	自然・天氣	the climate	ˈklaɪmət
+energy	E	n	能量；能源	自然・天氣	the energy	ˈɛnɚdʒi
+electricity	E	n	電	自然・天氣	the electricity	ɪˌlɛˈktɹɪsəti
+metal	E	n	金屬	自然・天氣	the metal	ˈmɛtəl
+plastic	E	n	塑膠	自然・天氣	the plastic	ˈplæstɪk
+glass	C	n	玻璃；玻璃杯	自然・天氣	a glass of water	ˈɡlæs
+paper	C	n	紙	自然・天氣	a piece of paper	ˈpeɪpɚ
+water	C	n	水	自然・天氣	the water	ˈwɔːtər
+atom	E	n	原子	自然・天氣	the atom	ˈætəm
+bee	E	n	蜜蜂	自然・天氣	the bee	ˈbiː
+cell	E	n	細胞	自然・天氣	the cell	ˈsɛl
+cow	E	n	牛	自然・天氣	the cow	ˈkaʊ
+dirt	E	n	泥土	自然・天氣	the dirt	ˈdɝt
+fuel	E	n	燃料	自然・天氣	the fuel	ˈfjuːəl
+fur	E	n	毛皮	自然・天氣	the fur	ˈfɝ
+grain	E	n	穀物	自然・天氣	the grain	ˈɡɹeɪn
+hay	E	n	乾草	自然・天氣	the hay	ˈheɪ
+horse	E	n	馬	自然・天氣	the horse	ˈhɔɹs
+insect	E	n	昆蟲	自然・天氣	the insect	ˈɪˌnsɛkt
+iron	E	n	鐵	自然・天氣	the iron	ˈaɪɚn
+liquid	E	n	液體	自然・天氣	the liquid	ˈlɪkwəd
+pig	E	n	豬	自然・天氣	the pig	ˈpɪɡ
+planet	E	n	行星	自然・天氣	the planet	ˈplænət
+root	E	n	根	自然・天氣	the root	ˈɹuːt
+seed	E	n	種子	自然・天氣	the seed	ˈsiːd
+sheep	E	n	羊	自然・天氣	the sheep	ˈʃiːp
+snake	E	n	蛇	自然・天氣	the snake	ˈsneɪk
+soil	E	n	泥土	自然・天氣	the soil	ˈsɔɪl
+volcano	E	n	火山	自然・天氣	the volcano	vɑˈlkeɪnoʊ
+wing	E	n	翅膀	自然・天氣	the wing	ˈwɪŋ
+dust	E	n	灰塵	自然・天氣	the dust	ˈdʌst
+go	C	v	去	動作	go to work	ˈɡoʊ
+come	C	v	來	動作	come home	ˈkʌm
+walk	C	v	走	動作	to walk	ˈwɔk
+run	C	v	跑	動作	to run	ˈɹʌn
+sit	C	v	坐	動作	to sit	ˈsɪt
+stand	C	v	站	動作	to stand	ˈstænd
+eat	C	v	吃	動作	eat rice	ˈiːt
+drink	C	v/n	喝；飲料	動作	drink water	ˈdɹɪŋk
+sleep	C	v	睡	動作	sleep at night	ˈsliːp
+wake	C	v	醒來	動作	to wake	ˈweɪk
+read	C	v	讀	動作	read a book	ɹiːd
+write	C	v	寫	動作	write a letter	ˈɹaɪt
+speak	C	v	說（某種語言）	動作	to speak	ˈspiːk
+say	C	v	說	動作	say hello	ˈseɪ
+tell	C	v	告訴	動作	tell me	ˈtɛl
+ask	C	v	問	動作	ask a question	ˈæsk
+answer	C	v/n	回答；答案	動作	the answer	ˈænsɚ
+look	C	v	看	動作	look at the map	ˈlʊk
+see	C	v	看見	動作	see a doctor	ˈsiː
+watch	C	v/n	看；觀看；手錶	動作	watch a movie	ˈwɑtʃ
+hear	C	v	聽見	動作	hear music	ˈhiːɹ
+listen	C	v	聽	動作	to listen	ˈlɪsən
+give	C	v	給	動作	give me the key	ˈɡɪv
+take	C	v	拿；花費；搭乘	動作	take a bus	ˈteɪk
+get	C	v	得到；到	動作	get a coffee	ˈɡɛt
+put	C	v	放	動作	put it on the table	ˈpʊt
+make	C	v	做；使得	動作	make dinner	ˈmeɪk
+buy	C	v	買	動作	buy food	ˈbaɪ
+sell	C	v	賣	動作	sell fruit	ˈsɛl
+pay	C	v	付錢	動作	pay the bill	ˈpeɪ
+cost	C	v	花費	動作	to cost	ˈkɑst
+open	C	v	開	動作	open the door	ˈoʊpən
+close	C	v	關	動作	close the window	kloʊs
+start	C	v	開始	動作	start work	ˈstɑɹt
+stop	C	v	停止	動作	stop the car	ˈstɑp
+wait	C	v	等待	動作	wait for the bus	ˈweɪt
+work	C	v/n	工作	動作	work at home	ˈwɝk
+play	C	v	玩；比賽	動作	play with a child	ˈpleɪ
+study	C	v	學習	動作	study English	ˈstʌdi
+learn	C	v	學會	動作	learn a new word	ˈlɝn
+teach	C	v	教	動作	teach students	ˈtiːtʃ
+help	C	v	幫助	動作	help my friend	ˈhɛlp
+use	C	v	使用	動作	use a computer	juːz
+find	C	v	找到	動作	find my keys	ˈfaɪnd
+lose	C	v	失去	動作	lose my phone	ˈluːz
+keep	C	v	保持	動作	keep the book	ˈkiːp
+send	C	v	寄；送	動作	send an email	ˈsɛnd
+bring	C	v	帶來	動作	bring water	ˈbɹɪŋ
+carry	C	v	搬；帶	動作	to carry	ˈkæɹi
+move	C	v	移動	動作	move to a new city	ˈmuːv
+turn	C	v	轉；變成	動作	to turn	ˈtɝn
+change	C	v	改變	動作	change my job	ˈtʃeɪndʒ
+grow	C	v	生長	動作	grow flowers	ˈɡɹoʊ
+live	C	v	住；生活	動作	live in a big city	lɪv
+die	C	v	死	動作	die young	ˈdaɪ
+meet	C	v	遇見	動作	meet my friend	ˈmiːt
+visit	C	v	拜訪	動作	visit my parents	ˈvɪzɪt
+drive	C	v	開車	動作	drive to work	ˈdɹaɪv
+ride	C	v	騎	動作	ride a bike	ˈɹaɪd
+fly	C	v	飛	動作	fly to another country	ˈflaɪ
+cook	C	v	煮飯	動作	cook dinner	ˈkʊk
+wash	C	v	洗	動作	wash my hands	ˈwɑʃ
+clean	C	v/adj	洗乾淨；乾淨的	動作	clean the room	ˈkliːn
+cut	C	v	切；剪	動作	cut the bread	ˈkʌt
+break	C	v	打破；休息	動作	to break	ˈbɹeɪk
+fix	C	v	修理	動作	to fix	ˈfɪks
+wear	C	v	穿	動作	wear a coat	ˈwɛɹ
+feel	C	v	感覺	動作	feel happy	ˈfiːl
+hurt	C	v	痛；受傷	動作	hurt my back	ˈhɝt
+want	C	v	想要	動作	want water	ˈwɑnt
+try	C	v	嘗試	動作	try again	ˈtɹaɪ
+love	C	v	愛	動作	love my family	ˈlʌv
+hate	C	v	討厭	動作	hate cold weather	ˈheɪt
+begin	C	v	開始	動作	begin a new job	bɪˈɡɪn
+finish	C	v	完成	動作	finish my work	ˈfɪnɪʃ
+choose	C	v	選擇	動作	choose a chair	ˈtʃuːz
+decide	C	v	決定	動作	decide to go	ˌdɪˈsaɪd
+hope	C	v	希望	動作	I hope so	ˈhoʊp
+wish	C	v	希望；祝願	動作	wish you a good day	ˈwɪʃ
+remember	C	v	記得	動作	remember her name	ɹɪˈmɛmbɚ
+forget	C	v	忘記	動作	forget the time	fɚˈɡɛt
+know	C	v	知道	動作	know the answer	ˈnoʊ
+think	C	v	認為	動作	I think so	ˈθɪŋk
+mean	C	v	意思是	動作	to mean	ˈmiːn
+happen	C	v	發生	動作	what happened?	ˈhæpən
+become	C	v	變成	動作	become a teacher	bɪˈkʌm
+stay	C	v	停留	動作	stay at home	ˈsteɪ
+leave	C	v	離開	動作	leave the room	ˈliːv
+arrive	C	v	抵達	動作	arrive on time	ɚˈaɪv
+return	C	v	回來	動作	return home	ɹɪˈtɝn
+call	C	v	打電話；叫	動作	call a friend	ˈkɔl
+sing	C	v	唱歌	動作	sing a song	ˈsɪŋ
+dance	C	v	跳舞	動作	dance with music	ˈdæns
+swim	E	v	游泳	動作	swim in the sea	ˈswɪm
+jump	C	v	跳	動作	jump high	ˈdʒʌmp
+climb	E	v	爬	動作	climb the mountain	ˈklaɪm
+fall	C	v	跌倒	動作	fall down	ˈfɔl
+push	C	v	推	動作	push the door	ˈpʊʃ
+pull	C	v	拉	動作	pull the door	ˈpʊl
+throw	C	v	丟	動作	throw the ball	ˈθɹoʊ
+catch	C	v	抓住	動作	catch the ball	ˈkætʃ
+win	C	v	贏	動作	win the game	ˈwɪn
+dream	E	v	夢	動作	have a dream	ˈdɹiːm
+rest	C	v/n	休息	動作	rest a little	ˈɹɛst
+marry	E	v	結婚	動作	marry a friend	ˈmɛɹi
+raise	C	v	養育；提高	動作	raise your hand	ˈɹeɪz
+count	E	v	數；計算	動作	count the money	ˈkaʊnt
+taste	E	v	嘗	動作	taste the food	ˈteɪst
+smell	E	v	聞；發出味道	動作	smell the coffee	ˈsmɛl
+touch	E	v	觸碰	動作	touch the wall	ˈtʌtʃ
+share	C	v	分享	動作	share the food	ˈʃɛɹ
+join	E	v	加入	動作	join the game	ˈdʒɔɪn
+follow	C	v	跟隨	動作	follow me	ˈfɑloʊ
+lead	C	v	領導	動作	lead the group	liːd
+hit	C	v	打；撞到	動作	hit the ball	ˈhɪt
+enter	C	v	進入	動作	enter the room	ˈɛntɚ
+pass	C	v	通過；傳遞	動作	pass the salt	ˈpæs
+paint	E	v	畫；油漆	動作	paint the wall	ˈpeɪnt
+draw	E	v	畫	動作	draw a picture	ˈdɹɔ
+feed	E	v	餵	動作	feed the child	ˈfiːd
+hang	E	v	掛	動作	hang the coat	ˈhæŋ
+spread	E	v	傳播；攤開	動作	spread the map	ˈspɹɛd
+cover	E	v	蓋住；覆蓋	動作	cover the table	ˈkʌvɚ
+fill	E	v	裝滿	動作	fill the cup	ˈfɪl
+empty	C	v/adj	倒空；空的	動作	empty the box	ˈɛmpti
+lock	E	v	鎖上	動作	lock the door	ˈlɑk
+knock	E	v	敲	動作	knock at the door	ˈnɑk
+ring	C	v	響；打電話	動作	the phone rings	ˈɹɪŋ
+wave	E	v	揮手；波浪	動作	wave goodbye	ˈweɪv
+point	E	v/n	指；點；看法	動作	point to the door	ˈpɔɪnt
+smile	E	v	微笑	動作	smile at me	ˈsmaɪl
+laugh	E	v	笑	動作	laugh together	ˈlæf
+cry	E	v	哭	動作	cry a little	ˈkɹaɪ
+shout	E	v	喊	動作	shout for help	ˈʃaʊt
+print	E	v	印	動作	print a photo	ˈpɹɪnt
+copy	E	v	複印	動作	copy the message	ˈkɑpi
+save	E	v	儲存；救	動作	save money	ˈseɪv
+spend	C	v	花費	動作	spend money	ˈspɛnd
+add	E	v	增加；加	動作	add some water	ˈæd
+allow	C	v	允許	動作	allow me to go	əˈlaʊ
+include	C	v	包含	動作	include the price	ˌɪˈnkluːd
+show	E	v	顯示；給…看	動作	show me	ˈʃoʊ
+cause	E	v/n	造成；原因	動作	cause a problem	ˈkɑz
+prepare	E	v	準備	動作	prepare dinner	pɹiˈpɛɹ
+continue	E	v	繼續	動作	continue to work	kəˈntɪnju
+notice	E	v	注意到	動作	I notice a noise	ˈnoʊtəs
+believe	C	v	相信	動作	believe me	bɪˈliːv
+expect	E	v	預期	動作	I expect rain	ɪˈkspɛkt
+explain	C	v	解釋	動作	explain it again	ɪˈkspleɪn
+describe	C	v	描述	動作	describe the room	dɪˈskɹaɪb
+agree	E	v	同意	動作	I agree	əˈɡɹiː
+check	E	v	檢查	動作	check the time	ˈtʃɛk
+travel	E	v	旅行	動作	travel by train	ˈtɹævəl
+translate	E	v	翻譯	動作	translate the words	tɹæˈnzleɪt
+behave	E	v	表現	動作	behave well	bɪˈheɪv
+heal	E	v	癒合	動作	heal fast	ˈhiːl
+borrow	E	v	借入	動作	borrow a book	ˈbɑˌɹoʊ
+lend	E	v	借出	動作	lend me money	ˈlɛnd
+rent	E	v	租	動作	rent a room	ˈɹɛnt
+order	E	v	訂購	動作	order the food	ˈɔɹdɚ
+deliver	E	v	送遞	動作	deliver the food	dɪˈlɪvɚ
+offer	E	v	提供	動作	offer help	ˈɔfɚ
+support	C	v/n	支持	動作	support a friend	səˈpɔɹt
+affect	E	v	影響	動作	affect the price	əˈfɛkt
+increase	E	v	增加	動作	increase the price	ˌɪˈnkɹiːs
+decrease	E	v	減少	動作	decrease the price	dɪˈkɹiːs
+complete	E	v	完成	動作	complete the work	kəˈmpliːt
+compare	E	v	比較	動作	compare the 2	kəˈmpɛɹ
+discuss	E	v	討論	動作	discuss the plan	dɪˈskʌs
+refuse	E	v	拒絕	動作	refuse the offer	ɹəˈfjuːz
+avoid	E	v	避免	動作	avoid the busy road	əˈvɔɪd
+prevent	E	v	防止	動作	prevent a fire	pɹɪˈvɛnt
+improve	E	v	改善	動作	improve the quality	ˌɪˈmpɹuːv
+develop	E	v	發展	動作	develop a plan	dɪˈvɛləp
+produce	E	v	生產	動作	produce food	pɹəˈduːs
+create	E	v	創造	動作	create a story	kɹiˈeɪt
+build	C	v	建造	動作	build a house	ˈbɪld
+destroy	E	v	破壞	動作	destroy the old house	dɪˈstɹɔɪ
+protect	C	v	保護	動作	protect your family	pɹəˈtɛkt
+manage	E	v	管理	動作	manage a group	ˈmænədʒ
+depend	E	v	取決於	動作	depend on the weather	dɪˈpɛnd
+seem	C	v	似乎	動作	seem easy	ˈsiːm
+appear	C	v	出現；似乎	動作	appear at the door	əˈpɪɹ
+exist	C	v	存在	動作	does it exist?	ɪˈɡzɪst
+remain	E	v	保持	動作	remain at home	ɹɪˈmeɪn
+contain	E	v	包含	動作	contain water	kəˈnteɪn
+require	E	v	需要；要求	動作	require much time	ˌɹiːˈkwaɪɚ
+provide	C	v	提供	動作	provide food	pɹəˈvaɪd
+receive	C	v	收到	動作	receive a letter	ɹəˈsiːv
+accept	C	v	接受	動作	accept the food	æˈksɛpt
+serve	E	v	服務；上菜	動作	serve food	ˈsɝv
+press	E	v	按；壓	動作	press the light	ˈpɹɛs
+pour	E	v	倒	動作	pour the water	ˈpɔɹ
+boil	E	v	煮沸	動作	boil the water	ˈbɔɪl
+matter	E	v	要緊	動作	it does not matter	ˈmætɚ
+sound	E	v/n	聽起來；聲音	動作	sound good	ˈsaʊnd
+cross	E	v	穿過	動作	cross the road	ˈkɹɔs
+understand	C	v	理解	動作	I understand	ˌʌndɚˈstænd
+talk	C	v	說話；談	動作	talk to a friend	ˈtɔk
+reach	C	v	到達；伸手拿	動作	reach the shop	ˈɹiːtʃ
+act	E	v	行動；表演	動作	to act	ˈækt
+bend	E	v	彎曲	動作	to bend	ˈbɛnd
+breathe	E	v	呼吸	動作	to breathe	ˈbɹiːð
+burn	E	v	燒	動作	to burn	ˈbɝn
+disappear	E	v	消失	動作	to disappear	ˌdɪsəˈpɪɹ
+drop	E	v	掉落；讓掉落	動作	to drop	ˈdɹɑp
+enjoy	E	v	喜歡	動作	to enjoy	ˌɛˈndʒɔɪ
+flow	E	v	流動	動作	to flow	ˈfloʊ
+hide	E	v	藏	動作	to hide	ˈhaɪd
+kill	E	v	殺	動作	to kill	ˈkɪl
+mix	E	v	混合	動作	to mix	ˈmɪks
+pray	E	v	祈禱	動作	to pray	ˈpɹeɪ
+repeat	E	v	重複	動作	repeat the word	ɹɪˈpiːt
+respect	E	v	尊重	動作	to respect	ɹɪˈspɛkt
+search	E	v	尋找	動作	to search	ˈsɝtʃ
+sew	E	v	縫	動作	to sew	ˈsoʊ
+shake	E	v	搖	動作	to shake	ˈʃeɪk
+shoot	E	v	射	動作	to shoot	ˈʃuːt
+step	E	v	踏	動作	to step	ˈstɛp
+twist	E	v	扭轉	動作	to twist	ˈtwɪst
+zip	E	v	拉鍊	動作	to zip	ˈzɪp
+fight	E	v	打鬥	動作	to fight	ˈfaɪt
+fit	E	v	合身	動作	it fits me	ˈfɪt
+force	E	v	用力	動作	to force	ˈfɔɹs
+measure	E	v	量	動作	to measure	ˈmɛʒɚ
+tie	E	v	綁	動作	to tie	ˈtaɪ
+trust	E	v	信任	動作	to trust	ˈtɹʌst
+vote	E	v	投票	動作	to vote	ˈvoʊt
+match	E	v/n	比；比賽	動作	to match	ˈmætʃ
+announce	E	v	宣布	動作	to announce	əˈnaʊns
+hold	E	v	拿著；容納	動作	to hold	ˈhoʊld
+good	C	adj	好	性質	a good day	ˈɡʊd
+bad	C	adj	壞	性質	a bad day	ˈbæd
+big	C	adj	大	性質	a big house	ˈbɪɡ
+small	C	adj	小	性質	a small room	ˈsmɔl
+long	C	adj	長	性質	a long road	ˈlɔŋ
+short	C	adj	短	性質	a short story	ˈʃɔɹt
+tall	C	adj	高（人或樹）	性質	a tall man	ˈtɔl
+high	C	adj	高	性質	a high price	ˈhaɪ
+low	C	adj	低	性質	a low price	ˈloʊ
+old	C	adj	老；舊	性質	an old man	ˈoʊld
+new	C	adj	新	性質	a new job	nuː
+young	C	adj	年輕	性質	a young woman	ˈjʌŋ
+hot	C	adj	熱	性質	hot water	ˈhɑt
+cold	C	adj	冷	性質	cold weather	ˈkoʊld
+warm	C	adj	溫暖	性質	a warm room	ˈwɔɹm
+cool	C	adj	涼爽	性質	cool water	ˈkuːl
+wet	C	adj	濕	性質	wet clothes	ˈwɛt
+dry	C	adj	乾	性質	dry air	ˈdɹaɪ
+easy	C	adj	容易	性質	an easy question	ˈiːzi
+hard	C	adj	難；硬的	性質	a hard question	ˈhɑɹd
+difficult	C	adj	困難	性質	a difficult question	ˈdɪfəkəlt
+simple	C	adj	簡單	性質	a simple answer	ˈsɪmpəl
+important	C	adj	重要	性質	an important thing	ˌɪˈmpɔɹtənt
+different	C	adj	不同	性質	different from me	ˈdɪfɚənt
+wrong	C	adj	錯	性質	the wrong answer	ˈɹɔŋ
+true	C	adj	真	性質	a true story	ˈtɹuː
+false	C	adj	假	性質	a false story	ˈfɔls
+real	C	adj	真實	性質	a real story	ˈɹiːl
+nice	C	adj	好；友善	性質	a nice day	ˈnaɪs
+fine	C	adj	細的；很好	性質	fine, thanks	ˈfaɪn
+free	C	adj	免費；自由	性質	free food	ˈfɹiː
+busy	C	adj	忙	性質	a busy day	ˈbɪzi
+happy	C	adj	快樂	性質	a happy child	ˈhæpi
+sad	C	adj	悲傷	性質	a sad story	ˈsæd
+angry	E	adj	生氣	性質	an angry man	ˈæŋɡɹi
+tired	C	adj	疲累	性質	very tired	ˈtaɪɚd
+hungry	E	adj	餓	性質	I am hungry	ˈhʌŋɡɹi
+sick	C	adj	生病	性質	a sick child	ˈsɪk
+healthy	C	adj	健康	性質	a healthy body	ˈhɛlθi
+strong	C	adj	強壯	性質	a strong man	ˈstɹɔŋ
+weak	C	adj	弱	性質	a weak man	ˈwiːk
+heavy	C	adj	重	性質	a heavy bag	ˈhɛvi
+fast	C	adj/adv	快	性質	a fast car	ˈfæst
+slow	C	adj/adv	慢	性質	a slow bus	ˈsloʊ
+beautiful	C	adj	美麗	性質	a beautiful day	ˈbjuːtɪfəl
+ugly	E	adj	醜	性質	very ugly	ˈʌɡli
+afraid	C	adj	害怕	性質	afraid at night	əˈfɹeɪd
+fun	C	adj/adv	有趣	性質	a fun game	ˈfʌn
+interesting	C	adj	有趣	性質	an interesting story	ˈɪntɹəstɪŋ
+boring	E	adj	無聊	性質	very boring	ˈbɔɹɪŋ
+possible	C	adj	可能	性質	it is possible	ˈpɑsəbəl
+clear	C	adj	清楚	性質	a clear answer	ˈklɪɹ
+ready	C	adj	準備好	性質	I am ready	ˈɹɛdi
+sure	C	adj	確定	性質	I am sure	ˈʃʊɹ
+funny	E	adj	好笑	性質	very funny	ˈfʌni
+strange	E	adj	奇怪	性質	very strange	ˈstɹeɪndʒ
+quiet	E	adj	安靜	性質	very quiet	ˈkwaɪət
+noisy	E	adj	吵	性質	very noisy	ˈnɔɪzi
+rich	C	adj	有錢；豐富	性質	a rich family	ˈɹɪtʃ
+poor	C	adj	窮；可憐	性質	a poor family	ˈpuːɹ
+sweet	C	adj	甜	性質	sweet tea	ˈswiːt
+sour	E	adj	酸	性質	very sour	ˈsaʊɚ
+bitter	E	adj	苦	性質	very bitter	ˈbɪtɚ
+soft	C	adj	軟	性質	a soft bed	ˈsɑft
+sharp	E	adj	尖銳	性質	very sharp	ˈʃɑɹp
+smooth	E	adj	平滑	性質	very smooth	ˈsmuːð
+rough	E	adj	粗糙	性質	very rough	ˈɹʌf
+thin	E	adj	薄	性質	very thin	ˈθɪn
+wide	C	adj	寬	性質	a wide road	ˈwaɪd
+narrow	E	adj	窄	性質	very narrow	ˈnɛɹoʊ
+deep	C	adj	深	性質	a deep river	ˈdiːp
+full	C	adj	滿	性質	a full cup	ˈfʊl
+round	E	adj	圓	性質	very round	ˈɹaʊnd
+straight	E	adj/adv	直	性質	very straight	ˈstɹeɪt
+brown	C	adj	棕色	性質	brown bread	ˈbɹaʊn
+black	C	adj	黑色	性質	a black cat	ˈblæk
+white	C	adj	白色	性質	a white shirt	ˈwaɪt
+red	C	adj	紅色	性質	a red apple	ˈɹɛd
+blue	C	adj	藍色	性質	a blue sky	ˈbluː
+green	C	adj	綠色	性質	green tea	ˈɡɹiːn
+yellow	C	adj	黃色	性質	a yellow flower	ˈjɛloʊ
+orange	C	adj	橘色	性質	an orange cat	ˈɔɹəndʒ
+pink	C	adj	粉紅色	性質	a pink flower	ˈpɪŋk
+purple	E	adj	紫色	性質	very purple	ˈpɝpəl
+gray	E	adj	灰色	性質	very gray	ˈɡɹeɪ
+special	C	adj	特別的	性質	a special day	ˈspɛʃəl
+safe	C	adj	安全的	性質	a safe place	ˈseɪf
+dangerous	E	adj	危險的	性質	very dangerous	ˈdeɪndʒɚəs
+careful	C	adj	小心的	性質	be careful	ˈkɛɹfəl
+friendly	E	adj	友善的	性質	very friendly	ˈfɹɛndli
+kind	C	adj/n	善良的；種類	性質	a kind man	ˈkaɪnd
+polite	E	adj	有禮貌的	性質	very polite	pəˈlaɪt
+honest	E	adj	誠實的	性質	very honest	ˈɑnəst
+brave	E	adj	勇敢的	性質	very brave	ˈbɹeɪv
+lazy	E	adj	懶惰的	性質	very lazy	ˈleɪzi
+clever	E	adj	聰明的	性質	very clever	ˈklɛvɚ
+stupid	E	adj	笨的	性質	very stupid	ˈstuːpəd
+crazy	E	adj	瘋狂的	性質	very crazy	ˈkɹeɪzi
+serious	E	adj	嚴肅的	性質	very serious	ˈsɪɹiəs
+nervous	E	adj	緊張的	性質	very nervous	ˈnɝvəs
+calm	E	adj	平靜的	性質	very calm	ˈkɑm
+comfortable	E	adj	舒服的	性質	very comfortable	ˈkʌmfɚtəbəl
+popular	E	adj	受歡迎的	性質	very popular	ˈpɑpjəlɚ
+correct	C	adj	正確的	性質	the correct answer	kɚˈɛkt
+necessary	E	adj	必要的	性質	very necessary	ˈnɛsəˌsɛɹi
+likely	E	adj	可能的	性質	very likely	ˈlaɪkli
+certain	C	adj	確定的	性質	a certain fact	ˈsɝtən
+quick	E	adj	快的	性質	very quick	ˈkwɪk
+sudden	E	adj	突然的	性質	very sudden	ˈsʌdən
+terrible	E	adj	糟糕的	性質	very terrible	ˈtɛɹəbəl
+wonderful	E	adj	極好的	性質	very wonderful	ˈwʌndɚfəl
+pretty	E	adj	漂亮的	性質	very pretty	ˈpɹɪti
+alone	E	adj	獨自的	性質	very alone	əˈloʊn
+dirty	C	adj	髒	性質	dirty clothes	ˈdɝti
+glad	E	adj	高興的	性質	very glad	ˈɡlæd
+proud	E	adj	驕傲的	性質	very proud	ˈpɹaʊd
+lonely	E	adj	孤單的	性質	very lonely	ˈloʊnli
+bored	E	adj	無聊的	性質	very bored	ˈbɔɹd
+worried	E	adj	擔心的	性質	very worried	ˈwɝid
+excited	E	adj	興奮的	性質	very excited	ɪˈksaɪtəd
+surprised	E	adj	驚訝的	性質	very surprised	sɚˈpɹaɪzd
+upset	E	adj	難過的；生氣的	性質	very upset	əˈpsɛt
+shy	E	adj	害羞的	性質	very shy	ˈʃaɪ
+color	C	n	顏色	性質	the color	ˈkʌlɚ
+alive	E	adj	活著的	性質	very alive	əˈlaɪv
+available	E	adj	可以拿到的	性質	very available	əˈveɪləbəl
+bright	E	adj	明亮	性質	very bright	ˈbɹaɪt
+cheap	E	adj	便宜	性質	very cheap	ˈtʃiːp
+dark	E	adj	黑暗的	性質	very dark	ˈdɑɹk
+dead	E	adj	死的	性質	very dead	ˈdɛd
+equal	E	adj	相同的	性質	very equal	ˈiːkwəl
+exact	E	adj	完全正確的	性質	very exact	ɪˈɡzækt
+fair	E	adj	公平的	性質	very fair	ˈfɛɹ
+fat	E	adj	胖的	性質	very fat	ˈfæt
+frozen	E	adj	結冰的	性質	very frozen	ˈfɹoʊzən
+ill	E	adj	生病的	性質	very ill	ˈɪl
+loud	E	adj	大聲的	性質	very loud	ˈlaʊd
+normal	E	adj	正常的	性質	very normal	ˈnɔɹməl
+relaxed	E	adj	放鬆的	性質	very relaxed	ɹɪˈlækst
+religious	E	adj	宗教的	性質	very religious	ɹɪˈlɪdʒəs
+shiny	E	adj	發亮的	性質	very shiny	ˈʃaɪni
+smart	E	adj	聰明的	性質	very smart	ˈsmɑɹt
+thick	E	adj	厚的	性質	very thick	ˈθɪk
+tight	E	adj	緊的	性質	very tight	ˈtaɪt
+usual	E	adj	一般的	性質	very usual	ˈjuːʒuəl
+valuable	E	adj	貴重的	性質	very valuable	ˈvæljəbəl
+windy	E	adj	有風的	性質	very windy	ˈwɪndi
+flat	E	adj	平的	性質	very flat	ˈflæt
+main	E	adj	主要的	性質	very main	ˈmeɪn
+worth	E	adj	值得的	性質	very worth	ˈwɝθ
+common	E	adj	常見的	性質	very common	ˈkɑmən
+wild	E	adj	野生的	性質	very wild	ˈwaɪld
+awake	E	adj	醒著的	性質	very awake	əˈweɪk
+selfish	E	adj	自私的	性質	very selfish	ˈsɛlfɪʃ
+food	C	n	食物	事物	good food	ˈfuːd
+rice	C	n	米飯	事物	eat rice	ˈɹaɪs
+bread	E	n	麵包	事物	the bread	ˈbɹɛd
+meat	C	n	肉	事物	meat and rice	ˈmiːt
+egg	E	n	蛋	事物	the egg	ˈɛɡ
+milk	C	n	牛奶	事物	a glass of milk	ˈmɪlk
+tea	C	n	茶	事物	a cup of tea	ˈtiː
+coffee	C	n	咖啡	事物	a cup of coffee	ˈkɑfi
+juice	E	n	果汁	事物	the juice	ˈdʒuːs
+fruit	C	n	水果	事物	a sweet apple	ˈfɹuːt
+apple	C	n	蘋果	事物	a red apple	ˈæpəl
+vegetable	E	n	蔬菜	事物	the vegetable	ˈvɛdʒtəbəl
+sugar	C	n	糖	事物	too much sugar	ˈʃʊɡɚ
+salt	C	n	鹽	事物	a little salt	ˈsɔlt
+soup	E	n	湯	事物	the soup	ˈsuːp
+cake	E	n	蛋糕	事物	the cake	ˈkeɪk
+potato	E	n	馬鈴薯	事物	the potato	pəˈteɪˌtoʊ
+tomato	E	n	番茄	事物	the tomato	təˈmeɪˌtoʊ
+chicken	E	n	雞；雞肉	事物	the chicken	ˈtʃɪkən
+breakfast	E	n	早餐	事物	the breakfast	ˈbɹɛkfəst
+lunch	C	n	午餐	事物	eat lunch	ˈlʌntʃ
+dinner	C	n	晚餐	事物	make dinner	ˈdɪnɚ
+head	C	n	頭	事物	my head	ˈhɛd
+hair	E	n	頭髮	事物	long hair	ˈhɛɹ
+eye	C	n	眼睛	事物	big eyes	aɪ
+ear	E	n	耳朵	事物	2 ears	ˈiːɹ
+nose	C	n	鼻子	事物	a small nose	ˈnoʊz
+mouth	C	n	嘴巴	事物	open your mouth	ˈmaʊθ
+tooth	E	n	牙齒	事物	clean your teeth	ˈtuːθ
+tongue	E	n	舌頭	事物	the tongue	ˈtʌŋ
+neck	E	n	脖子	事物	the neck	ˈnɛk
+shoulder	E	n	肩膀	事物	the shoulder	ˈʃoʊldɚ
+arm	E	n	手臂	事物	my arm	ˈɑɹm
+hand	C	n	手	事物	wash your hands	ˈhænd
+finger	E	n	手指	事物	the finger	ˈfɪŋɡɚ
+leg	E	n	腿	事物	my leg	ˈlɛɡ
+foot	C	n	腳	事物	my foot	ˈfʊt
+knee	E	n	膝蓋	事物	the knee	ˈniː
+heart	C	n	心臟	事物	my heart	ˈhɑɹt
+stomach	E	n	肚子	事物	the stomach	ˈstʌmək
+skin	E	n	皮膚	事物	the skin	ˈskɪn
+bone	E	n	骨頭	事物	the bone	ˈboʊn
+blood	E	n	血	事物	the blood	ˈblʌd
+face	C	n	臉	事物	wash your face	ˈfeɪs
+body	C	n	身體	事物	a healthy body	ˈbɑdi
+shirt	C	n	襯衫	事物	a white shirt	ˈʃɝt
+pants	E	n	褲子	事物	new pants	ˈpænts
+dress	E	n	洋裝；穿（動詞）	事物	a nice dress	ˈdɹɛs
+coat	E	n	外套	事物	the coat	ˈkoʊt
+shoes	E	n	鞋	事物	new shoes	ˈʃuːz
+hat	E	n	帽子	事物	a big hat	ˈhæt
+socks	E	n	襪子	事物	the socks	ˈsɑks
+clothes	E	n	衣服	事物	the clothes	kloʊðz
+shoe	E	n	鞋	事物	the shoe	ˈʃuː
+glasses	E	n	眼鏡	事物	the glasses	ˈɡlæsəz
+table	C	n	桌子	事物	on the table	ˈteɪbəl
+desk	E	n	書桌	事物	the desk	ˈdɛsk
+chair	C	n	椅子	事物	a small chair	ˈtʃɛɹ
+bed	C	n	床	事物	go to bed	ˈbɛd
+sofa	E	n	沙發	事物	the sofa	ˈsoʊfə
+lamp	E	n	燈	事物	the lamp	ˈlæmp
+cup	C	n	杯子	事物	a cup of tea	ˈkʌp
+bowl	E	n	碗	事物	the bowl	ˈboʊl
+plate	E	n	盤子	事物	the plate	ˈpleɪt
+knife	C	n	刀	事物	a sharp knife	ˈnaɪf
+fork	E	n	叉子	事物	the fork	ˈfɔɹk
+spoon	E	n	湯匙	事物	the spoon	ˈspuːn
+bottle	C	n	瓶子	事物	a water bottle	ˈbɑtəl
+box	C	n	盒子	事物	a small box	ˈbɑks
+bag	C	n	袋子	事物	a heavy bag	ˈbæɡ
+book	C	n	書	事物	a good book	ˈbʊk
+pen	C	n	筆	事物	write with a pen	ˈpɛn
+pencil	E	n	鉛筆	事物	the pencil	ˈpɛnsəl
+key	C	n	鑰匙	事物	the key to the door	ˈkiː
+picture	C	n	圖片	事物	a nice picture	ˈpɪktʃɚ
+photo	E	n	照片	事物	the photo	ˈfoʊˌtoʊ
+medicine	C	n	藥	事物	take medicine	ˈmɛdəsən
+mirror	E	n	鏡子	事物	the mirror	ˈmɪɹɚ
+towel	E	n	毛巾	事物	the towel	ˈtaʊəl
+soap	E	n	肥皂	事物	the soap	ˈsoʊp
+umbrella	E	n	雨傘	事物	the umbrella	əˈmbɹɛlə
+radio	E	n	收音機	事物	the radio	ˈɹeɪdiˌoʊ
+television	E	n	電視	事物	the television	ˈtɛləˌvɪʒən
+blanket	E	n	毯子	事物	the blanket	ˈblæŋkət
+phone	C	n	電話	事物	my phone	ˈfoʊn
+computer	C	n	電腦	事物	my computer	kəˈmpjuːtɚ
+mouse	E	n	滑鼠	事物	the mouse	ˈmaʊs
+screen	E	n	螢幕	事物	the screen	ˈskɹiːn
+password	E	n	密碼	事物	the password	ˈpæˌswɚd
+account	E	n	帳戶	事物	the account	əˈkaʊnt
+website	E	n	網站	事物	the website	ˈwɛˌbsaɪt
+letter	C	n	信；字母	事物	write a letter	ˈlɛtɚ
+email	E	n	電子郵件	事物	the email	iˈmeɪl
+message	C	n	訊息	事物	a short message	ˈmɛsədʒ
+meal	E	n	一餐	事物	the meal	ˈmiːl
+menu	E	n	菜單	事物	the menu	ˈmɛnju
+bill	C	n	帳單	事物	pay the bill	ˈbɪl
+money	C	n	錢	事物	much money	ˈmʌni
+price	C	n	價格	事物	the price of food	ˈpɹaɪs
+cash	E	n	現金	事物	the cash	ˈkæʃ
+card	C	n	卡片	事物	a bank card	ˈkɑɹd
+kitchen	C	n	廚房	事物	the kitchen	ˈkɪtʃən
+bedroom	C	n	臥室	事物	the bedroom	ˈbɛˌdɹuːm
+classroom	C	n	教室	事物	the classroom	ˈklæˌsɹuːm
+supermarket	C	n	大超市	事物	the supermarket	ˈsuːpɚˌmɑɹkɪt
+bookstore	C	n	書店	事物	the bookstore	ˈbʊˌkstɔɹ
+bath	E	n	洗澡	事物	the bath	ˈbæθ
+bell	E	n	鈴	事物	the bell	ˈbɛl
+board	E	n	板子	事物	the board	ˈbɔɹd
+breath	E	n	呼吸	事物	the breath	ˈbɹɛθ
+brush	E	n	刷子	事物	the brush	ˈbɹʌʃ
+bullet	E	n	子彈	事物	the bullet	ˈbʊlət
+cable	E	n	纜線	事物	the cable	ˈkeɪbəl
+camera	E	n	攝影機	事物	the camera	ˈkæmɚə
+case	E	n	箱子；案子	事物	the case	ˈkeɪs
+chain	E	n	鏈子	事物	the chain	ˈtʃeɪn
+cheese	E	n	起司	事物	the cheese	ˈtʃiːz
+cloth	E	n	布	事物	the cloth	ˈklɔθ
+coin	E	n	硬幣	事物	the coin	ˈkɔɪn
+crowd	E	n	人群	事物	the crowd	ˈkɹaʊd
+flour	E	n	麵粉	事物	the flour	ˈflaʊɚ
+handle	E	n	把手	事物	the handle	ˈhændəl
+hole	E	n	洞	事物	the hole	ˈhoʊl
+hood	E	n	帽子	事物	the hood	ˈhʊd
+instrument	E	n	樂器	事物	the instrument	ˈɪnstɹəmənt
+jacket	E	n	夾克	事物	the jacket	ˈdʒækət
+jaw	E	n	顎	事物	the jaw	ˈdʒɔ
+leather	E	n	皮革	事物	the leather	ˈlɛðɚ
+lung	E	n	肺	事物	the lung	ˈlʌŋ
+muscle	E	n	肌肉	事物	the muscle	ˈmʌsəl
+nail	E	n	指甲	事物	the nail	ˈneɪl
+needle	E	n	針	事物	the needle	ˈniːdəl
+newspaper	E	n	報紙	事物	the newspaper	ˈnuːˌzpeɪpɚ
+nut	E	n	堅果	事物	the nut	ˈnʌt
+oven	E	n	烤箱	事物	the oven	ˈʌvən
+page	E	n	頁	事物	the page	ˈpeɪdʒ
+pasta	E	n	義大利麵	事物	the pasta	ˈpɑstə
+pepper	E	n	胡椒	事物	the pepper	ˈpɛpɚ
+poem	E	n	詩	事物	the poem	ˈpoʊəm
+pot	E	n	鍋	事物	the pot	ˈpɑt
+powder	E	n	粉	事物	the powder	ˈpaʊdɚ
+prize	E	n	獎品	事物	the prize	ˈpɹaɪz
+rope	E	n	繩子	事物	the rope	ˈɹoʊp
+salad	E	n	沙拉	事物	the salad	ˈsæləd
+sauce	E	n	醬汁	事物	the sauce	ˈsɔs
+saw	E	n	鋸子	事物	the saw	ˈsɔ
+shell	E	n	殼	事物	the shell	ˈʃɛl
+soy	E	n	大豆	事物	the soy	ˈsɔɪ
+spice	E	n	香料	事物	the spice	ˈspaɪs
+spot	E	n	斑點	事物	the spot	ˈspɑt
+stick	E	n	棍子	事物	the stick	ˈstɪk
+strap	E	n	背帶	事物	the strap	ˈstɹæp
+string	E	n	繩子	事物	the string	ˈstɹɪŋ
+stuff	E	n	東西	事物	the stuff	ˈstʌf
+surface	E	n	表面	事物	the surface	ˈsɝfəs
+tube	E	n	管子	事物	the tube	ˈtuːb
+video	E	n	影片	事物	the video	ˈvɪdioʊ
+waist	E	n	腰	事物	the waist	ˈweɪst
+wheel	E	n	輪子	事物	the wheel	ˈwiːl
+wool	E	n	羊毛	事物	the wool	ˈwʊl
+wound	E	n	傷口	事物	the wound	ˈwaʊnd
+belt	E	n	皮帶	事物	the belt	ˈbɛlt
+bit	E	n	小塊	事物	the bit	ˈbɪt
+file	E	n/v	檔案	事物	to file	ˈfaɪl
+film	E	n	影片	事物	the film	ˈfɪlm
+fist	E	n	拳頭	事物	the fist	ˈfɪst
+form	E	n	形式	事物	the form	ˈfɔɹm
+mark	E	n	分數	事物	the mark	ˈmɑɹk
+thread	E	n	線	事物	the thread	ˈθɹɛd
+throat	E	n	喉嚨	事物	the throat	ˈθɹoʊt
+bubble	E	n	泡泡	事物	the bubble	ˈbʌbəl
+cough	E	n/v	咳嗽	事物	to cough	ˈkɑf
+fever	E	n	發燒	事物	the fever	ˈfiːvər
+glue	E	n	黏膠	事物	the glue	ˈɡluː
+tail	E	n	尾巴	事物	the tail	ˈteɪl
+horn	E	n	角	事物	the horn	ˈhɔɹn
+gear	E	n	齒輪	事物	the gear	ˈɡɪɹ
+bean	E	n	豆子	事物	the bean	ˈbiːn
+pedal	E	n	踏板	事物	the pedal	ˈpɛdəl
+motor	E	n	馬達	事物	the motor	ˈmoʊtɚ
+frame	E	n	車架	事物	the frame	ˈfɹeɪm
+hello	C	interj	你好	社交・人	say hello	həˈloʊ
+hi	C	interj	嗨	社交・人	say hi	ˈhaɪ
+goodbye	E	interj	再見	社交・人	say goodbye	ˌɡʊˈdbaɪ
+bye	E	interj	再見	社交・人	say bye	ˈbaɪ
+thanks	C	interj	謝謝	社交・人	say thanks	ˈθæŋks
+thank	C	v	感謝	社交・人	thank you	ˈθæŋk
+please	C	adv	請	社交・人	please sit down	ˈpliːz
+sorry	C	adj	抱歉的；難過的	社交・人	I am sorry	ˈsɑɹi
+welcome	C	v/adj	歡迎	社交・人	welcome to my home	ˈwɛlkəm
+excuse	E	v	寬恕；打斷	社交・人	to excuse	ɪˈkskjuːs
+name	C	n	名字	社交・人	my name	ˈneɪm
+friend	C	n	朋友	社交・人	a good friend	ˈfɹɛnd
+family	C	n	家人	社交・人	my family	ˈfæməli
+mother	C	n	母親	社交・人	my mother	ˈmʌðər
+father	C	n	父親	社交・人	my father	ˈfɑːðər
+parent	C	n	父母	社交・人	my parents	ˈpɛɹənt
+brother	C	n	兄弟	社交・人	my brother	ˈbrʌðər
+sister	C	n	姐妹	社交・人	my sister	ˈsɪstɚ
+child	C	n	小孩	社交・人	a small child	ˈtʃaɪld
+son	C	n	兒子	社交・人	my son	ˈsʌn
+daughter	C	n	女兒	社交・人	my daughter	ˈdɔtɚ
+husband	C	n	丈夫	社交・人	my husband	ˈhʌzbənd
+wife	C	n	妻子	社交・人	my wife	ˈwaɪf
+baby	C	n	嬰兒	社交・人	a small baby	ˈbeɪbi
+grandmother	E	n	祖母	社交・人	the grandmother	ˈɡɹæˌndmʌðɚ
+grandfather	E	n	祖父	社交・人	the grandfather	ˈɡɹæˌndfɑðɚ
+uncle	E	n	叔伯	社交・人	the uncle	ˈʌŋkəl
+aunt	E	n	姑姑阿姨	社交・人	the aunt	ˈænt
+cousin	E	n	表兄弟姊妹	社交・人	the cousin	ˈkʌzən
+teacher	C	n	老師	社交・人	a good teacher	ˈtiːtʃɚ
+student	C	n	學生	社交・人	a young student	ˈstuːdənt
+doctor	C	n	醫生	社交・人	see a doctor	ˈdɑktɚ
+nurse	C	n	護士	社交・人	the nurse is here	ˈnɝs
+worker	C	n	工作者	社交・人	a hard worker	ˈwɝkɚ
+boss	E	n	老闆	社交・人	the boss	ˈbɑs
+customer	C	n	客人	社交・人	a new customer	ˈkʌstəmɚ
+person	C	n	人	社交・人	a kind person	ˈpɝsən
+man	C	n	男人	社交・人	a young man	ˈmæn
+woman	C	n	女人	社交・人	a young woman	ˈwʊmən
+lady	E	n	女士	社交・人	the lady	ˈleɪdi
+people	C	n	人們	社交・人	many people	ˈpiːpəl
+stranger	E	n	陌生人	社交・人	the stranger	ˈstɹeɪndʒɚ
+guest	E	n	客人	社交・人	the guest	ˈɡɛst
+neighbor	E	n	鄰居	社交・人	the neighbor	ˈneɪbɚ
+kid	E	n	小孩	社交・人	the kid	ˈkɪd
+partner	E	n	伴侶；夥伴	社交・人	the partner	ˈpɑɹtnɚ
+member	C	n	成員	社交・人	a team member	ˈmɛmbɚ
+leader	E	n	領袖	社交・人	the leader	ˈliːdɚ
+citizen	E	n	公民	社交・人	the citizen	ˈsɪtəzən
+couple	E	n	一對	社交・人	the couple	ˈkʌpəl
+sir	E	n	先生	社交・人	the sir	ˈsɝ
+soldier	E	n	士兵	社交・人	the soldier	ˈsoʊldʒɚ
+officer	E	n	官員	社交・人	the officer	ˈɔfəsɚ
+scientist	E	n	科學家	社交・人	the scientist	ˈsaɪəntɪst
+artist	E	n	藝術家	社交・人	the artist	ˈɑɹtəst
+writer	E	n	作家	社交・人	the writer	ˈɹaɪtɚ
+engineer	E	n	工程師	社交・人	the engineer	ˈɛndʒəˈnɪɹ
+lawyer	E	n	律師	社交・人	the lawyer	ˈlɔjɚ
+farmer	E	n	農民	社交・人	the farmer	ˈfɑɹmɚ
+driver	E	n	司機	社交・人	the driver	ˈdɹaɪvɚ
+English	C	n	英語	社交・人	I speak English	ˈɪŋɡlɪʃ
+Chinese	C	n	中文	社交・人	I speak Chinese	ˈtʃaɪniːz
+band	E	n	樂團	社交・人	the band	ˈbænd
+crime	E	n	犯罪	社交・人	the crime	ˈkɹaɪm
+king	E	n	國王	社交・人	the king	ˈkɪŋ
+queen	E	n	女王	社交・人	the queen	ˈkwiːn
+judge	E	n	法官	社交・人	the judge	ˈdʒʌdʒ
+lover	E	n	情人	社交・人	the lover	ˈlʌvɚ
+girl	E	n	女孩	社交・人	the girl	ˈɡɝl
+boy	E	n	男孩	社交・人	the boy	ˈbɔɪ
+mayor	E	n	市長	社交・人	the mayor	ˈmeɪɚ
+actor	E	n	演員	社交・人	the actor	ˈæktɚ
+manager	E	n	經理	社交・人	the manager	ˈmænədʒɚ
+kingdom	E	n	王國	社交・人	the kingdom	ˈkɪŋdəm
+thing	C	n	事物	抽象概念	a thing to eat	ˈθɪŋ
+type	C	n	類型	抽象概念	the type	ˈtaɪp
+sort	C	n	種類	抽象概念	the sort	ˈsɔɹt
+part	E	n	部分	抽象概念	a part of the work	ˈpɑɹt
+piece	E	n	片段；一片	抽象概念	a piece of bread	ˈpiːs
+group	E	n	群組	抽象概念	a group of people	ˈɡɹuːp
+system	E	n	系統	抽象概念	a simple system	ˈsɪstəm
+tool	C	n	工具	抽象概念	a tool for cutting	ˈtuːl
+machine	E	n	機器	抽象概念	a machine that washes clothes	məˈʃiːn
+material	E	n	材料	抽象概念	a material for building	məˈtɪɹiəl
+voice	E	n	嗓音	抽象概念	the voice	ˈvɔɪs
+noise	E	n	噪音	抽象概念	the noise	ˈnɔɪz
+language	C	n	語言	抽象概念	a language for talking	ˈlæŋɡwədʒ
+word	C	n	單字	抽象概念	a new word	ˈwɝd
+shape	E	n	形狀	抽象概念	a round shape	ˈʃeɪp
+size	E	n	大小	抽象概念	the size of the room	ˈsaɪz
+level	E	n	程度；階層	抽象概念	a high level of English	ˈlɛvəl
+degree	E	n	程度；度	抽象概念	a high degree	dɪˈɡɹiː
+reason	C	n	原因	抽象概念	the reason why	ˈɹiːzən
+result	C	n	結果	抽象概念	the result of the work	ɹɪˈzʌlt
+problem	C	n	問題	抽象概念	a big problem	ˈpɹɑbləm
+question	C	n	問題	抽象概念	a hard question	ˈkwɛstʃən
+idea	E	n	想法	抽象概念	a good idea	aɪˈdiːə
+plan	E	n	計畫	抽象概念	a plan for the week	ˈplæn
+method	E	n	方法	抽象概念	the method	ˈmɛθəd
+example	E	n	例子	抽象概念	an example of it	ɪˈɡzæmpəl
+fact	E	n	事實	抽象概念	a true fact	ˈfækt
+truth	E	n	真實	抽象概念	the truth	ˈtɹuːθ
+lie	E	n	謊話	抽象概念	the lie	ˈlaɪ
+information	E	n	資訊	抽象概念	the information	ˌɪnfɚˈmeɪʃən
+knowledge	E	n	知識	抽象概念	the knowledge	ˈnɑlədʒ
+skill	E	n	技能	抽象概念	the skill	ˈskɪl
+ability	E	n	能力	抽象概念	the ability	əˈbɪləˌtiː
+chance	E	n	機會	抽象概念	the chance	ˈtʃæns
+choice	E	n	選擇	抽象概念	the choice	ˈtʃɔɪs
+decision	E	n	決定	抽象概念	the decision	dɪˈsɪʒən
+difference	E	n	差異	抽象概念	the difference	ˈdɪfɚəns
+effect	E	n	影響	抽象概念	the effect	ɪˈfɛkt
+event	E	n	事件	抽象概念	the event	ɪˈvɛnt
+experience	E	n	經驗	抽象概念	the experience	ɪˈkspɪɹiəns
+process	E	n	過程	抽象概念	the process	ˈpɹɑˌsɛs
+progress	E	n	進步	抽象概念	the progress	ˈpɹɑˌɡɹɛs
+purpose	E	n	目的	抽象概念	the purpose	ˈpɝpəs
+quality	E	n	品質	抽象概念	the quality	ˈkwɑləti
+quantity	E	n	數量	抽象概念	the quantity	ˈkwɑntəti
+value	E	n	價值	抽象概念	the value	ˈvælju
+rate	E	n	比率	抽象概念	the rate	ˈɹeɪt
+power	E	n	力量；電力	抽象概念	the power	ˈpaʊɚ
+control	E	v/n	控制	抽象概念	control the price	kəˈntɹoʊl
+influence	E	n/v	影響	抽象概念	to influence	ˈɪnfluəns
+service	E	n	服務	抽象概念	the service	ˈsɝvəs
+product	E	n	產品	抽象概念	the product	ˈprɑːdəkt
+project	E	n	專案	抽象概念	the project	ˈpɹɑdʒɛkt
+research	E	n/v	研究	抽象概念	to research	ɹiˈsɝtʃ
+policy	E	n	政策	抽象概念	the policy	ˈpɑləsi
+culture	E	n	文化	抽象概念	the culture	ˈkʌltʃɚ
+society	E	n	社會	抽象概念	the society	səˈsaɪəti
+community	E	n	社群	抽象概念	the community	kəˈmjuːnəti
+government	E	n	政府	抽象概念	the government	ˈɡʌvɚmənt
+president	E	n	總統	抽象概念	the president	ˈpɹɛzəˌdɛnt
+minister	E	n	部長	抽象概念	the minister	ˈmɪnəstɚ
+party	E	n	政黨；派對	抽象概念	the party	ˈpɑɹti
+war	E	n	戰爭	抽象概念	the war	ˈwɔɹ
+peace	E	n	和平	抽象概念	the peace	ˈpiːs
+health	C	n	健康	抽象概念	good health	ˈhɛlθ
+disease	E	n	疾病	抽象概念	the disease	dɪˈziːz
+pain	C	n	疼痛	抽象概念	a little pain	ˈpeɪn
+treatment	E	n	治療	抽象概念	the treatment	ˈtɹiːtmənt
+science	E	n	科學	抽象概念	the science	ˈsaɪəns
+technology	E	n	科技	抽象概念	the technology	tɛˈknɑlədʒi
+history	E	n	歷史	抽象概念	the history	ˈhɪstɚi
+art	C	n	藝術	抽象概念	a school for art	ˈɑɹt
+music	C	n	音樂	抽象概念	music I like	ˈmjuːzɪk
+story	C	n	故事	抽象概念	a long story	ˈstɔɹi
+news	E	n	新聞	抽象概念	the news	ˈnuːz
+article	E	n	文章	抽象概念	the article	ˈɑɹtəkəl
+report	E	v/n	報告	抽象概念	to report	ɹiˈpɔɹt
+meeting	E	n	會議	抽象概念	a work meeting	ˈmiːtɪŋ
+job	C	n	工作	抽象概念	a good job	ˈdʒɑb
+rule	C	n	規則	抽象概念	a simple rule	ˈɹuːl
+law	C	n	法律	抽象概念	the law of the country	ˈlɔ
+company	C	n	公司	抽象概念	a big company	ˈkʌmpəˌniː
+business	E	n	商業	抽象概念	the business	ˈbɪznəs
+industry	E	n	產業	抽象概念	the industry	ˈɪndəstɹi
+software	E	n	軟體	抽象概念	the software	ˈsɔˌftwɛɹ
+program	C	n	節目；程式	抽象概念	a radio program	ˈpɹoʊˌɡɹæm
+internet	E	n	網際網路	抽象概念	the internet	ˈɪntɚˌnɛt
+data	E	n	資料	抽象概念	the data	ˈdeɪtə
+movie	E	n	電影	抽象概念	the movie	ˈmuːvi
+song	E	n	歌	抽象概念	the song	ˈsɔŋ
+game	C	n	遊戲；比賽	抽象概念	a fun game	ˈɡeɪm
+sport	C	n	運動	抽象概念	a popular sport	ˈspɔɹt
+ball	C	n	球	抽象概念	a red ball	ˈbɔl
+player	C	n	玩家	抽象概念	a good player	ˈpleɪɚ
+class	C	n	班；課	抽象概念	a class of students	ˈklæs
+lesson	E	n	課	抽象概念	the lesson	ˈlɛsən
+test	E	n/v	測試	抽象概念	to test	ˈtɛst
+mistake	E	n	錯誤	抽象概念	the mistake	mɪˈsteɪk
+homework	E	n	作業	抽象概念	the homework	ˈhoʊˌmwɚk
+score	E	n	分數	抽象概念	the score	ˈskɔɹ
+title	E	n	標題	抽象概念	the title	ˈtaɪtəl
+list	E	n	清單	抽象概念	the list	ˈlɪst
+record	E	n/v	記錄	抽象概念	to record	ɹəˈkɔɹd
+note	E	n/v	筆記；注意	抽象概念	to note	ˈnoʊt
+interest	E	n	興趣	抽象概念	the interest	ˈɪntɹəst
+attention	E	n	注意力	抽象概念	the attention	əˈtɛnʃən
+amount	E	n	數量	抽象概念	the amount	əˈmaʊnt
+sense	E	n	意義；感覺	抽象概念	the sense	ˈsɛns
+image	E	n	影像	抽象概念	the image	ˈɪmədʒ
+situation	E	n	情況	抽象概念	the situation	ˌsɪtʃuˈeɪʃən
+condition	E	n	情況；條件	抽象概念	the condition	kəˈndɪʃən
+subject	E	n	主題；科目	抽象概念	the subject	səˈbdʒɛkt
+end	C	n/v	結束	抽象概念	the end of the day	ˈɛnd
+life	C	n	生活；生命	抽象概念	a good life	ˈlaɪf
+death	E	n	死亡	抽象概念	the death	ˈdɛθ
+feeling	C	n	感覺；心情	抽象概念	a good feeling	ˈfiːlɪŋ
+team	C	n	團隊	抽象概念	the team	ˈtiːm
+angle	E	n	角度	抽象概念	the angle	ˈæŋɡəl
+competition	E	n	比賽	抽象概念	the competition	ˌkɑmpəˈtɪʃən
+illness	E	n	疾病	抽象概念	the illness	ˈɪlnəs
+journey	E	n	旅行	抽象概念	the journey	ˈdʒɝni
+length	E	n	長度	抽象概念	the length	ˈlɛŋkθ
+marriage	E	n	婚姻	抽象概念	the marriage	ˈmɛɹɪdʒ
+math	E	n	數學	抽象概念	the math	ˈmæθ
+mind	E	n	心智	抽象概念	the mind	ˈmaɪnd
+network	E	n	網路	抽象概念	the network	ˈnɛˌtwɚk
+period	E	n	時期	抽象概念	the period	ˈpɪɹiəd
+pressure	E	n	壓力	抽象概念	the pressure	ˈpɹɛʃɚ
+promise	E	n	承諾	抽象概念	the promise	ˈpɹɑməs
+reaction	E	n	反應	抽象概念	the reaction	ɹiˈækʃən
+signal	E	n	訊號	抽象概念	the signal	ˈsɪɡnəl
+web	E	n	網	抽象概念	the web	ˈwɛb
+wedding	E	n	婚禮	抽象概念	the wedding	ˈwɛdɪŋ
+age	E	n	年紀	抽象概念	the age	ˈeɪdʒ
+agreement	E	n	協議	抽象概念	the agreement	əˈɡɹiːmənt
+care	E	n	照顧	抽象概念	the care	ˈkɛɹ
+course	E	n	課	抽象概念	the course	ˈkɔɹs
+danger	E	n	危險	抽象概念	the danger	ˈdeɪndʒɚ
+effort	E	n	努力	抽象概念	the effort	ˈɛfɚt
+fear	E	n	害怕	抽象概念	the fear	ˈfɪɹ
+goal	E	n	目標	抽象概念	the goal	ˈɡoʊl
+trip	E	n	旅行	抽象概念	the trip	ˈtɹɪp
+habit	E	n	習慣	抽象概念	the habit	ˈhæbət
+sentence	E	n	句子	抽象概念	the sentence	ˈsɛntəns
+stock	E	n	股票；存貨	抽象概念	the stock	ˈstɑk
+opinion	E	n	意見	抽象概念	the opinion	əˈpɪnjən
+model	E	n	模型	抽象概念	the model	ˈmɑdəl
+state	E	n	州；狀態	抽象概念	the state	ˈsteɪt
+dynasty	E	n	王朝	抽象概念	the dynasty	ˈdaɪnəsti
+mechanism	E	n	機械裝置	抽象概念	the mechanism	ˈmɛkəˌnɪzəm
+movement	E	n	移動	抽象概念	the movement	ˈmuːvmənt
+physics	E	n	物理	抽象概念	the physics	ˈfɪzɪks
+chemistry	E	n	化學	抽象概念	the chemistry	ˈkɛməstɹi
+element	E	n	元素	抽象概念	the element	ˈɛləmənt
+cycle	E	n	循環	抽象概念	the cycle	ˈsaɪkəl

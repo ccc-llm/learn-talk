@@ -1,0 +1,10 @@
+# 詞表外最常用的詞（最容易不小心寫出來）
+beaucoup plusieurs quelques certain diverse quelconque tel quel
+toujours jamais souvent parfois
+aujourd'hui demain hier avant après
+toujours déjà encore
+beaucoup peu assez trop
+si parce donc car mais
+grand petit nouveau vieux
+maison voiture école travail
+aller faire dire voir savoir pouvoir vouloir devoir prendre venir

@@ -1,0 +1,9 @@
+{
+  "name": "Mini-Korean",
+  "native": "簡易韓國語",
+  "unit": "word",
+  "script": "hangul",
+  "romanization": "romaji",
+  "target_reader": "母語不是韓文的外國人",
+  "source": "原創設計"
+}

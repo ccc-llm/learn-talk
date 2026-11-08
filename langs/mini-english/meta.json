@@ -1,0 +1,9 @@
+{
+  "name": "Mini-English",
+  "native": "簡易英文",
+  "unit": "word",
+  "script": "latin",
+  "romanization": "ipa",
+  "target_reader": "母語不是英文的外國人",
+  "source": "mini-lang/mini-english"
+}

@@ -1,0 +1,2525 @@
+# Mini-French：規格
+
+> 簡易法文　單位：word　核心層 752 ＋ 擴充層 403
+
+## 1. 設計目標
+
+| 目標 | 做法 |
+|---|---|
+| 字少 | 所有句子只由詞表內的單位組成；數字用阿拉伯數字 |
+| 是真正的該語言 | 寫出來的一定是正確、自然的該語言，不是另一種語言 |
+| 靠組合 | 學會詞表就能讀懂更多說法 |
+| 語法固定 | 只用編號的句型規則，困難結構用固定替代說法 |
+| 說不出來就換句話說 | 表外的概念用「描述 ＋ 類頭」，說不出是哪一個就用外來語 |
+
+## 2. 詞表
+
+| 詞 | 層 | 詞性 | 意思 | 類別 | 例子 |
+|---|---|---|---|---|---|
+| aucun | C | pron | 沒有一個；沒有人 | 代詞・指示 | Aucun ne sait. |
+| autre | C | pron | 另一個 | 代詞・指示 | Un autre. |
+| autres | C | pron | 其他的人或物 | 代詞・指示 | Les autres sont là. |
+| ce | C | pron | 這；這個 | 代詞・指示 | Ce chat dort. |
+| ceci | C | pron | 這個事物 | 代詞・指示 | Ceci est vrai. |
+| ces | C | pron | 這些 | 代詞・指示 |  |
+| cet | C | pron | 這個（陽性；母音前） | 代詞・指示 | Cet homme parle. |
+| cette | C | pron | 這個（陰性） | 代詞・指示 | Cette personne vient. |
+| chacun | C | pron | 每一個；每個人（陽性） | 代詞・指示 | Chacun travaille. |
+| chacune | C | pron | 每一個；每個人（陰性） | 代詞・指示 | Chacune parle. |
+| combien | C | pron | 多少；幾個 | 代詞・指示 | Combien ? |
+| comment | C | pron | 怎樣；如何 | 代詞・指示 | Comment ? |
+| dont | C | pron | ……的；來自…… | 代詞・指示 | Celui dont je parle est là. |
+| elle | C | pron | 她 | 代詞・指示 | Elle est. |
+| elles | C | pron | 她們 | 代詞・指示 | Elles sont là. |
+| en | C | pron | 一些；其中的；對它 | 代詞・指示 | Il en a. |
+| il | C | pron | 他 | 代詞・指示 | Il va. |
+| ils | C | pron | 他們 | 代詞・指示 | Ils sont là. |
+| je | C | pron | 我 | 代詞・指示 | Je suis. |
+| leur | C | pron | 他們；她們（間接） | 代詞・指示 | Je leur parle. |
+| lui | C | pron | 他；她；它（間接） | 代詞・指示 | Je lui parle. |
+| me | C | pron | 我（自反） | 代詞・指示 |  |
+| nous | C | pron | 我們 | 代詞・指示 | Nous sommes. |
+| on | C | pron | 人們；我們 | 代詞・指示 | On va. |
+| où | C | pron | 哪裡；在……的地方 | 代詞・指示 | Tu es où ? |
+| personne | C | pron | 沒有人 | 代詞・指示 | Personne ne vient. |
+| pourquoi | C | pron | 為什麼 | 代詞・指示 | Pourquoi ? |
+| quand | C | pron | 什麼時候 | 代詞・指示 | Tu viens quand ? |
+| que | C | pron | 什麼；……的 | 代詞・指示 | Je sais que. |
+| quelles | C | det | 哪些 | 代詞・指示 | Quelles fleurs sont rouges ? |
+| quelque | C | det | 某個 | 代詞・指示 |  |
+| quelques | C | det | 一些 | 代詞・指示 |  |
+| quels | C | det | 哪些 | 代詞・指示 |  |
+| qui | C | pron | 誰；……的人 | 代詞・指示 | Je sais qui parle. |
+| quoi | C | pron | 什麼 | 代詞・指示 | Quoi ? |
+| rien | C | pron | 什麼也沒有 | 代詞・指示 | Je n'ai rien. |
+| sa | C | det | 她的 | 代詞・指示 | Sa clé est là. |
+| se | C | pron | 自己（自反） | 代詞・指示 |  |
+| ses | C | det | 他的／她的 | 代詞・指示 | Il a ses lunettes. |
+| soi | C | pron | 自己 | 代詞・指示 |  |
+| son | C | det | 他的 | 代詞・指示 | C'est son livre. |
+| te | C | pron | 你（自反） | 代詞・指示 | Je te vois. |
+| tous | C | pron | 全部；大家（陽性複數） | 代詞・指示 | Tous sont là. |
+| tout | C | pron | 全部；一切 | 代詞・指示 | Tout va. |
+| toute | C | pron | 全部（陰性） | 代詞・指示 |  |
+| toutes | C | pron | 全部；大家（陰性複數） | 代詞・指示 | Toutes sont là. |
+| tu | C | pron | 你 | 代詞・指示 |  |
+| vous | C | pron | 你們；您 | 代詞・指示 | Vous êtes là. |
+| y | C | pron | 在那裡；對它 | 代詞・指示 |  |
+| ça | C | pron | 這個；那個 | 代詞・指示 | Ça va. |
+| celle | E | pron | 那個（陰性） | 代詞・指示 |  |
+| celle-ci | E | pron | 這個（陰性） | 代詞・指示 |  |
+| celle-là | E | pron | 那個（陰性） | 代詞・指示 |  |
+| celles | E | pron | 那些（陰性） | 代詞・指示 |  |
+| celles-ci | E | pron | 這些（陰性） | 代詞・指示 |  |
+| celles-là | E | pron | 那些（陰性） | 代詞・指示 |  |
+| celui | E | pron | 那個（陽性） | 代詞・指示 |  |
+| celui-ci | E | pron | 這個（陽性） | 代詞・指示 |  |
+| celui-là | E | pron | 那個（陽性） | 代詞・指示 |  |
+| certain | E | pron | 某個；某位（陽性） | 代詞・指示 |  |
+| certaine | E | pron | 某個；某位（陰性） | 代詞・指示 |  |
+| ceux | E | pron | 那些（陽性） | 代詞・指示 |  |
+| ceux-ci | E | pron | 這些（陽性） | 代詞・指示 |  |
+| ceux-là | E | pron | 那些（陽性） | 代詞・指示 |  |
+| l'un | E | pron | 其中一個（陽性） | 代詞・指示 |  |
+| laquelle | E | pron | 哪一個（陰性） | 代詞・指示 |  |
+| lequel | E | pron | 哪一個（陽性） | 代詞・指示 |  |
+| lesquelles | E | pron | 哪一些（陰性複數） | 代詞・指示 |  |
+| lesquels | E | pron | 哪一些（陽性複數） | 代詞・指示 |  |
+| plusieurs | E | pron | 幾個；許多人 | 代詞・指示 |  |
+| quelqu'un | E | pron | 某人 | 代詞・指示 |  |
+| tel | E | pron | 某某；這樣的（陽性） | 代詞・指示 |  |
+| telle | E | pron | 某某；這樣的（陰性） | 代詞・指示 |  |
+| telles | E | pron | 某些；這樣的（陰性複數） | 代詞・指示 |  |
+| tels | E | pron | 某些；這樣的（陽性複數） | 代詞・指示 |  |
+| aller | C | gram | 去；將要 | 語法（功能詞） | Je vais. |
+| alors | C | adv | 那時；那麼 | 語法（功能詞） | Alors ? |
+| au | C | gram | 「à + le」縮合冠詞 | 語法（功能詞） |  |
+| aussi | C | adv | 也 | 語法（功能詞） | Moi aussi. |
+| aux | C | gram | 「à + les」縮合冠詞 | 語法（功能詞） |  |
+| avec | C | gram | 和；帶著 | 語法（功能詞） |  |
+| avoir | C | gram | 有 | 語法（功能詞） | Il a froid. |
+| bien | C | adv | 好 | 語法（功能詞） | Ça va bien. |
+| car | C | gram | 因為 | 語法（功能詞） | Car je reste. |
+| chez | C | gram | 在……家 | 語法（功能詞） | Je suis chez moi. |
+| comme | C | gram | 像；如同 | 語法（功能詞） | Il est comme toi. |
+| dans | C | gram | 在……裡 | 語法（功能詞） |  |
+| de | C | gram | 的；從 | 語法（功能詞） | J'ai de pain. |
+| derrière | C | gram | 在……後面 | 語法（功能詞） | Il est derrière. |
+| des | C | gram | 複數不定冠詞 | 語法（功能詞） |  |
+| devant | C | gram | 在……前面 | 語法（功能詞） | Il est devant. |
+| devoir | C | gram | 必須 | 語法（功能詞） | Je dois partir. |
+| donc | C | gram | 因此 | 語法（功能詞） | Je pars donc. |
+| du | C | gram | 「de + le」縮合冠詞 | 語法（功能詞） |  |
+| ensuite | C | adv | 接著 | 語法（功能詞） |  |
+| entre | C | gram | 在……之間 | 語法（功能詞） | Il est entre nous. |
+| et | C | gram | 和；以及 | 語法（功能詞） | Moi et toi. |
+| faire | C | gram | 做；使 | 語法（功能詞） | Je fais. |
+| jamais | C | gram | 從不；永不 | 語法（功能詞） |  |
+| la | C | gram | 陰性定冠詞 | 語法（功能詞） |  |
+| le | C | gram | 陽性定冠詞 | 語法（功能詞） |  |
+| les | C | gram | 複數定冠詞 | 語法（功能詞） |  |
+| ma | C | gram | 我的 | 語法（功能詞） |  |
+| mais | C | gram | 但是 | 語法（功能詞） | Oui, mais non. |
+| mal | C | adv | 壞 | 語法（功能詞） |  |
+| malgré | C | gram | 儘管 | 語法（功能詞） | Malgré tout, je pars. |
+| mes | C | gram | 我的 | 語法（功能詞） | Mes parents. |
+| mon | C | gram | 我的 | 語法（功能詞） |  |
+| ne | C | gram | 否定構件 | 語法（功能詞） | Je ne sais pas. |
+| ni | C | gram | 也不 | 語法（功能詞） |  |
+| non | C | gram | 不；不是 | 語法（功能詞） | Non. |
+| nos | C | gram | 我們的 | 語法（功能詞） | Nos livres sont ici. |
+| notre | C | gram | 我們的 | 語法（功能詞） | Notre chat est là. |
+| ou | C | gram | 或者 | 語法（功能詞） | Vrai ou faux ? |
+| par | C | gram | 通過；藉由 | 語法（功能詞） | Je passe par là. |
+| parce que | C | gram | 因為 | 語法（功能詞） |  |
+| pas | C | gram | 不 | 語法（功能詞） | Je ne mange pas. |
+| peut-être | C | adv | 也許 | 語法（功能詞） |  |
+| plus | C | gram | 不再 | 語法（功能詞） | Il n’est plus là. |
+| pour | C | gram | 為了；為了……利益 | 語法（功能詞） |  |
+| pouvoir | C | gram | 能夠 | 語法（功能詞） | Je peux. |
+| puisque | C | gram | 因為 | 語法（功能詞） |  |
+| quel | C | gram | 哪個 | 語法（功能詞） | Quel est ton nom ? |
+| quelle | C | gram | 哪個 | 語法（功能詞） | Quelle heure ? |
+| sans | C | gram | 沒有；不用 | 語法（功能詞） | Je suis sans argent. |
+| savoir | C | gram | 知道；會 | 語法（功能詞） | Je sais. |
+| si | C | gram | 如果 | 語法（功能詞） | Si tu viens, je reste. |
+| sous | C | gram | 在……下 | 語法（功能詞） | Un chat est sous la table. |
+| sur | C | gram | 在……上 | 語法（功能詞） | Le chat est sur la table. |
+| ta | C | gram | 你的 | 語法（功能詞） |  |
+| tes | C | gram | 你的 | 語法（功能詞） | Tu as tes clés. |
+| ton | C | gram | 你的 | 語法（功能詞） |  |
+| trop | C | adv | 太 | 語法（功能詞） |  |
+| très | C | adv | 很 | 語法（功能詞） | Je suis très bien. |
+| un | C | gram | 陽性不定冠詞 | 語法（功能詞） |  |
+| une | C | gram | 陰性不定冠詞 | 語法（功能詞） |  |
+| vers | C | gram | 朝向 | 語法（功能詞） | Viens vers moi. |
+| vos | C | gram | 您們的 | 語法（功能詞） | Vos amis sont là. |
+| votre | C | gram | 您的 | 語法（功能詞） |  |
+| vouloir | C | gram | 想要 | 語法（功能詞） | Je veux. |
+| vraiment | C | adv | 真的 | 語法（功能詞） |  |
+| à | C | gram | 到；在 | 語法（功能詞） | À bientôt ! |
+| être | C | gram | 是；存在 | 語法（功能詞） | Je suis. |
+| a | E | v | 有（現在） | 語法（功能詞） |  |
+| ai | E | v | 有（現在） | 語法（功能詞） |  |
+| allez | E | v | 去 | 語法（功能詞） |  |
+| allons | E | v | 去 | 語法（功能詞） |  |
+| as | E | v | 有（現在） | 語法（功能詞） |  |
+| avait | E | v | 有（過去） | 語法（功能詞） |  |
+| avez | E | v | 有（現在） | 語法（功能詞） |  |
+| avons | E | v | 有（現在） | 語法（功能詞） |  |
+| chaque | E | gram | 每個 | 語法（功能詞） |  |
+| dois | E | v | 必須 | 語法（功能詞） |  |
+| doit | E | v | 必須 | 語法（功能詞） |  |
+| doivent | E | v | 必須 | 語法（功能詞） |  |
+| es | E | v | 是（現在） | 語法（功能詞） |  |
+| eu | E | v | 有（過去分詞） | 語法（功能詞） |  |
+| fais | E | v | 做 | 語法（功能詞） |  |
+| fait | E | v | 做 | 語法（功能詞） |  |
+| font | E | v | 做 | 語法（功能詞） |  |
+| leurs | E | gram | 他們的 | 語法（功能詞） |  |
+| moi | E | gram | 我 | 語法（功能詞） |  |
+| ont | E | v | 有（現在） | 語法（功能詞） |  |
+| oui | E | adv | 是 | 語法（功能詞） |  |
+| peut | E | v | 可以 | 語法（功能詞） |  |
+| peuvent | E | v | 可以 | 語法（功能詞） |  |
+| peux | E | v | 可以 | 語法（功能詞） |  |
+| sais | E | v | 知道 | 語法（功能詞） |  |
+| sait | E | v | 知道 | 語法（功能詞） |  |
+| savent | E | v | 知道 | 語法（功能詞） |  |
+| sera | E | v | 將會是 | 語法（功能詞） |  |
+| seront | E | v | 將會是 | 語法（功能詞） |  |
+| sommes | E | v | 是（現在） | 語法（功能詞） |  |
+| sont | E | v | 是（現在） | 語法（功能詞） |  |
+| suis | E | v | 是（現在） | 語法（功能詞） |  |
+| toi | E | gram | 你 | 語法（功能詞） |  |
+| va | E | v | 去；將會 | 語法（功能詞） |  |
+| vais | E | v | 去 | 語法（功能詞） |  |
+| vas | E | v | 去 | 語法（功能詞） |  |
+| veulent | E | v | 想要 | 語法（功能詞） |  |
+| veut | E | v | 想要 | 語法（功能詞） |  |
+| veux | E | v | 想要 | 語法（功能詞） |  |
+| étaient | E | v | 是（過去） | 語法（功能詞） |  |
+| était | E | v | 是（過去） | 語法（功能詞） |  |
+| êtes | E | v | 是（現在） | 語法（功能詞） |  |
+| cent | C | n | 一百 | 數量・比例 |  |
+| cinq | C | n | 五 | 數量・比例 |  |
+| cinquante | C | n | 五十 | 數量・比例 | Il a cinquante livres. |
+| demi | C | n | 一半 | 數量・比例 |  |
+| deux | C | n | 二 | 數量・比例 |  |
+| deuxième | C | n | 第二 | 數量・比例 | Il est deuxième. |
+| dix | C | n | 十 | 數量・比例 |  |
+| douze | C | n | 十二 | 數量・比例 | C'est douze heures. |
+| fois | C | n | 次 | 數量・比例 |  |
+| huit | C | n | 八 | 數量・比例 |  |
+| mille | C | n | 一千 | 數量・比例 | Il y a mille personnes. |
+| million | C | n | 一百万 | 數量・比例 | Il a un million. |
+| neuf | C | n | 九 | 數量・比例 | Il est neuf. |
+| onze | C | n | 十一 | 數量・比例 |  |
+| premier | C | n | 第一 | 數量・比例 | Il est premier. |
+| quarante | C | n | 四十 | 數量・比例 |  |
+| quatre | C | n | 四 | 數量・比例 |  |
+| quinze | C | n | 十五 | 數量・比例 |  |
+| sept | C | n | 七 | 數量・比例 |  |
+| six | C | n | 六 | 數量・比例 |  |
+| soixante | C | n | 六十 | 數量・比例 | Il a soixante livres. |
+| trente | C | n | 三十 | 數量・比例 |  |
+| trois | C | n | 三 | 數量・比例 |  |
+| troisième | C | n | 第三 | 數量・比例 | Il est troisième. |
+| vingt | C | n | 二十 | 數量・比例 |  |
+| centième | E | n | 第一百 | 數量・比例 |  |
+| cinq-à-quarts | E | n | 五分之四 | 數量・比例 |  |
+| cinquantième | E | n | 第五十 | 數量・比例 |  |
+| cinquième | E | n | 第五 | 數量・比例 |  |
+| dix-huit | E | n | 十八 | 數量・比例 |  |
+| dix-huitième | E | n | 第十八 | 數量・比例 |  |
+| dix-neuf | E | n | 十九 | 數量・比例 |  |
+| dix-neuvième | E | n | 第十九 | 數量・比例 |  |
+| dix-sept | E | n | 十七 | 數量・比例 |  |
+| dix-septième | E | n | 第十七 | 數量・比例 |  |
+| dixième | E | n | 第十 | 數量・比例 |  |
+| douzième | E | n | 第十二 | 數量・比例 |  |
+| huitième | E | n | 第八 | 數量・比例 |  |
+| milliard | E | n | 十亿 | 數量・比例 |  |
+| millionième | E | n | 第一百万 | 數量・比例 |  |
+| millième | E | n | 第一千 | 數量・比例 |  |
+| neuvième | E | n | 第九 | 數量・比例 |  |
+| nonantième | E | n | 第九十 | 數量・比例 |  |
+| octantième | E | n | 第八十 | 數量・比例 |  |
+| onzième | E | n | 第十一 | 數量・比例 |  |
+| quarantième | E | n | 第四十 | 數量・比例 |  |
+| quart | E | n | 四分之一 | 數量・比例 |  |
+| quatorze | E | n | 十四 | 數量・比例 |  |
+| quatorzième | E | n | 第十四 | 數量・比例 |  |
+| quatre-vingt-dix | E | n | 九十 | 數量・比例 |  |
+| quatre-vingts | E | n | 八十 | 數量・比例 |  |
+| quatrième | E | n | 第四 | 數量・比例 |  |
+| quinzième | E | n | 第十五 | 數量・比例 |  |
+| seize | E | n | 十六 | 數量・比例 |  |
+| seizième | E | n | 第十六 | 數量・比例 |  |
+| septantième | E | n | 第七十 | 數量・比例 |  |
+| septième | E | n | 第七 | 數量・比例 |  |
+| sixième | E | n | 第六 | 數量・比例 |  |
+| soixante-dix | E | n | 七十 | 數量・比例 |  |
+| soixantième | E | n | 第六十 | 數量・比例 |  |
+| tiers | E | n | 三分之一 | 數量・比例 |  |
+| treize | E | n | 十三 | 數量・比例 |  |
+| treizième | E | n | 第十三 | 數量・比例 |  |
+| trentième | E | n | 第三十 | 數量・比例 |  |
+| trois-quarts | E | n | 四分之三 | 數量・比例 |  |
+| vingtième | E | n | 第二十 | 數量・比例 |  |
+| zéro | E | n | 零 | 數量・比例 |  |
+| Noël | C | n | 聖誕節 | 時間 |  |
+| Pâques | C | n | 復活節 | 時間 |  |
+| anniversaire | C | n | 週年紀念；生日 | 時間 | C'est mon anniversaire. |
+| année | C | n | 年 | 時間 | Cette année commence. |
+| août | C | n | 八月 | 時間 | C’est août. |
+| après | C | gram | 在…之後 | 時間 | Après le repas. |
+| aujourd'hui | C | adv | 今天 | 時間 | Aujourd’hui, je mange. |
+| automne | C | n | 秋季 | 時間 | C’est l’automne. |
+| avant | C | gram | 在…之前 | 時間 |  |
+| avril | C | n | 四月 | 時間 | C'est avril. |
+| bientôt | C | adv | 不久；很快 | 時間 | Je pars bientôt. |
+| demain | C | adv | 明天 | 時間 | Demain, je pars. |
+| dimanche | C | n | 星期日 | 時間 | Je viens dimanche. |
+| décembre | C | n | 十二月 | 時間 | C'est décembre. |
+| déjà | C | adv | 已經 | 時間 | Il est déjà là. |
+| encore | C | adv | 還；仍然 | 時間 | Je joue encore. |
+| enfin | C | adv | 最後；終於 | 時間 | Enfin ! |
+| futur | C | n | 未來 | 時間 | Le futur est là. |
+| février | C | n | 二月 | 時間 | C’est février. |
+| fête | C | n | 節日；慶典 | 時間 |  |
+| heure | C | n | 時刻；小時 | 時間 | Il est une heure. |
+| hier | C | adv | 昨天 | 時間 |  |
+| hiver | C | n | 冬季 | 時間 | C'est l'hiver. |
+| janvier | C | n | 一月 | 時間 | C’est janvier. |
+| jeudi | C | n | 星期四 | 時間 |  |
+| jour | C | n | 日子；一天 | 時間 | Le jour |
+| juillet | C | n | 七月 | 時間 | C’est juillet. |
+| juin | C | n | 六月 | 時間 | C'est juin. |
+| lundi | C | n | 星期一 | 時間 |  |
+| mai | C | n | 五月 | 時間 |  |
+| maintenant | C | adv | 現在 | 時間 | Je pars maintenant. |
+| mardi | C | n | 星期二 | 時間 |  |
+| mars | C | n | 三月 | 時間 |  |
+| matin | C | n | 早晨 | 時間 | Je mange |
+| mercredi | C | n | 星期三 | 時間 |  |
+| midi | C | n | 中午 | 時間 | Il est midi. |
+| minuit | C | n | 午夜 | 時間 | Il est minuit. |
+| minute | C | n | 分鐘 | 時間 | Je dois attendre une minute. |
+| mois | C | n | 月；月份 | 時間 | Mai est un mois. |
+| moment | C | n | 片刻 | 時間 | Un moment. |
+| novembre | C | n | 十一月 | 時間 | C'est novembre. |
+| nuit | C | n | 夜晚 | 時間 | C’est la nuit. |
+| octobre | C | n | 十月 | 時間 | Octobre est un mois. |
+| parfois | C | adv | 有時 | 時間 | Il vient parfois. |
+| passé | C | n | 過去 | 時間 | Je pense au passé. |
+| printemps | C | n | 春季 | 時間 | Le printemps arrive. |
+| présent | C | n | 現在 | 時間 | C'est le présent. |
+| repas | C | n | 一餐；用餐 | 時間 | C'est un repas. |
+| saison | C | n | 季節 | 時間 |  |
+| samedi | C | n | 星期六 | 時間 |  |
+| seconde | C | n | 秒 | 時間 | Une seconde. |
+| semaine | C | n | 星期；一週 | 時間 | Il y a une semaine. |
+| septembre | C | n | 九月 | 時間 | Septembre est un mois. |
+| siècle | C | n | 世紀 | 時間 | C'est un siècle. |
+| soir | C | n | 傍晚；晚上 | 時間 | Je mange ce soir. |
+| souvent | C | adv | 經常 | 時間 | Je viens souvent. |
+| tard | C | adv | 晚；遲 | 時間 | Il est tard. |
+| temps | C | n | 時間 | 時間 | Le temps passe. |
+| toujours | C | adv | 總是；始終 | 時間 | Je suis toujours là. |
+| tôt | C | adv | 早 | 時間 | Il est tôt. |
+| vendredi | C | n | 星期五 | 時間 |  |
+| week-end | C | n | 週末 | 時間 |  |
+| été | C | n | 夏季 | 時間 |  |
+| après-demain | E | adv | 後天 | 時間 |  |
+| après-midi | E | n | 下午 | 時間 |  |
+| aube | E | n | 黎明 | 時間 |  |
+| aujourd’hui | E | adv | 今天 | 時間 |  |
+| autrefois | E | adv | 從前；以前 | 時間 |  |
+| avant-hier | E | adv | 前天 | 時間 |  |
+| calendrier | E | n | 日曆 | 時間 |  |
+| congé | E | n | 休假；請假 | 時間 |  |
+| crépuscule | E | n | 黃昏 | 時間 |  |
+| date | E | n | 日期 | 時間 |  |
+| durée | E | n | 時長 | 時間 |  |
+| déjeuner | E | n | 午餐；午飯 | 時間 |  |
+| délai | E | n | 時限；期限 | 時間 |  |
+| désormais | E | adv | 從今以後 | 時間 |  |
+| dîner | E | n | 晚餐；晚飯 | 時間 |  |
+| horaire | E | n | 時間表；作息表 | 時間 |  |
+| horaires | E | n | 時間表 | 時間 |  |
+| horloge | E | n | 時鐘 | 時間 |  |
+| journée | E | n | 一日；白天 | 時間 |  |
+| lendemain | E | n | 次日；翌日 | 時間 |  |
+| matinée | E | n | 上午 | 時間 |  |
+| montre | E | n | 手錶 | 時間 |  |
+| pause | E | n | 休息 | 時間 |  |
+| période | E | n | 時期 | 時間 |  |
+| rarement | E | adv | 很少；難得 | 時間 |  |
+| récréation | E | n | 課間休息 | 時間 |  |
+| réveil | E | n | 醒來；起床 | 時間 |  |
+| sieste | E | n | 午睡 | 時間 |  |
+| sommeil | E | n | 睡眠 | 時間 |  |
+| vacances | E | n | 假期 | 時間 |  |
+| veille | E | n | 前夜；前夕 | 時間 |  |
+| ailleurs | C | adv | 別處 | 方位・地點 | Il est ailleurs. |
+| aéroport | C | n | 機場 | 方位・地點 |  |
+| banque | C | n | 銀行 | 方位・地點 | La banque est là. |
+| bibliothèque | C | n | 圖書館 | 方位・地點 | Je suis à la bibliothèque. |
+| bord | C | n | 邊緣 | 方位・地點 | Il est à bord. |
+| carrefour | C | n | 十字路口 | 方位・地點 | Un carrefour est là. |
+| centre | C | n | 中央 | 方位・地點 | Je suis au centre. |
+| champ | C | n | 田野 | 方位・地點 |  |
+| cinéma | C | n | 電影院 | 方位・地點 | J’aime le cinéma. |
+| coin | C | n | 角落 | 方位・地點 | C'est un coin. |
+| concert | C | n | 音樂會 | 方位・地點 | Il y a un concert. |
+| continent | C | n | 洲 | 方位・地點 | C’est un continent. |
+| côte | C | n | 海岸 | 方位・地點 | Je vois la côte. |
+| côté | C | n | 旁邊 | 方位・地點 |  |
+| dedans | C | adv | 裡面 | 方位・地點 | Reste dedans. |
+| dehors | C | adv | 外面 | 方位・地點 | Je suis dehors. |
+| dessous | C | adv | 下面 | 方位・地點 | Il est dessous. |
+| dessus | C | adv | 上面 | 方位・地點 | C’est dessus. |
+| direction | C | n | 方向 | 方位・地點 | Quelle direction ? |
+| entrée | C | n | 入口 | 方位・地點 | L’entrée est ici. |
+| est | C | n | 東部 | 方位・地點 | C’est. |
+| fond | C | n | 底部 | 方位・地點 | Le fond est noir. |
+| forêt | C | n | 森林 | 方位・地點 | La forêt est grande. |
+| gare | C | n | 車站 | 方位・地點 |  |
+| hôpital | C | n | 醫院 | 方位・地點 |  |
+| hôtel | C | n | 旅館 | 方位・地點 | Cet hôtel est grand. |
+| ici | C | adv | 這裡 | 方位・地點 | Je suis ici. |
+| jardin | C | n | 花園 | 方位・地點 | Le jardin est grand. |
+| lac | C | n | 湖 | 方位・地點 | Je vois le lac. |
+| loin | C | adv | 遠處 | 方位・地點 | Il est loin. |
+| là | C | adv | 那裡 | 方位・地點 | Je suis là. |
+| magasin | C | n | 商店 | 方位・地點 | Je vais au magasin. |
+| mer | C | n | 海洋 | 方位・地點 |  |
+| milieu | C | n | 中間 | 方位・地點 | Je suis au milieu. |
+| monde | C | n | 世界 | 方位・地點 | Le monde est grand. |
+| montagne | C | n | 山 | 方位・地點 | Je vois la montagne. |
+| mosquée | C | n | 清真寺 | 方位・地點 |  |
+| musée | C | n | 博物館 | 方位・地點 | Je vais au musée. |
+| nord | C | n | 北方 | 方位・地點 | Il est au nord. |
+| ouest | C | n | 西部 | 方位・地點 | C’est l’ouest. |
+| parc | C | n | 公園 | 方位・地點 | Un parc est là. |
+| partout | C | adv | 到處 | 方位・地點 | Il va partout. |
+| pays | C | n | 國家 | 方位・地點 | Mon pays est grand. |
+| plage | C | n | 海灘 | 方位・地點 | J'aime la plage. |
+| pont | C | n | 橋 | 方位・地點 |  |
+| port | C | n | 港口 | 方位・地點 | Je vais au port. |
+| poste | C | n | 郵局；職位 | 方位・地點 | Je suis au poste. |
+| près | C | adv | 附近 | 方位・地點 | C'est près. |
+| restaurant | C | n | 餐廳 | 方位・地點 | J’aime ce restaurant. |
+| rivière | C | n | 河流 | 方位・地點 |  |
+| route | C | n | 公路 | 方位・地點 |  |
+| rue | C | n | 街道 | 方位・地點 |  |
+| région | C | n | 地區 | 方位・地點 | J'aime cette région. |
+| sens | C | n | 方向 | 方位・地點 | Quel est le sens ? |
+| sol | C | n | 地面 | 方位・地點 |  |
+| sortie | C | n | 出口 | 方位・地點 | La sortie est ici. |
+| station | C | n | 車站 | 方位・地點 |  |
+| sud | C | n | 南方 | 方位・地點 | C'est le sud. |
+| temple | C | n | 寺廟 | 方位・地點 | Je vois le temple. |
+| théâtre | C | n | 劇場 | 方位・地點 | Le théâtre est grand. |
+| tunnel | C | n | 隧道 | 方位・地點 |  |
+| village | C | n | 村莊 | 方位・地點 | C’est un village. |
+| ville | C | n | 城市 | 方位・地點 |  |
+| école | C | n | 學校 | 方位・地點 |  |
+| église | C | n | 教堂 | 方位・地點 |  |
+| île | C | n | 島 | 方位・地點 |  |
+| allée | E | n | 林蔭道 | 方位・地點 |  |
+| arrêt | E | n | 站 | 方位・地點 |  |
+| avenue | E | n | 大道 | 方位・地點 |  |
+| banlieue | E | n | 郊區 | 方位・地點 |  |
+| bois | E | n | 樹林 | 方位・地點 |  |
+| boulevard | E | n | 大道 | 方位・地點 |  |
+| campagne | E | n | 鄉村 | 方位・地點 |  |
+| carrière | E | n | 採石場 | 方位・地點 |  |
+| chemin | E | n | 路 | 方位・地點 |  |
+| croisement | E | n | 交叉口 | 方位・地點 |  |
+| dos | E | n | 背面 | 方位・地點 |  |
+| droite | E | adj | 右邊的 | 方位・地點 |  |
+| département | E | n | 省 | 方位・地點 |  |
+| désert | E | n | 沙漠 | 方位・地點 |  |
+| ensemble | E | adv | 一起 | 方位・地點 |  |
+| face | E | n | 面 | 方位・地點 |  |
+| fleuve | E | n | 河流 | 方位・地點 |  |
+| frontière | E | n | 邊界 | 方位・地點 |  |
+| gauche | E | adj | 左邊的 | 方位・地點 |  |
+| halte | E | n | 小站 | 方位・地點 |  |
+| hameau | E | n | 小村 | 方位・地點 |  |
+| impasse | E | n | 死胡同 | 方位・地點 |  |
+| itinéraire | E | n | 路線 | 方位・地點 |  |
+| lieu | E | n | 地方 | 方位・地點 |  |
+| lieu-dit | E | n | 地點 | 方位・地點 |  |
+| lieux | E | n | 地方（複數） | 方位・地點 |  |
+| nord-est | E | n | 東北方 | 方位・地點 |  |
+| nord-ouest | E | n=西北 |  | 方位・地點 |  |
+| océan | E | n | 海洋 | 方位・地點 |  |
+| part | E | adv | 部分 | 方位・地點 |  |
+| passage | E | n | 通道 | 方位・地點 |  |
+| piste | E | n | 小路 | 方位・地點 |  |
+| place | E | n | 廣場 | 方位・地點 |  |
+| plaine | E | n | 平原 | 方位・地點 |  |
+| promenade | E | n | 散步道 | 方位・地點 |  |
+| province | E | n | 省 | 方位・地點 |  |
+| pré | E | n | 草地 | 方位・地點 |  |
+| péninsule | E | n | 半島 | 方位・地點 |  |
+| quai | E | n | 站台 | 方位・地點 |  |
+| quartier | E | n | 街區 | 方位・地點 |  |
+| ruelle | E | n | 小巷 | 方位・地點 |  |
+| ruisseau | E | n | 溪流 | 方位・地點 |  |
+| sentier | E | n | 小徑 | 方位・地點 |  |
+| sommet | E | n | 頂端 | 方位・地點 |  |
+| sud-est | E | n | 東南方 | 方位・地點 |  |
+| sud-ouest | E | n | 西南方 | 方位・地點 |  |
+| séparément | E | adv | 分開 | 方位・地點 |  |
+| terrain | E | n | 土地 | 方位・地點 |  |
+| vallée | E | n | 山谷 | 方位・地點 |  |
+| abeille | C | n | 蜜蜂 | 自然・天氣 | Une abeille mange. |
+| aigle | C | n | 鷹 | 自然・天氣 | Je vois un aigle. |
+| air | C | n | 空氣 | 自然・天氣 | L’air est froid. |
+| animal | C | n | 動物 | 自然・天氣 | Un animal est vivant. |
+| araignée | C | n | 蜘蛛 | 自然・天氣 | Une araignée est ici. |
+| arbre | C | n | 樹 | 自然・天氣 |  |
+| baleine | C | n | 鯨魚 | 自然・天氣 | C’est une baleine. |
+| boue | C | n | 泥 | 自然・天氣 | La boue est sale. |
+| brouillard | C | n | 霧 | 自然・天氣 | Il y a du brouillard. |
+| chaleur | C | n | 炎熱 | 自然・天氣 | Il fait chaleur. |
+| champignon | C | n | 蘑菇 | 自然・天氣 |  |
+| chat | C | n | 貓 | 自然・天氣 |  |
+| cheval | C | n | 馬 | 自然・天氣 |  |
+| chien | C | n | 狗 | 自然・天氣 |  |
+| chèvre | C | n | 山羊 | 自然・天氣 |  |
+| ciel | C | n | 天空 | 自然・天氣 | Le ciel est bleu. |
+| dauphin | C | n | 海豚 | 自然・天氣 | Le dauphin nage. |
+| escargot | C | n | 蝸牛 | 自然・天氣 |  |
+| feu | C | n | 火 | 自然・天氣 | Le feu est chaud. |
+| feuille | C | n | 葉子 | 自然・天氣 | La feuille est jaune. |
+| fleur | C | n | 花 | 自然・天氣 |  |
+| froid | C | n | 寒冷 | 自然・天氣 | Il fait froid. |
+| fruit | C | n | 水果 | 自然・天氣 | Je mange un fruit. |
+| gel | C | n | 結冰 | 自然・天氣 | Le gel arrive. |
+| glace | C | n | 冰 | 自然・天氣 | J’aime la glace. |
+| graine | C | n | 種子 | 自然・天氣 |  |
+| grenouille | C | n | 青蛙 | 自然・天氣 | Une grenouille saute. |
+| herbe | C | n | 草 | 自然・天氣 |  |
+| hibou | C | n | 貓頭鷹 | 自然・天氣 | Un hibou dort. |
+| lapin | C | n | 兔子 | 自然・天氣 |  |
+| lion | C | n | 獅子 | 自然・天氣 |  |
+| loup | C | n | 狼 | 自然・天氣 | Le loup dort. |
+| lumière | C | n | 光 | 自然・天氣 | Je vois la lumière. |
+| lune | C | n | 月亮 | 自然・天氣 |  |
+| miel | C | n | 蜂蜜 | 自然・天氣 | J'aime le miel. |
+| mousse | C | n | 苔蘚 | 自然・天氣 |  |
+| mouton | C | n | 綿羊 | 自然・天氣 |  |
+| neige | C | n | 雪 | 自然・天氣 | La neige est là. |
+| nuage | C | n | 雲 | 自然・天氣 | Le nuage est gris. |
+| oiseau | C | n | 鳥 | 自然・天氣 |  |
+| ombre | C | n | 影子 | 自然・天氣 |  |
+| orage | C | n | 雷雨 | 自然・天氣 | Un orage arrive. |
+| ours | C | n | 熊 | 自然・天氣 | L’ours est fort. |
+| papillon | C | n | 蝴蝶 | 自然・天氣 | Je vois un papillon. |
+| pierre | C | n | 石頭 | 自然・天氣 | C’est une pierre. |
+| plante | C | n | 植物 | 自然・天氣 | La plante est verte. |
+| pluie | C | n | 雨 | 自然・天氣 | Je vois la pluie. |
+| poisson | C | n | 魚 | 自然・天氣 | Le poisson nage. |
+| racine | C | n | 根 | 自然・天氣 |  |
+| rose | C | n | 玫瑰 | 自然・天氣 |  |
+| sable | C | n | 沙子 | 自然・天氣 | Regarde le sable. |
+| serpent | C | n | 蛇 | 自然・天氣 | Le serpent est vert. |
+| singe | C | n | 猴子 | 自然・天氣 |  |
+| soleil | C | n | 太陽 | 自然・天氣 | Le soleil est chaud. |
+| source | C | n | 水源 | 自然・天氣 | La source est là. |
+| souris | C | n | 老鼠 | 自然・天氣 |  |
+| terre | C | n | 大地 | 自然・天氣 | La terre est bleue. |
+| tigre | C | n | 老虎 | 自然・天氣 |  |
+| tonnerre | C | n | 雷聲 | 自然・天氣 | Le tonnerre est fort. |
+| tortue | C | n | 烏龜 | 自然・天氣 | La tortue marche. |
+| vache | C | n | 奶牛 | 自然・天氣 |  |
+| vent | C | n | 風 | 自然・天氣 | Le vent est fort. |
+| éclair | C | n | 閃電 | 自然・天氣 | Je vois l’éclair. |
+| écureuil | C | n | 松鼠 | 自然・天氣 |  |
+| éléphant | C | n | 大象 | 自然・天氣 |  |
+| étoile | C | n | 星星 | 自然・天氣 | C'est une étoile. |
+| arc-en-ciel | E | n | 彩虹 | 自然・天氣 |  |
+| aurore | E | n | 曙光 | 自然・天氣 |  |
+| bourgeon | E | n | 芽 | 自然・天氣 |  |
+| branche | E | n | 樹枝 | 自然・天氣 |  |
+| buisson | E | n | 灌木叢 | 自然・天氣 |  |
+| cactus | E | n | 仙人掌 | 自然・天氣 |  |
+| cerf | E | n | 鹿 | 自然・天氣 |  |
+| chêne | E | n | 橡樹 | 自然・天氣 |  |
+| cochon | E | n | 豬 | 自然・天氣 |  |
+| espèce | E | n | 物種 | 自然・天氣 |  |
+| fougère | E | n | 蕨 | 自然・天氣 |  |
+| fourmi | E | n | 螞蟻 | 自然・天氣 |  |
+| grêle | E | n | 冰雹 | 自然・天氣 |  |
+| kangourou | E | n | 袋鼠 | 自然・天氣 |  |
+| lavande | E | n | 薰衣草 | 自然・天氣 |  |
+| nature | E | n | 自然 | 自然・天氣 |  |
+| palmier | E | n | 棕櫚樹 | 自然・天氣 |  |
+| panda | E | n | 熊貓 | 自然・天氣 |  |
+| pin | E | n | 松樹 | 自然・天氣 |  |
+| pétale | E | n | 花瓣 | 自然・天氣 |  |
+| sève | E | n | 樹液 | 自然・天氣 |  |
+| tige | E | n | 莖 | 自然・天氣 |  |
+| tournesol | E | n | 向日葵 | 自然・天氣 |  |
+| trèfle | E | n | 三葉草 | 自然・天氣 |  |
+| volcan | E | n | 火山 | 自然・天氣 |  |
+| écorce | E | n | 樹皮 | 自然・天氣 |  |
+| acheter | C | v | 購買 | 動作 |  |
+| aider | C | v | 幫助 | 動作 |  |
+| aimer | C | v | 愛 | 動作 | J’aime. |
+| apprendre | C | v | 學會 | 動作 |  |
+| arriver | C | v | 到達 | 動作 | Je vais arriver. |
+| attendre | C | v | 等待 | 動作 | Je vais attendre. |
+| boire | C | v | 喝 | 動作 | Je bois. |
+| changer | C | v | 改變 | 動作 | Je change. |
+| chanter | C | v | 唱歌 | 動作 |  |
+| chercher | C | v | 尋找 | 動作 |  |
+| choisir | C | v | 選擇 | 動作 | Je choisis. |
+| commencer | C | v | 開始 | 動作 | Je commence. |
+| comprendre | C | v | 理解 | 動作 |  |
+| conduire | C | v | 開車 | 動作 | Je vais conduire. |
+| connaître | C | v | 認識 | 動作 | Je connais. |
+| couper | C | v | 切斷 | 動作 | Je coupe. |
+| courir | C | v | 奔跑 | 動作 |  |
+| cuisiner | C | v | 烹飪 | 動作 | Je cuisine. |
+| danser | C | v | 跳舞 | 動作 | Je danse. |
+| demander | C | v | 詢問 | 動作 | Je demande. |
+| descendre | C | v | 下樓 | 動作 |  |
+| dire | C | v | 說 | 動作 | Je dis. |
+| donner | C | v | 給 | 動作 | Je donne. |
+| dormir | C | v | 睡覺 | 動作 | Je vais dormir. |
+| décider | C | v | 決定 | 動作 | Je décide. |
+| entendre | C | v | 聽見 | 動作 |  |
+| entrer | C | v | 進入 | 動作 | Il entre. |
+| envoyer | C | v | 寄送 | 動作 | Il envoie. |
+| essayer | C | v | 嘗試 | 動作 | Je dois essayer. |
+| expliquer | C | v | 解釋 | 動作 |  |
+| fermer | C | v | 關閉 | 動作 | Je ferme. |
+| finir | C | v | 結束 | 動作 | Je finis. |
+| gagner | C | v | 贏得 | 動作 | Je gagne. |
+| habiter | C | v | 居住 | 動作 | Je habite ici. |
+| inviter | C | v | 邀請 | 動作 | Je vais inviter mon ami. |
+| jouer | C | v | 玩或演奏 | 動作 |  |
+| laver | C | v | 清洗 | 動作 |  |
+| lire | C | v | 閱讀 | 動作 | Je lis. |
+| manger | C | v | 吃 | 動作 | Mange ! |
+| marcher | C | v | 走路 | 動作 |  |
+| mettre | C | v | 放置 | 動作 | Je mets la table. |
+| monter | C | v | 上樓 | 動作 |  |
+| montrer | C | v | 展示 | 動作 |  |
+| nager | C | v | 游泳 | 動作 |  |
+| nettoyer | C | v | 清潔 | 動作 | Je nettoie. |
+| oublier | C | v | 忘記 | 動作 |  |
+| ouvrir | C | v | 打開 | 動作 | J'ouvre. |
+| parler | C | v | 說話 | 動作 | Je parle. |
+| partager | C | v | 分享 | 動作 | Je partage le pain. |
+| partir | C | v | 離開 | 動作 | Je pars. |
+| passer | C | v | 經過 | 動作 | Je passe. |
+| payer | C | v | 付款 | 動作 | Je paie. |
+| penser | C | v | 思考 | 動作 | Je pense. |
+| perdre | C | v | 遺失或輸 | 動作 |  |
+| pleurer | C | v | 哭 | 動作 | Pleure ! |
+| prendre | C | v | 拿取 | 動作 | Je le prends. |
+| présenter | C | v | 介紹 | 動作 |  |
+| recevoir | C | v | 收到 | 動作 | Je reçois un cadeau. |
+| regarder | C | v | 注視 | 動作 | Je regarde. |
+| rencontrer | C | v | 遇見 | 動作 | Je te rencontre. |
+| rendre | C | v | 歸還 | 動作 |  |
+| rester | C | v | 留下 | 動作 |  |
+| rire | C | v | 笑 | 動作 | Je ris. |
+| réparer | C | v | 修理 | 動作 | Je répare la voiture. |
+| répondre | C | v | 回答 | 動作 | Je réponds. |
+| réussir | C | v | 成功 | 動作 | Je réussis. |
+| s'habiller | C | v | 穿衣服 | 動作 |  |
+| saluer | C | v | 打招呼 | 動作 |  |
+| sauter | C | v | 跳躍 | 動作 |  |
+| se coucher | C | v | 睡覺 | 動作 |  |
+| se laver | C | v | 洗澡 | 動作 | Je me lave. |
+| se lever | C | v | 起床 | 動作 |  |
+| se promener | C | v | 散步 | 動作 |  |
+| se réveiller | C | v | 醒來 | 動作 |  |
+| sentir | C | v | 感覺 | 動作 | Il sent. |
+| sortir | C | v | 外出 | 動作 |  |
+| tenir | C | v | 握著 | 動作 | Je tiens. |
+| toucher | C | v | 觸碰 | 動作 |  |
+| travailler | C | v | 工作 | 動作 |  |
+| trouver | C | v | 找到 | 動作 |  |
+| vendre | C | v | 出售 | 動作 | Je le vends. |
+| venir | C | v | 來 | 動作 | Je viens. |
+| voir | C | v | 看見 | 動作 | Je vois. |
+| voyager | C | v | 旅行 | 動作 | Il voyage. |
+| échouer | C | v | 失敗 | 動作 | Il échoue. |
+| écouter | C | v | 聆聽 | 動作 |  |
+| écrire | C | v | 寫 | 動作 |  |
+| étudier | C | v | 學習 | 動作 |  |
+| croire | E | v | 相信 | 動作 |  |
+| jeter | E | v | 丟棄 | 動作 |  |
+| paye | E | v | 付錢 | 動作 |  |
+| porter | E | v | 攜帶 | 動作 |  |
+| pousser | E | v | 推 | 動作 |  |
+| s'asseoir | E | v | 坐下 | 動作 |  |
+| tirer | E | v | 拉 | 動作 |  |
+| aimable | C | adj | 可亲的 | 性質 | Il est aimable. |
+| argenté | C | adj | 银色的 | 性質 | Il est argenté. |
+| bas | C | adj | 低的 | 性質 | Il est bas. |
+| beau | C | adj | 美丽的 | 性質 |  |
+| blanc | C | adj | 白色的 | 性質 | C’est blanc. |
+| bleu | C | adj | 蓝色的 | 性質 | Il est bleu. |
+| brun | C | adj | 棕色的 | 性質 | Il est brun. |
+| calme | C | adj | 平静的 | 性質 | Je suis calme. |
+| chaud | C | adj | 热的 | 性質 |  |
+| clair | C | adj | 明亮的；浅色的 | 性質 | Il est clair. |
+| compliqué | C | adj | 复杂的 | 性質 | C'est compliqué. |
+| courageux | C | adj | 勇敢的 | 性質 | Il est courageux. |
+| court | C | adj | 短的 | 性質 | C’est court. |
+| difficile | C | adj | 困难的 | 性質 | Il est difficile. |
+| différent | C | adj | 不同的 | 性質 |  |
+| doré | C | adj | 金色的 | 性質 | C’est doré. |
+| drôle | C | adj | 好笑的 | 性質 |  |
+| dur | C | adj | 硬的 | 性質 |  |
+| facile | C | adj | 容易的 | 性質 | C’est facile. |
+| faible | C | adj | 虚弱的 | 性質 | Je suis faible. |
+| faux | C | adj | 假的 | 性質 | C'est faux. |
+| fier | C | adj | 自豪的 | 性質 | Je suis fier. |
+| fort | C | adj | 强壮的 | 性質 | Il est fort. |
+| fâché | C | adj | 生气的 | 性質 | Il est fâché. |
+| gentil | C | adj | 友善的 | 性質 | Il est gentil. |
+| grand | C | adj | 大的 | 性質 | Il est grand. |
+| gris | C | adj | 灰色的 | 性質 | C'est gris. |
+| haut | C | adj | 高的 | 性質 | Il est haut. |
+| heureux | C | adj | 快乐的 | 性質 | Je suis heureux. |
+| honteux | C | adj | 羞愧的 | 性質 | Il est honteux. |
+| important | C | adj | 重要的 | 性質 | C'est important. |
+| inquiet | C | adj | 担心的 | 性質 | Je suis inquiet. |
+| intelligent | C | adj | 聪明的 | 性質 | Il est intelligent. |
+| inutile | C | adj | 无用的 | 性質 | C’est inutile. |
+| jaune | C | adj | 黄色的 | 性質 | C'est jaune. |
+| jeune | C | adj | 年轻的 | 性質 |  |
+| large | C | adj | 宽大的 | 性質 | C'est large. |
+| lent | C | adj | 慢的 | 性質 | Il est lent. |
+| libre | C | adj | 自由的 | 性質 |  |
+| lisse | C | adj | 光滑的 | 性質 |  |
+| long | C | adj | 长的 | 性質 | C’est long. |
+| lourd | C | adj | 重的 | 性質 |  |
+| lâche | C | adj | 懦弱的 | 性質 | Il est lâche. |
+| léger | C | adj | 轻的 | 性質 |  |
+| meilleur | C | adj | 更好的 | 性質 |  |
+| mince | C | adj | 薄的 | 性質 |  |
+| mou | C | adj | 软的 | 性質 |  |
+| méchant | C | adj | 坏的 | 性質 | Il est méchant. |
+| même | C | adj | 同樣的 | 性質 |  |
+| noir | C | adj | 黑色的 | 性質 | C’est noir. |
+| nouveau | C | adj | 新的 | 性質 |  |
+| nécessaire | C | adj | 必要的 | 性質 | C’est nécessaire. |
+| occupé | C | adj | 忙的 | 性質 |  |
+| opaque | C | adj | 不透明的 | 性質 | C'est opaque. |
+| orange | C | adj | 橙色的 | 性質 | C'est orange. |
+| pareil | C | adj | 一樣的 | 性質 |  |
+| petit | C | adj | 小的 | 性質 | Il est petit. |
+| pire | C | adj | 更差的 | 性質 |  |
+| plein | C | adj | 满的 | 性質 | C'est plein. |
+| propre | C | adj | 干净的 | 性質 | C’est propre. |
+| prêt | C | adj | 准备好的 | 性質 |  |
+| rapide | C | adj | 快的 | 性質 | Il est rapide. |
+| rouge | C | adj | 红色的 | 性質 | C’est rouge. |
+| sale | C | adj | 脏的 | 性質 | C'est sale. |
+| seul | C | adj | 唯一的 | 性質 |  |
+| silencieux | C | adj | 安静的 | 性質 |  |
+| simple | C | adj | 简单的 | 性質 | C’est simple. |
+| solide | C | adj | 坚固的 | 性質 |  |
+| sombre | C | adj | 阴暗的 | 性質 | C’est sombre. |
+| surpris | C | adj | 惊讶的 | 性質 | Je suis surpris. |
+| sérieux | C | adj | 严肃的 | 性質 |  |
+| timide | C | adj | 害羞的 | 性質 | Il est timide. |
+| tiède | C | adj | 温的 | 性質 |  |
+| transparent | C | adj | 透明的 | 性質 |  |
+| triste | C | adj | 伤心的 | 性質 | Il est triste. |
+| utile | C | adj | 有用的 | 性質 | Il est utile. |
+| vert | C | adj | 绿色的 | 性質 | Il est vert. |
+| vide | C | adj | 空的 | 性質 | La boîte est vide. |
+| vieux | C | adj | 旧的 | 性質 |  |
+| violet | C | adj | 紫色的 | 性質 | C’est violet. |
+| vivant | C | adj | 有生命的 | 性質 | Il est vivant. |
+| vrai | C | adj | 真的 | 性質 | Il est vrai. |
+| épais | C | adj | 厚的 | 性質 | Le mur est épais. |
+| étroit | C | adj | 狭窄的 | 性質 | Il est étroit. |
+| brûlant | E | adj | 烫的 | 性質 |  |
+| bête | E | adj | 愚蠢的 | 性質 |  |
+| coloré | E | adj | 色彩鲜艳的 | 性質 |  |
+| fermée | E | adj | 關著的 | 性質 |  |
+| fragile | E | adj | 易碎的 | 性質 |  |
+| glacé | E | adj | 冰冷的 | 性質 |  |
+| laid | E | adj | 丑的 | 性質 |  |
+| mort | E | adj | 死的 | 性質 |  |
+| rugueux | E | adj | 粗糙的 | 性質 |  |
+| argent | C | n | 錢 | 事物 | J'ai de l'argent. |
+| avion | C | n | 飛機 | 事物 | Je vois un avion. |
+| banane | C | n | 香蕉 | 事物 | C’est une banane. |
+| bateau | C | n | 船 | 事物 | Un bateau part. |
+| beurre | C | n | 奶油 | 事物 | J'ai du beurre. |
+| billet | C | n | 票 | 事物 | J'ai un billet. |
+| bouche | C | n | 嘴 | 事物 | J'ai mal à la bouche. |
+| bouton | C | n | 扣子 | 事物 | C'est un bouton. |
+| boîte | C | n | 盒子 | 事物 | La boîte est rouge. |
+| bras | C | n | 手臂 | 事物 | Mon bras est long. |
+| brosse | C | n | 刷子 | 事物 | Je lave la brosse. |
+| bus | C | n | 公車 | 事物 | Le bus arrive. |
+| café | C | n | 咖啡 | 事物 | Je bois du café. |
+| carotte | C | n | 胡蘿蔔 | 事物 | Je mange une carotte. |
+| ceinture | C | n | 腰帶 | 事物 | Je porte une ceinture. |
+| chaise | C | n | 椅子 | 事物 |  |
+| chapeau | C | n | 帽子 | 事物 | J’ai un chapeau. |
+| chaussure | C | n | 鞋 | 事物 | Je porte une chaussure. |
+| chemise | C | n | 襯衫 | 事物 | Je porte une chemise. |
+| cheveu | C | n | 頭髮 | 事物 | Le cheveu est noir. |
+| chocolat | C | n | 巧克力 | 事物 | C’est du chocolat. |
+| clé | C | n | 鑰匙 | 事物 | J’ai la clé. |
+| corps | C | n | 身體 | 事物 |  |
+| couteau | C | n | 刀 | 事物 | Je porte le couteau. |
+| cuillère | C | n | 勺子 | 事物 | J'ai une cuillère. |
+| cœur | C | n | 心臟 | 事物 | C'est mon cœur. |
+| dent | C | n | 牙齒 | 事物 | J'ai une dent. |
+| eau | C | n | 水 | 事物 | Cette eau est claire. |
+| enfant | C | n | 孩子 | 事物 |  |
+| farine | C | n | 麵粉 | 事物 | J'ai de la farine. |
+| femme | C | n | 女人 | 事物 |  |
+| fenêtre | C | n | 窗戶 | 事物 |  |
+| fourchette | C | n | 叉子 | 事物 | La fourchette est là. |
+| fromage | C | n | 起司 | 事物 | Il aime le fromage. |
+| gant | C | n | 手套 | 事物 | Je porte un gant. |
+| gilet | C | n | 背心 | 事物 | J'ai un gilet. |
+| gâteau | C | n | 蛋糕 | 事物 |  |
+| habit | C | n | 衣服 | 事物 | J'ai un habit. |
+| homme | C | n | 男人 | 事物 |  |
+| internet | C | n | 網路 | 事物 |  |
+| jambe | C | n | 腿 | 事物 | Il a une jambe. |
+| jambon | C | n | 火腿 | 事物 | J’aime le jambon. |
+| jeu | C | n | 遊戲 | 事物 |  |
+| jupe | C | n | 裙子 | 事物 | J'ai une jupe. |
+| lait | C | n | 牛奶 | 事物 | J'ai du lait. |
+| lampe | C | n | 燈 | 事物 | La lampe est jaune. |
+| lit | C | n | 床 | 事物 |  |
+| livre | C | n | 書 | 事物 | Je lis un livre. |
+| lunettes | C | n | 眼鏡 | 事物 | Elle a des lunettes. |
+| machine | C | n | 機器 | 事物 | La machine travaille. |
+| main | C | n | 手 | 事物 | Je montre ma main. |
+| maison | C | n | 房子 | 事物 |  |
+| miroir | C | n | 鏡子 | 事物 | Je vois le miroir. |
+| mur | C | n | 牆壁 | 事物 |  |
+| musique | C | n | 音樂 | 事物 | J'aime la musique. |
+| métro | C | n | 地鐵 | 事物 | Le métro est ici. |
+| nez | C | n | 鼻子 | 事物 | Il a un nez. |
+| nom | C | n | 名字 | 事物 | J'ai un nom. |
+| oreille | C | n | 耳朵 | 事物 |  |
+| pain | C | n | 麵包 | 事物 | J’ai du pain. |
+| pantalon | C | n | 褲子 | 事物 | Je porte un pantalon. |
+| papier | C | n | 紙 | 事物 |  |
+| peau | C | n | 皮膚 | 事物 |  |
+| peigne | C | n | 梳子 | 事物 | Le peigne est propre. |
+| photo | C | n | 照片 | 事物 | J'ai une photo. |
+| pied | C | n | 腳 | 事物 | J'ai un pied. |
+| plafond | C | n | 天花板 | 事物 |  |
+| poche | C | n | 口袋 | 事物 | Ma poche est vide. |
+| pomme | C | n | 蘋果 | 事物 | Je mange une pomme. |
+| porte | C | n | 門 | 事物 |  |
+| prix | C | n | 價格 | 事物 | Quel est le prix ? |
+| radio | C | n | 收音機 | 事物 | J'ai une radio. |
+| raisin | C | n | 葡萄 | 事物 | Je mange du raisin. |
+| riz | C | n | 米飯 | 事物 | Je mange du riz. |
+| robe | C | n | 洋裝 | 事物 |  |
+| sac | C | n | 袋子 | 事物 | J'ai un sac. |
+| salade | C | n | 沙拉 | 事物 | Je mange la salade. |
+| sandwich | C | n | 三明治 | 事物 |  |
+| sang | C | n | 血 | 事物 | C'est du sang. |
+| saucisse | C | n | 香腸 | 事物 | J'aime la saucisse. |
+| savon | C | n | 肥皂 | 事物 | C'est du savon. |
+| sel | C | n | 鹽 | 事物 | J'aime le sel. |
+| serviette | C | n | 毛巾 | 事物 | La serviette est propre. |
+| soupe | C | n | 湯 | 事物 |  |
+| sport | C | n | 運動 | 事物 | J'aime le sport. |
+| steak | C | n | 牛排 | 事物 | J’aime le steak. |
+| stylo | C | n | 筆 | 事物 | Le stylo est bleu. |
+| sucre | C | n | 糖 | 事物 | Il aime le sucre. |
+| table | C | n | 桌子 | 事物 |  |
+| taxi | C | n | 計程車 | 事物 | Un taxi arrive. |
+| thé | C | n | 茶 | 事物 | Je bois du thé. |
+| ticket | C | n | 票 | 事物 | J'ai un ticket. |
+| toit | C | n | 屋頂 | 事物 | Le toit est rouge. |
+| tomate | C | n | 番茄 | 事物 | J’aime la tomate. |
+| train | C | n | 火車 | 事物 | Le train arrive. |
+| travail | C | n | 工作 | 事物 |  |
+| télévision | C | n | 電視 | 事物 | Je regarde la télévision. |
+| tête | C | n | 頭 | 事物 |  |
+| veste | C | n | 夾克 | 事物 | J’ai une veste. |
+| viande | C | n | 肉 | 事物 | Je mange la viande. |
+| vin | C | n | 葡萄酒 | 事物 |  |
+| visage | C | n | 臉 | 事物 |  |
+| voiture | C | n | 汽車 | 事物 |  |
+| vélo | C | n | 腳踏車 | 事物 | Je vais à vélo. |
+| écharpe | C | n | 圍巾 | 事物 | Je porte une écharpe. |
+| œil | C | n | 眼睛 | 事物 |  |
+| œuf | C | n | 蛋 | 事物 | Je mange un œuf. |
+| chaussette | E | n | 襪子 | 事物 |  |
+| chaussettes | E | n | 襪子 | 事物 |  |
+| cheveux | E | n | 頭髮 | 事物 |  |
+| cravate | E | n | 領帶 | 事物 |  |
+| fauteuil | E | n | 扶手椅 | 事物 |  |
+| gants | E | n | 手套 | 事物 |  |
+| instrument | E | n | 工具 | 事物 |  |
+| jeux | E | n | 遊戲（複數） | 事物 |  |
+| manteau | E | n | 外套 | 事物 |  |
+| matière | E | n | 材料 | 事物 |  |
+| personnes | E | n | 人（複數） | 事物 |  |
+| pâtes | E | n | 義大利麵 | 事物 |  |
+| reçu | E | n | 收據 | 事物 |  |
+| téléversion | E | n | 電視 | 事物 |  |
+| accord | C | n | 同意 | 社交・人 | C’est un accord. |
+| adieu | C | n | 告別 | 社交・人 | Adieu. |
+| adresse | C | n | 地址 | 社交・人 |  |
+| ami | C | n | 朋友 | 社交・人 | J'ai un ami. |
+| amitié | C | n | 友誼 | 社交・人 |  |
+| amour | C | n | 愛 | 社交・人 | Tu es mon amour. |
+| bonjour | C | n | 你好 | 社交・人 | Bonjour ! |
+| bonsoir | C | n | 晚安 | 社交・人 | Bonsoir ! |
+| cadeau | C | n | 禮物 | 社交・人 | J'ai un cadeau. |
+| camarade | C | n | 同伴 | 社交・人 |  |
+| carte | C | n | 卡片 | 社交・人 | C'est une carte. |
+| chauffeur | C | n | 司機 | 社交・人 | Je suis chauffeur. |
+| chef | C | n | 首長 | 社交・人 | Le chef parle. |
+| client | C | n | 客戶 | 社交・人 | Le client paie. |
+| collègue | C | n | 同事 | 社交・人 |  |
+| confiance | C | n | 信任 | 社交・人 | J’ai confiance. |
+| conflit | C | n | 衝突 | 社交・人 | Il y a un conflit. |
+| contrat | C | n | 契約 | 社交・人 | J'ai un contrat. |
+| conversation | C | n | 交談 | 社交・人 | Il y a une conversation. |
+| copain | C | n | 朋友 | 社交・人 |  |
+| copine | C | n | 女朋友／女性朋友 | 社交・人 |  |
+| cousin | C | n | 堂／表兄弟 | 社交・人 | Mon cousin vient. |
+| cousine | C | n | 堂／表姐妹 | 社交・人 | Ma cousine arrive. |
+| docteur | C | n | 醫生 | 社交・人 | Le docteur arrive. |
+| employé | C | n | 僱員 | 社交・人 | Je suis employé. |
+| famille | C | n | 家庭 | 社交・人 | J'aime ma famille. |
+| fille | C | n | 女兒 | 社交・人 | Elle est fille. |
+| fils | C | n | 兒子 | 社交・人 | C'est mon fils. |
+| frère | C | n | 兄弟 | 社交・人 | Mon frère arrive. |
+| grand-mère | C | n | 祖母／外祖母 | 社交・人 |  |
+| grand-père | C | n | 祖父／外祖父 | 社交・人 |  |
+| lettre | C | n | 信 | 社交・人 | J'ai une lettre. |
+| liberté | C | n | 自由 | 社交・人 |  |
+| madame | C | n | 女士 | 社交・人 |  |
+| mari | C | n | 丈夫 | 社交・人 |  |
+| mariage | C | n | 婚禮／婚姻 | 社交・人 | C’est un mariage. |
+| merci | C | n | 謝謝 | 社交・人 | Merci. |
+| message | C | n | 訊息 | 社交・人 | J'ai un message. |
+| monsieur | C | n | 先生 | 社交・人 |  |
+| mère | C | n | 母親 | 社交・人 | Ma mère est là. |
+| obligation | C | n | 義務 | 社交・人 | J'ai une obligation. |
+| oncle | C | n | 叔叔／舅舅 | 社交・人 |  |
+| pardon | C | n | 對不起 | 社交・人 | Pardon. |
+| parent | C | n | 家長 | 社交・人 | Un parent travaille. |
+| patient | C | n | 病人 | 社交・人 | Le patient attend. |
+| policier | C | n | 警察 | 社交・人 | Je suis policier. |
+| professeur | C | n | 教授 | 社交・人 | Je suis professeur. |
+| promesse | C | n | 承諾 | 社交・人 | Je fais une promesse. |
+| père | C | n | 父親 | 社交・人 | Mon père arrive. |
+| question | C | n | 問題 | 社交・人 | Tu as une question ? |
+| réponse | C | n | 回答 | 社交・人 | Je sais la réponse. |
+| réunion | C | n | 會議 | 社交・人 | J'ai une réunion. |
+| salut | C | n | 問候 | 社交・人 | Salut ! |
+| secret | C | n | 秘密 | 社交・人 | C'est un secret. |
+| soirée | C | n | 聚會 | 社交・人 |  |
+| soldat | C | n | 士兵 | 社交・人 | Le soldat part. |
+| sœur | C | n | 姐妹 | 社交・人 |  |
+| tante | C | n | 姑姑／阿姨 | 社交・人 |  |
+| téléphone | C | n | 電話 (synonym; only one, choose téléphone more buildable? telephone) | 社交・人 | J'ai un téléphone. |
+| vendeur | C | n | 賣家 | 社交・人 | Je suis vendeur. |
+| visite | C | n | 拜訪 | 社交・人 |  |
+| voisin | C | n | 鄰居 | 社交・人 | Le voisin dort. |
+| vérité | C | n | 真相 | 社交・人 |  |
+| égalité | C | n | 平等 | 社交・人 |  |
+| élève | C | n | 學生 | 社交・人 | Je suis élève. |
+| épouse | C | n | 妻子 | 社交・人 |  |
+| étudiant | C | n | 大學生 | 社交・人 | Je suis étudiant. |
+| abbé | E | n | 神父 | 社交・人 |  |
+| accusé | E | n | 被告 | 社交・人 |  |
+| acheteur | E | n | 買家 | 社交・人 |  |
+| acteur | E | n | 演員 | 社交・人 |  |
+| actionnaire | E | n | 股東 | 社交・人 |  |
+| admiration | E | n | 欽佩 | 社交・人 |  |
+| ados | E | n | 青少年 | 社交・人 |  |
+| adulte | E | n | 成年人 | 社交・人 |  |
+| agriculteur | E | n | 農民 | 社交・人 |  |
+| amical | E | adj | 友好的 | 社交・人 |  |
+| amoureux | E | adj | 愛的 | 社交・人 |  |
+| animateur | E | n | 主持人／帶領者 | 社交・人 |  |
+| appel | E | n | 電話 | 社交・人 |  |
+| apprenti | E | n | 學徒 | 社交・人 |  |
+| artisan | E | n | 工匠 | 社交・人 |  |
+| artiste | E | n | 藝術家 | 社交・人 |  |
+| associé | E | n | 合夥人 | 社交・人 |  |
+| auteur | E | n | 作者 | 社交・人 |  |
+| avocat | E | n | 律師 | 社交・人 |  |
+| baiser | E | n | 親吻 | 社交・人 |  |
+| bal | E | n | 舞會 | 社交・人 |  |
+| banquier | E | n | 銀行家 | 社交・人 |  |
+| baptême | E | n | 洗禮 | 社交・人 |  |
+| bébé | E | n | 嬰兒 | 社交・人 |  |
+| candidat | E | n | 候選人 | 社交・人 |  |
+| chanteur | E | n | 歌手 | 社交・人 |  |
+| charité | E | n | 慈善 | 社交・人 |  |
+| citoyen | E | n | 公民 | 社交・人 |  |
+| coiffeur | E | n | 理髮師 | 社交・人 |  |
+| commerçant | E | n | 商人 | 社交・人 |  |
+| compagnon | E | n | 伴侶 | 社交・人 |  |
+| compte | E | n | 帳號 | 社交・人 |  |
+| conjoint | E | n | 配偶 | 社交・人 |  |
+| consommateur | E | n | 消費者 | 社交・人 |  |
+| criminel | E | n | 罪犯 | 社交・人 |  |
+| croyant | E | n | 信徒 | 社交・人 |  |
+| créateur | E | n | 創作者 | 社交・人 |  |
+| cuisinier | E | n | 廚師 | 社交・人 |  |
+| danseur | E | n | 舞者 | 社交・人 |  |
+| dialogue | E | n | 對話 | 社交・人 |  |
+| directeur | E | n | 主管／主任 | 社交・人 |  |
+| dirigeant | E | n | 領導者 | 社交・人 |  |
+| discours | E | n | 演說 | 社交・人 |  |
+| discussion | E | n | 討論 | 社交・人 |  |
+| dispute | E | n | 爭吵 | 社交・人 |  |
+| diversité | E | n | 多樣性 | 社交・人 |  |
+| droits | E | n | 權利 | 社交・人 |  |
+| débate | E | n | 辯論 | 社交・人 |  |
+| délinquant | E | n | 罪犯 | 社交・人 |  |
+| désaccord | E | n | 不一致 | 社交・人 |  |
+| email | E | n | 電郵 | 社交・人 |  |
+| empathie | E | n | 同理心 | 社交・人 |  |
+| employeur | E | n | 僱主 | 社交・人 |  |
+| enseignant | E | n | 教師 | 社交・人 |  |
+| entrepreneur | E | n | 企業家 | 社交・人 |  |
+| familial | E | adj | 家庭的 | 社交・人 |  |
+| fiançailles | E | n | 訂婚 | 社交・人 |  |
+| financier | E | n | 金融家 | 社交・人 |  |
+| formateur | E | n | 培訓師 | 社交・人 |  |
+| fournisseur | E | n | 供應商 | 社交・人 |  |
+| funérailles | E | n | 葬禮 | 社交・人 |  |
+| garçon | E | n | 男孩 | 社交・人 |  |
+| gentillesse | E | n | 善意 | 社交・人 |  |
+| hôte | E | n | 主人 | 社交・人 |  |
+| imam | E | n | 伊瑪目 | 社交・人 |  |
+| immigré | E | n | 移民 | 社交・人 |  |
+| investisseur | E | n | 投資者 | 社交・人 |  |
+| invitation | E | n | 邀請 | 社交・人 |  |
+| invité | E | n | 客人 | 社交・人 |  |
+| journaliste | E | n | 記者 | 社交・人 |  |
+| juge | E | n | 法官 | 社交・人 |  |
+| marchand | E | n | 商人 | 社交・人 |  |
+| membre | E | n | 成員 | 社交・人 |  |
+| mensonge | E | n | 謊言 | 社交・人 |  |
+| migrant | E | n | 移民 | 社交・人 |  |
+| ministre | E | n | 部長 | 社交・人 |  |
+| moine | E | n | 修士 | 社交・人 |  |
+| musicien | E | n | 音樂家 | 社交・人 |  |
+| neveu | E | n | 侄子／外甥 | 社交・人 |  |
+| nièce | E | n | 侄女／外甥女 | 社交・人 |  |
+| nonne | E | n | 修女 | 社交・人 |  |
+| notaire | E | n | 公證人 | 社交・人 |  |
+| nouveau-né | E | n | 新生兒 | 社交・人 |  |
+| numéro | E | n | 號碼 | 社交・人 |  |
+| pape | E | n | 教宗 | 社交・人 |  |
+| parents | E | n | 父母 | 社交・人 |  |
+| partenaire | E | n | 合作夥伴 | 社交・人 |  |
+| partner | E | n | 伴侶 | 社交・人 |  |
+| patron | E | n | 老闆 | 社交・人 |  |
+| peintre | E | n | 畫家 | 社交・人 |  |
+| photographe | E | n | 攝影師 | 社交・人 |  |
+| pilote | E | n | 機師 | 社交・人 |  |
+| politesse | E | n | 禮貌 | 社交・人 |  |
+| pompier | E | n | 消防員 | 社交・人 |  |
+| prisonnier | E | n | 囚犯 | 社交・人 |  |
+| producteur | E | n | 製作者 | 社交・人 |  |
+| profil | E | n | 個人檔案 | 社交・人 |  |
+| présentateur | E | n | 主持人 | 社交・人 |  |
+| président | E | n | 主席／總統 | 社交・人 |  |
+| public | E | n | 觀眾／公眾 | 社交・人 |  |
+| querelle | E | n | 爭吵 (synonym; omit dispute perhaps) | 社交・人 |  |
+| rabbin | E | n | 拉比 | 社交・人 |  |
+| religieux | E | n | 宗教人士 | 社交・人 |  |
+| rencontre | E | n | 會面 | 社交・人 |  |
+| respect | E | n | 尊重 | 社交・人 |  |
+| retrouvailles | E | n | 重逢 | 社交・人 |  |
+| rumeur | E | n | 謠言 | 社交・人 |  |
+| réfugié | E | n | 難民 | 社交・人 |  |
+| salarié | E | n | 員工 | 社交・人 |  |
+| serment | E | n | 誓言 | 社交・人 |  |
+| serveur | E | n | 服務員 | 社交・人 |  |
+| solidarité | E | n | 團結 | 社交・人 |  |
+| spectateur | E | n | 觀眾 | 社交・人 |  |
+| stagiaire | E | n | 實習生 | 社交・人 |  |
+| sympathie | E | n | 同情 | 社交・人 |  |
+| tolérance | E | n | 寬容 | 社交・人 |  |
+| témoin | E | n | 證人 | 社交・人 |  |
+| usager | E | n | 使用者 | 社交・人 |  |
+| victime | E | n | 受害者 | 社交・人 |  |
+| visiter | E | v | 拜訪 | 社交・人 |  |
+| visiteur | E | n | 訪客 | 社交・人 |  |
+| voisine | E | n | 女鄰居 — gender variants maybe concept duplicate? Could one word "voisin" includes female by agreement; Chinese can 鄰居. Do not include feminine. | 社交・人 |  |
+| écrivain | E | n | 作家 | 社交・人 |  |
+| éditeur | E | n | 出版商 | 社交・人 |  |
+| électeur | E | n | 選民 | 社交・人 |  |
+| émigré | E | n | 移居者 | 社交・人 |  |
+| époux | E | n | 配偶 | 社交・人 |  |
+| étreinte | E | n | 擁抱 | 社交・人 |  |
+| évêque | E | n | 主教 | 社交・人 |  |
+| action | C | n | 行動 | 抽象概念 | Je fais une action. |
+| attention | C | n | 注意力 | 抽象概念 |  |
+| but | C | n | 目的 | 抽象概念 | C’est le but. |
+| chance | C | n | 機會 | 抽象概念 | Quelle chance ! |
+| choix | C | n | 選擇 | 抽象概念 | C'est un choix. |
+| chose | C | n | 東西 | 抽象概念 | C’est une chose. |
+| colère | C | n | 憤怒 | 抽象概念 | Je suis en colère. |
+| comparaison | C | n | 比較 | 抽象概念 |  |
+| concept | C | n | 概念 | 抽象概念 | Ce concept est clair. |
+| connaissance | C | n | 知識 | 抽象概念 |  |
+| coopération | C | n | 合作 | 抽象概念 |  |
+| différence | C | n | 差異 | 抽象概念 |  |
+| distance | C | n | 距離 | 抽象概念 |  |
+| doute | C | n | 懷疑 | 抽象概念 |  |
+| droit | C | n | 權利 | 抽象概念 |  |
+| décision | C | n | 決定 | 抽象概念 |  |
+| effet | C | n | 效果 | 抽象概念 | Cet effet est fort. |
+| endroit | C | n | 地方 | 抽象概念 | C’est un endroit. |
+| exemple | C | n | 例子 | 抽象概念 | C’est un exemple. |
+| genre | C | n | 種類 | 抽象概念 | Quel genre ? |
+| gouvernement | C | n | 政府 | 抽象概念 |  |
+| groupe | C | n | 群體 | 抽象概念 |  |
+| histoire | C | n | 歷史 | 抽象概念 |  |
+| honte | C | n | 羞恥 | 抽象概念 | J'ai honte. |
+| humeur | C | n | 心情 | 抽象概念 |  |
+| idée | C | n | 想法 | 抽象概念 |  |
+| information | C | n | 資訊 | 抽象概念 | J'ai une information. |
+| jalousie | C | n | 嫉妒 | 抽象概念 | Il a de la jalousie. |
+| joie | C | n | 喜悅 | 抽象概念 | Joie ! |
+| justice | C | n | 正義 | 抽象概念 |  |
+| langue | C | n | 語言 | 抽象概念 | J'aime la langue. |
+| logique | C | n | 邏輯 | 抽象概念 | La logique est simple. |
+| loi | C | n | 法律 | 抽象概念 |  |
+| mot | C | n | 詞 | 抽象概念 | C’est un mot. |
+| moyen | C | n | 方法 | 抽象概念 | C’est un moyen. |
+| mémoire | C | n | 記憶 | 抽象概念 |  |
+| ordre | C | n | 秩序 | 抽象概念 |  |
+| partie | C | n | 部分 | 抽象概念 | Une partie. |
+| pensée | C | n | 思維 | 抽象概念 | J’ai une pensée. |
+| peuple | C | n | 民族 | 抽象概念 |  |
+| peur | C | n | 恐懼 | 抽象概念 | J'ai peur. |
+| phrase | C | n | 句子 | 抽象概念 | C’est une phrase. |
+| plan | C | n | 計畫 | 抽象概念 | J'ai un plan. |
+| poids | C | n | 重量 | 抽象概念 | Le poids est lourd. |
+| problème | C | n | 問題 | 抽象概念 | J'ai un problème. |
+| qualité | C | n | 品質 | 抽象概念 | La qualité est importante. |
+| quantité | C | n | 數量 | 抽象概念 | La quantité est grande. |
+| raison | C | n | 理性 | 抽象概念 | J'ai raison. |
+| regret | C | n | 遺憾 | 抽象概念 |  |
+| relation | C | n | 關係 | 抽象概念 |  |
+| responsabilité | C | n | 責任 | 抽象概念 |  |
+| règle | C | n | 規則；尺 | 抽象概念 | J’ai une règle. |
+| réalité | C | n | 現實 | 抽象概念 |  |
+| résultat | C | n | 結果 | 抽象概念 | Le résultat est clair. |
+| santé | C | n | 健康 | 抽象概念 | Ma santé va bien. |
+| science | C | n | 科學 | 抽象概念 | La science est utile. |
+| société | C | n | 社會 | 抽象概念 |  |
+| solution | C | n | 解決方法 | 抽象概念 | La solution est simple. |
+| sorte | C | n | 種類 | 抽象概念 | Une sorte de mot. |
+| structure | C | n | 結構 | 抽象概念 |  |
+| surprise | C | n | 驚訝 | 抽象概念 | C’est une surprise. |
+| taille | C | n | 大小 | 抽象概念 |  |
+| tristesse | C | n | 悲傷 | 抽象概念 | Je suis triste. |
+| valeur | C | n | 價值 | 抽象概念 |  |
+| vie | C | n | 生活；生命 | 抽象概念 |  |
+| échange | C | n | 交流 | 抽象概念 |  |
+| émotion | C | n | 情緒 | 抽象概念 |  |
+| événement | C | n | 事件 | 抽象概念 | Un événement a lieu. |
+| alliance | E | n | 聯盟 | 抽象概念 |  |
+| anxiété | E | n | 焦慮 | 抽象概念 |  |
+| autorité | E | n | 權威 | 抽象概念 |  |
+| avenir | E | n | 未來 | 抽象概念 |  |
+| chronologie | E | n | 時序 | 抽象概念 |  |
+| citoyenneté | E | n | 公民身分 | 抽象概念 |  |
+| communauté | E | n | 社群 | 抽象概念 |  |
+| compréhension | E | n | 理解 | 抽象概念 |  |
+| croyance | E | n | 信念 | 抽象概念 |  |
+| créativité | E | n | 創造力 | 抽象概念 |  |
+| curiosité | E | n | 好奇心 | 抽象概念 |  |
+| dépendance | E | n | 依賴 | 抽象概念 |  |
+| fierté | E | n | 自豪 | 抽象概念 |  |
+| hiérarchie | E | n | 階層 | 抽象概念 |  |
+| identité | E | n | 同一性 | 抽象概念 |  |
+| imagination | E | n | 想像力 | 抽象概念 |  |
+| indépendance | E | n | 獨立 | 抽象概念 |  |
+| instant | E | n | 瞬間 | 抽象概念 |  |
+| institution | E | n | 機構 | 抽象概念 |  |
+| intelligence | E | n | 智力 | 抽象概念 |  |
+| lien | E | n | 聯繫 | 抽象概念 |  |
+| méfiance | E | n | 戒心 | 抽象概念 |  |
+| parenté | E | n | 親屬關係 | 抽象概念 |  |
+| principe | E | n | 原則 | 抽象概念 |  |
+| retard | E | n | 延誤 | 抽象概念 |  |
+| souci | E | n | 憂慮 | 抽象概念 |  |
+| unité | E | n | 統一 | 抽象概念 |  |
+| époque | E | n | 時代 | 抽象概念 |  |
+| état | E | n | 狀態 | 抽象概念 |  |
+
+### 分類統計
+
+| 類別 | 總數 | 核心層 |
+|---|---|---|
+| 代詞・指示 | 75 | 50 |
+| 語法（功能詞） | 110 | 68 |
+| 數量・比例 | 67 | 25 |
+| 時間 | 94 | 63 |
+| 方位・地點 | 115 | 66 |
+| 自然・天氣 | 92 | 66 |
+| 動作 | 95 | 88 |
+| 性質 | 93 | 84 |
+| 事物 | 121 | 107 |
+| 社交・人 | 196 | 67 |
+| 抽象概念 | 97 | 68 |
+
+## 3. 三層表達法
+
+| 層 | 什麼時候用 | 說法 |
+|---|---|---|
+| 本詞 | 詞表內的詞 | 直接用 |
+| 描述 | 表外的通用概念 | 描述 ＋ 類頭 |
+| 外來語 | 說不出「是哪一個」（人名、地名、物種、品牌） | 原文 ＋ 第一次出現加括號說明 |
+
+### 類頭
+
+chose、personne、lieu、moment、endroit、action、idée、genre、sorte、question、problème、travail、histoire、partie、mot、phrase、sens、vie、groupe、famille、endroit、école、science、langue
+
+### 描述模板
+
+- un lieu où ...
+- une personne qui ...
+- une chose qui ...
+- une chose pour ...
+- un genre de ...
+- une personne qui fait ...
+- le travail de ...
+- l'endroit où l'on ...
+
+## 4. 語法規則
+
+1. 主語 + 動詞 + 賓語。Mini-French 不改寫法文語法，只限制用哪些詞。　例：Je mange une pomme.
+2. 冠詞：陽性用 le / un，陰性用 la / une，複數用 les / des。　例：le livre / la table / les livres
+3. be 動詞只有 être：現在 est / sont / suis / es / sommes / êtes，過去 était / étaient。　例：Je suis étudiant.
+4. 第三人稱單數只加 -s（-er 動詞加 -s，其他多數不加，s / x / z 不變）。　例：Il parle. / Il finit.
+5. 進行式：être + 正在用的動詞（-ant 形式）。　例：Je mange une pomme.
+6. 過去式只用複合過去：avoir / être + 過去分詞。　例：J'ai mangé une pomme.
+7. 將來式用近將來：aller + 原文動詞。　例：Je vais manger une pomme.
+8. 否定只有 ne ... pas；没有 avoir 時用 n'a pas。　例：Je ne mange pas de pain.
+9. 有否定：n'a pas；動詞否定：ne ... pas。　例：Je n'ai pas de pain. / Je ne mange pas.
+10. 疑問詞放在答案原本的位置，不移到句頭。　例：Tu habites où ?
+11. 是非問句：句尾加 est-ce que ... 或把動詞提前。　例：Est-ce que tu viens ? / Tu viens ?
+12. 選擇問句：... ou ...。　例：Tu veux du thé ou du café ?
+13. wh- 問句用 est-ce que + wh- 詞，或把 wh- 詞放句頭。　例：Où est la gare ?
+14. 關係子句用 qui（人）、que（物）、où（地點）、dont（所屬）。　例：C'est un homme qui travaille.
+15. 時間放在動詞前面。　例：Je vais au marché demain.
+16. 地點用 à / dans / sur / sous + 場所。　例：Je suis à la maison.
+17. 修飾語在前，用 de / d' 連接。　例：une voiture de sport / un ami d'école
+18. 複合過去用 avoir 的動詞，與 être 連用的動詞（arriver / aller / venir / partir / entrer / sortir / monter / descendre / rester / tomber / naître / mourir）用 être。　例：Je suis allé à Paris. / J'ai mangé.
+19. 不定式：數字 + 動詞原文，表示「次」。　例：J'ai mangé deux fois.
+20. 命令式與第三人稱單數同形（不加 -s）。　例：Parle ! / Il parle.
+21. 比較級用 plus ... que / moins ... que；最高級用 le plus / le moins。　例：Il est plus grand que moi.
+22. 所有格：de + 物主代詞（de + le = du, de + les = des）。　例：le livre de mon ami
+23. 縮約：de + le = du，de + les = des，à + le = au，à + les = aux，de + a = d'。　例：du pain / des livres / au marché
+24. 原因用 parce que + 完整句子；結果用 donc。　例：Je reste parce que je suis fatigué.
+25. 條件句用 si + 現在式 + 將來意思。　例：Si tu viens, je serai content.
+26. 命令與請求：je veux que tu ... 太難，改用 S'il te plaît, ... 或 Je dois ...　例：Je dois partir.
+27. 時間詞：hier / aujourd'hui / demain / ce matin / ce soir / la semaine prochaine。　例：Je viens ce soir.
+28. 數字用阿拉伯數字；數字 + 動詞原文表示次數。　例：deux fois / trois ans
+29. 人稱代詞做賓語時放在動詞前面（除 y / en）。　例：Je le vois.
+30. 副詞放在動詞後面。　例：Je parle bien.
+31. 複合形容詞： bien + 形容詞 + 過去分詞 表示「已經…了」。　例：J'ai déjà mangé.
+32. 加-reflexe 動詞：se + 動詞，反身代詞放前面。　例：Je me lève. / Je lave ma voiture.
+33. 不定代詞：personne（沒有人）、rien（沒有東西）、chacun（每個）。　例：Personne ne vient.
+34. 說「有」用 avoir；說「是」用 être。不要混用。　例：Je suis tired. J'ai un livre.
+35. 一個概念一個詞，不要疊同義詞：只用 grand（不用 gros / immense）。　例：une grande maison
+
+## 5. 禁用詞與替代說法
+
+| 禁用 | 改用 |
+|---|---|
+| a few | quelques |
+| a little | un peu |
+| a lot | beaucoup |
+| a lot of | beaucoup de |
+| after | après |
+| almost | presque |
+| also | aussi |
+| although | bien que |
+| another | autre |
+| any | quelques |
+| as well as | et |
+| because | parce que |
+| before | avant |
+| besides | de plus |
+| both | les deux |
+| but | mais |
+| each | chaque |
+| either | l'un ou l'autre |
+| else | autre |
+| enough | assez |
+| even if | même si |
+| every | tout |
+| first | premier |
+| however | mais |
+| just | simplement |
+| last | dernier |
+| later | plus tard |
+| less than | moins que |
+| like | comme |
+| little | peu |
+| lots of | beaucoup de |
+| many | beaucoup |
+| maybe | peut-être |
+| more than | plus que |
+| much | beaucoup |
+| nearly | presque |
+| neither | ni l'un ni l'autre |
+| next | prochain |
+| now | maintenant |
+| nowadays | aujourd'hui |
+| of course | bien sûr |
+| only | seulement |
+| other | autre |
+| perhaps | peut-être |
+| plenty of | beaucoup de |
+| probably | peut-être |
+| quite | assez |
+| really | vraiment |
+| since | puisque |
+| some | quelques |
+| soon | bientôt |
+| such | tel |
+| such as | comme |
+| the same | le même |
+| then | alors |
+| therefore | donc |
+| too | trop |
+| too also | et |
+| very | très |
+
+## 附錄：完整詞表
+
+這是唯一的權威詞表。`#` 開頭的行是類別。
+
+```text
+# 代詞・指示
+aucun
+autre
+autres
+ce
+ceci
+ces
+cet
+cette
+chacun
+chacune
+combien
+comment
+dont
+elle
+elles
+en
+il
+ils
+je
+leur
+lui
+me
+nous
+on
+où
+personne
+pourquoi
+quand
+que
+quelles
+quelque
+quelques
+quels
+qui
+quoi
+rien
+sa
+se
+ses
+soi
+son
+te
+tous
+tout
+toute
+toutes
+tu
+vous
+y
+ça
+celle
+celle-ci
+celle-là
+celles
+celles-ci
+celles-là
+celui
+celui-ci
+celui-là
+certain
+certaine
+ceux
+ceux-ci
+ceux-là
+l'un
+laquelle
+lequel
+lesquelles
+lesquels
+plusieurs
+quelqu'un
+tel
+telle
+telles
+tels
+# 語法（功能詞）
+aller
+alors
+au
+aussi
+aux
+avec
+avoir
+bien
+car
+chez
+comme
+dans
+de
+derrière
+des
+devant
+devoir
+donc
+du
+ensuite
+entre
+et
+faire
+jamais
+la
+le
+les
+ma
+mais
+mal
+malgré
+mes
+mon
+ne
+ni
+non
+nos
+notre
+ou
+par
+parce que
+pas
+peut-être
+plus
+pour
+pouvoir
+puisque
+quel
+quelle
+sans
+savoir
+si
+sous
+sur
+ta
+tes
+ton
+trop
+très
+un
+une
+vers
+vos
+votre
+vouloir
+vraiment
+à
+être
+a
+ai
+allez
+allons
+as
+avait
+avez
+avons
+chaque
+dois
+doit
+doivent
+es
+eu
+fais
+fait
+font
+leurs
+moi
+ont
+oui
+peut
+peuvent
+peux
+sais
+sait
+savent
+sera
+seront
+sommes
+sont
+suis
+toi
+va
+vais
+vas
+veulent
+veut
+veux
+étaient
+était
+êtes
+# 數量・比例
+cent
+cinq
+cinquante
+demi
+deux
+deuxième
+dix
+douze
+fois
+huit
+mille
+million
+neuf
+onze
+premier
+quarante
+quatre
+quinze
+sept
+six
+soixante
+trente
+trois
+troisième
+vingt
+centième
+cinq-à-quarts
+cinquantième
+cinquième
+dix-huit
+dix-huitième
+dix-neuf
+dix-neuvième
+dix-sept
+dix-septième
+dixième
+douzième
+huitième
+milliard
+millionième
+millième
+neuvième
+nonantième
+octantième
+onzième
+quarantième
+quart
+quatorze
+quatorzième
+quatre-vingt-dix
+quatre-vingts
+quatrième
+quinzième
+seize
+seizième
+septantième
+septième
+sixième
+soixante-dix
+soixantième
+tiers
+treize
+treizième
+trentième
+trois-quarts
+vingtième
+zéro
+# 時間
+Noël
+Pâques
+anniversaire
+année
+août
+après
+aujourd'hui
+automne
+avant
+avril
+bientôt
+demain
+dimanche
+décembre
+déjà
+encore
+enfin
+futur
+février
+fête
+heure
+hier
+hiver
+janvier
+jeudi
+jour
+juillet
+juin
+lundi
+mai
+maintenant
+mardi
+mars
+matin
+mercredi
+midi
+minuit
+minute
+mois
+moment
+novembre
+nuit
+octobre
+parfois
+passé
+printemps
+présent
+repas
+saison
+samedi
+seconde
+semaine
+septembre
+siècle
+soir
+souvent
+tard
+temps
+toujours
+tôt
+vendredi
+week-end
+été
+après-demain
+après-midi
+aube
+aujourd’hui
+autrefois
+avant-hier
+calendrier
+congé
+crépuscule
+date
+durée
+déjeuner
+délai
+désormais
+dîner
+horaire
+horaires
+horloge
+journée
+lendemain
+matinée
+montre
+pause
+période
+rarement
+récréation
+réveil
+sieste
+sommeil
+vacances
+veille
+# 方位・地點
+ailleurs
+aéroport
+banque
+bibliothèque
+bord
+carrefour
+centre
+champ
+cinéma
+coin
+concert
+continent
+côte
+côté
+dedans
+dehors
+dessous
+dessus
+direction
+entrée
+est
+fond
+forêt
+gare
+hôpital
+hôtel
+ici
+jardin
+lac
+loin
+là
+magasin
+mer
+milieu
+monde
+montagne
+mosquée
+musée
+nord
+ouest
+parc
+partout
+pays
+plage
+pont
+port
+poste
+près
+restaurant
+rivière
+route
+rue
+région
+sens
+sol
+sortie
+station
+sud
+temple
+théâtre
+tunnel
+village
+ville
+école
+église
+île
+allée
+arrêt
+avenue
+banlieue
+bois
+boulevard
+campagne
+carrière
+chemin
+croisement
+dos
+droite
+département
+désert
+ensemble
+face
+fleuve
+frontière
+gauche
+halte
+hameau
+impasse
+itinéraire
+lieu
+lieu-dit
+lieux
+nord-est
+nord-ouest
+océan
+part
+passage
+piste
+place
+plaine
+promenade
+province
+pré
+péninsule
+quai
+quartier
+ruelle
+ruisseau
+sentier
+sommet
+sud-est
+sud-ouest
+séparément
+terrain
+vallée
+# 自然・天氣
+abeille
+aigle
+air
+animal
+araignée
+arbre
+baleine
+boue
+brouillard
+chaleur
+champignon
+chat
+cheval
+chien
+chèvre
+ciel
+dauphin
+escargot
+feu
+feuille
+fleur
+froid
+fruit
+gel
+glace
+graine
+grenouille
+herbe
+hibou
+lapin
+lion
+loup
+lumière
+lune
+miel
+mousse
+mouton
+neige
+nuage
+oiseau
+ombre
+orage
+ours
+papillon
+pierre
+plante
+pluie
+poisson
+racine
+rose
+sable
+serpent
+singe
+soleil
+source
+souris
+terre
+tigre
+tonnerre
+tortue
+vache
+vent
+éclair
+écureuil
+éléphant
+étoile
+arc-en-ciel
+aurore
+bourgeon
+branche
+buisson
+cactus
+cerf
+chêne
+cochon
+espèce
+fougère
+fourmi
+grêle
+kangourou
+lavande
+nature
+palmier
+panda
+pin
+pétale
+sève
+tige
+tournesol
+trèfle
+volcan
+écorce
+# 動作
+acheter
+aider
+aimer
+apprendre
+arriver
+attendre
+boire
+changer
+chanter
+chercher
+choisir
+commencer
+comprendre
+conduire
+connaître
+couper
+courir
+cuisiner
+danser
+demander
+descendre
+dire
+donner
+dormir
+décider
+entendre
+entrer
+envoyer
+essayer
+expliquer
+fermer
+finir
+gagner
+habiter
+inviter
+jouer
+laver
+lire
+manger
+marcher
+mettre
+monter
+montrer
+nager
+nettoyer
+oublier
+ouvrir
+parler
+partager
+partir
+passer
+payer
+penser
+perdre
+pleurer
+prendre
+présenter
+recevoir
+regarder
+rencontrer
+rendre
+rester
+rire
+réparer
+répondre
+réussir
+s'habiller
+saluer
+sauter
+se coucher
+se laver
+se lever
+se promener
+se réveiller
+sentir
+sortir
+tenir
+toucher
+travailler
+trouver
+vendre
+venir
+voir
+voyager
+échouer
+écouter
+écrire
+étudier
+croire
+jeter
+paye
+porter
+pousser
+s'asseoir
+tirer
+# 性質
+aimable
+argenté
+bas
+beau
+blanc
+bleu
+brun
+calme
+chaud
+clair
+compliqué
+courageux
+court
+difficile
+différent
+doré
+drôle
+dur
+facile
+faible
+faux
+fier
+fort
+fâché
+gentil
+grand
+gris
+haut
+heureux
+honteux
+important
+inquiet
+intelligent
+inutile
+jaune
+jeune
+large
+lent
+libre
+lisse
+long
+lourd
+lâche
+léger
+meilleur
+mince
+mou
+méchant
+même
+noir
+nouveau
+nécessaire
+occupé
+opaque
+orange
+pareil
+petit
+pire
+plein
+propre
+prêt
+rapide
+rouge
+sale
+seul
+silencieux
+simple
+solide
+sombre
+surpris
+sérieux
+timide
+tiède
+transparent
+triste
+utile
+vert
+vide
+vieux
+violet
+vivant
+vrai
+épais
+étroit
+brûlant
+bête
+coloré
+fermée
+fragile
+glacé
+laid
+mort
+rugueux
+# 事物
+argent
+avion
+banane
+bateau
+beurre
+billet
+bouche
+bouton
+boîte
+bras
+brosse
+bus
+café
+carotte
+ceinture
+chaise
+chapeau
+chaussure
+chemise
+cheveu
+chocolat
+clé
+corps
+couteau
+cuillère
+cœur
+dent
+eau
+enfant
+farine
+femme
+fenêtre
+fourchette
+fromage
+gant
+gilet
+gâteau
+habit
+homme
+internet
+jambe
+jambon
+jeu
+jupe
+lait
+lampe
+lit
+livre
+lunettes
+machine
+main
+maison
+miroir
+mur
+musique
+métro
+nez
+nom
+oreille
+pain
+pantalon
+papier
+peau
+peigne
+photo
+pied
+plafond
+poche
+pomme
+porte
+prix
+radio
+raisin
+riz
+robe
+sac
+salade
+sandwich
+sang
+saucisse
+savon
+sel
+serviette
+soupe
+sport
+steak
+stylo
+sucre
+table
+taxi
+thé
+ticket
+toit
+tomate
+train
+travail
+télévision
+tête
+veste
+viande
+vin
+visage
+voiture
+vélo
+écharpe
+œil
+œuf
+chaussette
+chaussettes
+cheveux
+cravate
+fauteuil
+gants
+instrument
+jeux
+manteau
+matière
+personnes
+pâtes
+reçu
+téléversion
+# 社交・人
+accord
+adieu
+adresse
+ami
+amitié
+amour
+bonjour
+bonsoir
+cadeau
+camarade
+carte
+chauffeur
+chef
+client
+collègue
+confiance
+conflit
+contrat
+conversation
+copain
+copine
+cousin
+cousine
+docteur
+employé
+famille
+fille
+fils
+frère
+grand-mère
+grand-père
+lettre
+liberté
+madame
+mari
+mariage
+merci
+message
+monsieur
+mère
+obligation
+oncle
+pardon
+parent
+patient
+policier
+professeur
+promesse
+père
+question
+réponse
+réunion
+salut
+secret
+soirée
+soldat
+sœur
+tante
+téléphone
+vendeur
+visite
+voisin
+vérité
+égalité
+élève
+épouse
+étudiant
+abbé
+accusé
+acheteur
+acteur
+actionnaire
+admiration
+ados
+adulte
+agriculteur
+amical
+amoureux
+animateur
+appel
+apprenti
+artisan
+artiste
+associé
+auteur
+avocat
+baiser
+bal
+banquier
+baptême
+bébé
+candidat
+chanteur
+charité
+citoyen
+coiffeur
+commerçant
+compagnon
+compte
+conjoint
+consommateur
+criminel
+croyant
+créateur
+cuisinier
+danseur
+dialogue
+directeur
+dirigeant
+discours
+discussion
+dispute
+diversité
+droits
+débate
+délinquant
+désaccord
+email
+empathie
+employeur
+enseignant
+entrepreneur
+familial
+fiançailles
+financier
+formateur
+fournisseur
+funérailles
+garçon
+gentillesse
+hôte
+imam
+immigré
+investisseur
+invitation
+invité
+journaliste
+juge
+marchand
+membre
+mensonge
+migrant
+ministre
+moine
+musicien
+neveu
+nièce
+nonne
+notaire
+nouveau-né
+numéro
+pape
+parents
+partenaire
+partner
+patron
+peintre
+photographe
+pilote
+politesse
+pompier
+prisonnier
+producteur
+profil
+présentateur
+président
+public
+querelle
+rabbin
+religieux
+rencontre
+respect
+retrouvailles
+rumeur
+réfugié
+salarié
+serment
+serveur
+solidarité
+spectateur
+stagiaire
+sympathie
+tolérance
+témoin
+usager
+victime
+visiter
+visiteur
+voisine
+écrivain
+éditeur
+électeur
+émigré
+époux
+étreinte
+évêque
+# 抽象概念
+action
+attention
+but
+chance
+choix
+chose
+colère
+comparaison
+concept
+connaissance
+coopération
+différence
+distance
+doute
+droit
+décision
+effet
+endroit
+exemple
+genre
+gouvernement
+groupe
+histoire
+honte
+humeur
+idée
+information
+jalousie
+joie
+justice
+langue
+logique
+loi
+mot
+moyen
+mémoire
+ordre
+partie
+pensée
+peuple
+peur
+phrase
+plan
+poids
+problème
+qualité
+quantité
+raison
+regret
+relation
+responsabilité
+règle
+réalité
+résultat
+santé
+science
+société
+solution
+sorte
+structure
+surprise
+taille
+tristesse
+valeur
+vie
+échange
+émotion
+événement
+alliance
+anxiété
+autorité
+avenir
+chronologie
+citoyenneté
+communauté
+compréhension
+croyance
+créativité
+curiosité
+dépendance
+fierté
+hiérarchie
+identité
+imagination
+indépendance
+instant
+institution
+intelligence
+lien
+méfiance
+parenté
+principe
+retard
+souci
+unité
+époque
+état
+```
+
+## 附錄：保留的不規則形式
+
+| 原形 | 形式 |
+|---|---|
+| aller | vais / vas / va / allons / allez / vont / allé |
+| apprendre | apprends / apprends / apprend / apprenons / apprenez / apprennent / appris |
+| avoir | avais / avais / avait / avions / aviez / avaient / eu / ayant / ayante |
+| boire | bois / bois / boit / bu |
+| comprendre | comprends / comprends / comprend / comprenons / comprenez / comprennent / compris |
+| connaître | connais / connais / connaît / connaissons / connaissez / connaissent / connu |
+| craindre | crains / crains / craint / craignons / craignez / craignent / craint |
+| devoir | dois / dois / doit / devons / devez / doivent / dû |
+| dire | dis / dis / dit / dites / dites / disent / dit / disant |
+| envoyer | envoies / envoie / envoient / envoyé |
+| faire | fais / fais / fait / faisons / faites / font / fait |
+| falloir | faut / faut |
+| lire | lis / lis / lit / lisons / lisez / lisent / lu |
+| mettre | mets / mets / met / mettons / mettez / mettent / mis |
+| mourir | murs / meurt / mourons / meurent / mort |
+| naitre | naîs / naît / naissons / naissent / né |
+| obtenir | obtiens / obtient / obtenons / obtenez / obtiennent / obtenu |
+| partir | pars / pars / part / partons / partez / partent / parti |
+| pleuvoir | pleut |
+| pouvoir | peux / peux / peut / pouvons / pouvez / peuvent / pu |
+| prendre | prends / prends / prend / prenons / prenez / prennent / pris |
+| recevoir | reçois / reçoit / reçoivent / reçu |
+| rire | ris / ris / rit / rions / riez / rient / ri |
+| répondre | réponds / réponds / répond / répondons / répondez / répondent / répondu |
+| savoir | sais / sais / sait / savons / savez / savent / su |
+| suivre | suis / suis / suit / suivons / suivez / suivent / suivi |
+| tenir | tiens / tiens / tient / tenons / tenez / tiennent / tenu |
+| vendre | vends / vends / vend / vendons / vendez / vendent / vendu |
+| venir | viens / viens / vient / venons / venez / viennent / venu |
+| voir | vois / vois / voit / voyons / voyez / voient / vu / voyant |
+| vouloir | veux / veux / veut / voulons / voulez / veulent / voulu |
+| écrire | écris / écris / écrit / écrivons / écrivez / écrivent / écrit |
+| être | étais / étais / était / étions / étiez / étaient / été / étante / étants / étantes |

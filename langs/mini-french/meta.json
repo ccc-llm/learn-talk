@@ -1,0 +1,9 @@
+{
+  "name": "Mini-French",
+  "native": "簡易法文",
+  "unit": "word",
+  "script": "latin",
+  "romanization": "ipa",
+  "target_reader": "母語不是法文的外國人",
+  "source": "原創設計"
+}

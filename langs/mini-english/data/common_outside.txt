@@ -1,0 +1,15 @@
+# 詞表外最常用的詞（最容易不小心寫出來）
+among however therefore although though whereas moreover furthermore nevertheless nonetheless
+upon amongst toward towards whether whenever wherever whatever whoever whomever
+himself herself itself myself yourself themselves ourselves
+various several certain particular general specific
+purchase acquire obtain procure
+commence initiate terminate cease
+assemble gather congregate
+sufficient adequate insufficient
+attempt endeavor endeavour
+apparent evident obvious
+implement execute
+substitute alternative
+approximately roughly nearly
+additional furthermore

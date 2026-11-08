@@ -1,0 +1,36 @@
+rid	text	example	note
+1	主語 + 動詞 + 賓語。Mini-French 不改寫法文語法，只限制用哪些詞。	Je mange une pomme.	法文和英文一樣是「誰 + 做 + 什麼」
+2	冠詞：陽性用 le / un，陰性用 la / une，複數用 les / des。	le livre / la table / les livres	性別一致只有冠詞需要；名詞本身不變
+3	be 動詞只有 être：現在 est / sont / suis / es / sommes / êtes，過去 était / étaient。	Je suis étudiant.	法文沒有 have，用 avoir
+4	第三人稱單數只加 -s（-er 動詞加 -s，其他多數不加，s / x / z 不變）。	Il parle. / Il finit.	只在最需要時加，不影響意思
+5	進行式：être + 正在用的動詞（-ant 形式）。	Je mange une pomme.	法文進行式只有現在式
+6	過去式只用複合過去：avoir / être + 過去分詞。	J'ai mangé une pomme.	不用簡單過去（j'ai mangé 取代 je mangeai）
+7	將來式用近將來：aller + 原文動詞。	Je vais manger une pomme.	不用將來時（je mangerai）
+8	否定只有 ne ... pas；没有 avoir 時用 n'a pas。	Je ne mange pas de pain.	沒有 je n'ai pas 這種簡化
+9	有否定：n'a pas；動詞否定：ne ... pas。	Je n'ai pas de pain. / Je ne mange pas.	沒有錢：pas d'argent（de 縮成 d'）
+10	疑問詞放在答案原本的位置，不移到句頭。	Tu habites où ?	法文和英文不同：保留原位
+11	是非問句：句尾加 est-ce que ... 或把動詞提前。	Est-ce que tu viens ? / Tu viens ?	也可以用 Tu viens, n'est-ce pas ?
+12	選擇問句：... ou ...。	Tu veux du thé ou du café ?	用 du / de la 表示「一些…」
+13	wh- 問句用 est-ce que + wh- 詞，或把 wh- 詞放句頭。	Où est la gare ?	放在句頭也可以
+14	關係子句用 qui（人）、que（物）、où（地點）、dont（所屬）。	C'est un homme qui travaille.	Mini-French 只用這四個
+15	時間放在動詞前面。	Je vais au marché demain.	法文語序和英文不同：時間在前
+16	地點用 à / dans / sur / sous + 場所。	Je suis à la maison.	à + 城市／國家，dans + 建築內
+17	修飾語在前，用 de / d' 連接。	une voiture de sport / un ami d'école	法文用 de 而不是英文的 of
+18	複合過去用 avoir 的動詞，與 être 連用的動詞（arriver / aller / venir / partir / entrer / sortir / monter / descendre / rester / tomber / naître / mourir）用 être。	Je suis allé à Paris. / J'ai mangé.	這些動詞要記
+19	不定式：數字 + 動詞原文，表示「次」。	J'ai mangé deux fois.	法文名詞沒有單複數變化（除了 -al）
+20	命令式與第三人稱單數同形（不加 -s）。	Parle ! / Il parle.	和第三人稱單數規則一致
+21	比較級用 plus ... que / moins ... que；最高級用 le plus / le moins。	Il est plus grand que moi.	不用 bon / mieux 這類不規則
+22	所有格：de + 物主代詞（de + le = du, de + les = des）。	le livre de mon ami	法文沒有 's
+23	縮約：de + le = du，de + les = des，à + le = au，à + les = aux，de + a = d'。	du pain / des livres / au marché	母語者都這樣寫
+24	原因用 parce que + 完整句子；結果用 donc。	Je reste parce que je suis fatigué.	原因句放後面
+25	條件句用 si + 現在式 + 將來意思。	Si tu viens, je serai content.	不用 subjunctive
+26	命令與請求：je veux que tu ... 太難，改用 S'il te plaît, ... 或 Je dois ...	Je dois partir.	避免虛擬式
+27	時間詞：hier / aujourd'hui / demain / ce matin / ce soir / la semaine prochaine。	Je viens ce soir.	一律用現成的時間片語
+28	數字用阿拉伯數字；數字 + 動詞原文表示次數。	deux fois / trois ans	沒有 un / deux / trois 的名詞變化
+29	人稱代詞做賓語時放在動詞前面（除 y / en）。	Je le vois.	和英文不同
+30	副詞放在動詞後面。	Je parle bien.	法文和英文不同
+31	複合形容詞： bien + 形容詞 + 過去分詞 表示「已經…了」。	J'ai déjà mangé.	用 déjà 而不是 avoir déjà mangé 的其他變化
+32	加-reflexe 動詞：se + 動詞，反身代詞放前面。	Je me lève. / Je lave ma voiture.	反身代詞與動詞配合
+33	不定代詞：personne（沒有人）、rien（沒有東西）、chacun（每個）。	Personne ne vient.	否定詞在受詞位置
+34	說「有」用 avoir；說「是」用 être。不要混用。	Je suis tired. J'ai un livre.	法文沒有 to be 的所有形式
+35	一個概念一個詞，不要疊同義詞：只用 grand（不用 gros / immense）。	une grande maison	同義詞是浪費學力

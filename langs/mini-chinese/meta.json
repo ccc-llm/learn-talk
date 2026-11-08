@@ -1,0 +1,9 @@
+{
+  "name": "Mini-Chinese",
+  "native": "簡易中文",
+  "unit": "char",
+  "script": "han",
+  "romanization": "pinyin",
+  "target_reader": "母語不是中文的外國人",
+  "source": "mini-lang/mini-chinese"
+}
