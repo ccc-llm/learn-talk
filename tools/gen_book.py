@@ -150,6 +150,7 @@ def main():
     ap.add_argument('--chapters', type=int, default=0, help='0 = 全部')
     ap.add_argument('--provider', default='minimax')
     ap.add_argument('--workers', type=int, default=4)
+    ap.add_argument('--out', default=None, help='輸出目錄（預設 books/<code>）')
     a = ap.parse_args()
 
     s = spec_mod.load(a.lang)
@@ -159,7 +160,7 @@ def main():
     llm = LLM(provider=a.provider)
     system = build_system(s, checker)
 
-    out_dir = ROOT / 'books' / s.code
+    out_dir = Path(a.out) if a.out else ROOT / 'books' / s.code
     out_dir.mkdir(parents=True, exist_ok=True)
 
     chapters = CHAPTERS[:a.chapters] if a.chapters else CHAPTERS

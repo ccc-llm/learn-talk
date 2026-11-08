@@ -156,6 +156,15 @@ class Spec:
         return {k for k, w in self.words.items() if w.level == 'C'}
 
     @property
+    def forbidden(self) -> list[str]:
+        """這個語言「不要用」的結構（寫進 LLM 系統提示詞）。"""
+        p = self.dir / 'data' / 'forbidden.txt'
+        if not p.exists():
+            return []
+        return [w.strip() for w in p.read_text(encoding='utf-8').splitlines()
+                if w.strip() and not w.startswith('#')]
+
+    @property
     def common_outside(self) -> list[str]:
         """詞表外最常見的詞（提醒模型不要不小心寫出來）。"""
         if self._common_outside is not None:

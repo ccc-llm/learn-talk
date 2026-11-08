@@ -161,6 +161,13 @@ def build_system_md(spec) -> str:
         parts += ['### 最容易不小心寫出來的詞', '',
                   '這些詞很常用，但**不在詞表內**，寫的時候要換成別的說法：', '',
                   '、'.join(spec.common_outside), '']
+    # 這個語言不要用的結構
+    if spec.forbidden:
+        parts += ['## 10. 這個語言「不要用」的結構', '',
+                  '寫的時候**不要**用下面這些說法，每一條後面都有替代說法：', '']
+        for f in spec.forbidden:
+            parts.append(f'- {f}')
+        parts += ['', '**句子要簡單**：一句話只說一件事，長句拆成短句。', '']
     if spec.rules:
         parts += ['## 8. 語法規則', '']
         for r in spec.rules:

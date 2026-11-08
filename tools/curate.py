@@ -89,7 +89,7 @@ def main():
             n_c += 1
         else:
             n_e += 1
-        stem = ' '.join(ko_forms[w]) if ko_forms.get(w) else ''
+        stem = '|'.join(ko_forms[w]) if ko_forms.get(w) else ''
         rows.append(f'{w}\t{level}\t{pos}\t{gloss}\t{CAT_NAMES[cat]}\t\t\t{stem}')
 
     for f in CATS:

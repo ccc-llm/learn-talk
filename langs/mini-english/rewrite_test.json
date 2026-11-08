@@ -1,0 +1,58 @@
+{
+  "ok": 6,
+  "total": 6,
+  "rate": 1.0,
+  "details": [
+    {
+      "source": "Yesterday I went to the park near my house. The weather was warm and a lot of children were playing football. I sat on a bench and read a book for about an hour. Then I went home and cooked dinner for my family. It was a simple but pleasant day.",
+      "output": "Yesterday I went to the park near my house. The weather was warm, and many boys and girls were playing ball. I sat on a seat and read a book for about 1 hour. Then I went home and cooked dinner for my family. It was a simple but good day.",
+      "errors": [],
+      "history": [
+        0
+      ]
+    },
+    {
+      "source": "The company announced that it will open a new office in Shanghai next year. The office will have about three hundred employees, mostly engineers and designers. People who live in other cities can apply for the positions. The company says it wants to make it easier for people to work together.",
+      "output": "The company announced that it will open a new office in Shanghai (a city in China) next year. The office will have about 300 workers, mostly engineers and people who make things. People who live in other cities can ask for the jobs. The company says it wants to make it easy for people to work with each other.",
+      "errors": [],
+      "history": [
+        2,
+        0
+      ]
+    },
+    {
+      "source": "Water is essential for life. Every living thing needs water to grow, and plants need it even more than animals. Without clean water, crops will not grow and people will get sick. This is why governments around the world are trying to build better water systems for small villages.",
+      "output": "Water is very important for life. Every thing that is alive needs water to grow, and plants need it more than animals. Without clean water, food from fields will not grow and people will get sick. This is why governments in many countries are trying to build a better system that gives clean water to small villages.",
+      "errors": [],
+      "history": [
+        0
+      ]
+    },
+    {
+      "source": "Once upon a time there was a farmer who had one very clever horse. The horse could do many things, but the farmer never gave him any food. One day the horse ran away and asked a merchant for help. The merchant was surprised but he gave the horse some oats.",
+      "output": "Long ago there was a farmer who had 1 very clever horse. The horse could do many things, but the farmer never gave him any food. One day the horse ran away and asked a person who sells things for help. The person was surprised, but he gave the horse some food for the horse to eat.",
+      "errors": [],
+      "history": [
+        0
+      ]
+    },
+    {
+      "source": "Scientists have found that sleep is very important for the body. When you sleep, your brain works and your body repairs itself. Students who sleep less than seven hours every night do worse in their tests. Doctors say that adults should sleep between seven and nine hours.",
+      "output": "Scientists have found that sleep is very important for the body. When you sleep, the part of your body that thinks works, and your body fixes itself. Students who sleep less than 7 hours every night have low scores in their tests. Doctors say that people who are at least 18 years old should sleep between 7 and 9 hours.",
+      "errors": [],
+      "history": [
+        2,
+        0
+      ]
+    },
+    {
+      "source": "Buying a car is not easy. First, you need to decide how much money you want to spend. Then you should compare different cars in a shop. Finally, you have to talk with the seller and sign the papers. After that, you will need to buy insurance for the car.",
+      "output": "Buying a car is not easy. First, you need to decide how much money you want to spend. Then you should compare different cars in a shop. At last, you have to talk with a person who sells cars and sign the forms. After that, you will need to buy a service that protects the car.",
+      "errors": [],
+      "history": [
+        1,
+        0
+      ]
+    }
+  ]
+}

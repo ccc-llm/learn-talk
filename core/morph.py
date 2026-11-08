@@ -294,7 +294,8 @@ def accepted_forms(spec) -> set[str]:
             forms = getattr(spec, 'ko_forms', {})
             if w.unit in forms:
                 out.update(forms[w.unit])
-                out.update(w.stem.split())
+            if w.stem:
+                out.update(f for f in w.stem.split('|') if f)
             elif 'v' in kinds:
                 out.update(korean.verb_forms(stem))
             if 'adj' in kinds:

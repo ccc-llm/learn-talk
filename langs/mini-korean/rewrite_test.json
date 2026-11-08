@@ -1,0 +1,89 @@
+{
+  "ok": 0,
+  "total": 6,
+  "rate": 0.0,
+  "details": [
+    {
+      "source": "Yesterday I went to the park near my house. The weather was warm and a lot of children were playing football. I sat on a bench and read a book for about an hour. Then I went home and cooked dinner for my family. It was a simple but pleasant day.",
+      "output": "어제 집 근처에 있는 공원에 갔어요. 날씨는 따뜻했어요. 공을 하는 작은 사람들이 많이 있었어요. 공원 안의 앉는 곳에서 한 시간 가까이 책을 읽었어요. 그 후에 집에 돌아갔어요. 가족한테 저녁을 요리해 줬어요. 일도 없는 날이에요. 하지만 편안한 날이에요.",
+      "errors": [
+        "未知詞：「그」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        6,
+        3,
+        1
+      ]
+    },
+    {
+      "source": "The company announced that it will open a new office in Shanghai next year. The office will have about three hundred employees, mostly engineers and designers. People who live in other cities can apply for the positions. The company says it wants to make it easier for people to work together.",
+      "output": "사람들이 일하는 곳을 말했어요. 1년 뒤에 새로운 일을 하는 곳을 만들어요.\n\n거기에는 약 300명의 직원이 있어요. 거의 대부분의 직원은 기계로 일하는 사람하고 계획으로 만드는 사람이에요.\n\n다른 도시에 사는 사람들은 원하는 일을 거기에 보내요.\n\n거기는 사람들이 같이 일하게 해요. 그것을 원해요.",
+      "errors": [
+        "未知詞：「년」不在詞表內（用描述或外來語）",
+        "未知詞：「거기에」不在詞表內（用描述或外來語）",
+        "未知詞：「기계로」不在詞表內（用描述或外來語）",
+        "未知詞：「계획으로」不在詞表內（用描述或外來語）",
+        "未知詞：「일하게」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        15,
+        7,
+        5
+      ]
+    },
+    {
+      "source": "Water is essential for life. Every living thing needs water to grow, and plants need it even more than animals. Without clean water, crops will not grow and people will get sick. This is why governments around the world are trying to build better water systems for small villages.",
+      "output": "자라는 것은 모두 물이 필요해요. 물이 있어요. 자라요.\n\n식물은 물을 많이 써요. 동물은 물을 조금 써요.\n\n깨끗한 물이 없어요. 식물은 안 자라요. 사람도 아파요.\n\n일을 결정하는 사람들이 세계 각 나라에 있어요. 사람들은 작은 마을에 아주 좋은 물을 보내는 도구를 만들 생각이에요.",
+      "errors": [
+        "未知詞：「자라」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        13,
+        1,
+        1
+      ]
+    },
+    {
+      "source": "Once upon a time there was a farmer who had one very clever horse. The horse could do many things, but the farmer never gave him any food. One day the horse ran away and asked a merchant for help. The merchant was surprised but he gave the horse some oats.",
+      "output": "한때에 농부가 있었어요. 농부한테 말의 생각 속도가 아주 큰 말이 있었어요. 말은 많은 일을 해요. 말한테 음식을 1번도 안 줘요. 어느 날 뛰는 말은 집에서 길로 나가요. 말은 상사한테 일을 도왔어요. 상사는 놀라요. 말한테 오트(말의 음식)를 조금 줘요.",
+      "errors": [
+        "未知詞：「길로」不在詞表內（用描述或外來語）",
+        "未知詞：「도왔어요」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        10,
+        1,
+        2
+      ]
+    },
+    {
+      "source": "Scientists have found that sleep is very important for the body. When you sleep, your brain works and your body repairs itself. Students who sleep less than seven hours every night do worse in their tests. Doctors say that adults should sleep between seven and nine hours.",
+      "output": "몸을 보아온 사람들이 말해요. 자는 것은 몸에 중요한 일이에요. 자는 동안 머리는 일해요. 몸은 자신을 고쳐요. 매일 밤 7시간 안에서 자는 학생들이 검사 결과가 안 좋아요. 의사를 하는 사람들이 말해요. 어른인 사람들이 7시간부터 9시간 사이에서 자요.",
+      "errors": [
+        "未知詞：「보아온」不在詞表內（用描述或外來語）",
+        "未知詞：「학생들」不在詞表內（用描述或外來語）",
+        "未知詞：「어른인」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        10,
+        4,
+        3
+      ]
+    },
+    {
+      "source": "Buying a car is not easy. First, you need to decide how much money you want to spend. Then you should compare different cars in a shop. Finally, you have to talk with the seller and sign the papers. After that, you will need to buy insurance for the car.",
+      "output": "자동차를 사는 것은 어려워요. 처음에는 필요한 돈이 얼마나 있는지 결정을 해요. 그 뒤에는 가게에서 다른 자동차를 봐요. 그 뒤에는 가게에 있는 사람한테 말해요. 약속을 써요. 거기에 이름을 써요. 제일 뒤에는 자동차에 문제가 있을 때 돈을 내는 것을 선택을 해요.",
+      "errors": [
+        "未知詞：「처음에」不在詞表內（用描述或外來語）",
+        "未知詞：「있는지」不在詞表內（用描述或外來語）",
+        "未知詞：「그」不在詞表內（用描述或外來語）",
+        "未知詞：「그」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        9,
+        5,
+        4
+      ]
+    }
+  ]
+}

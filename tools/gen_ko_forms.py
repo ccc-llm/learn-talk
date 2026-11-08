@@ -51,6 +51,15 @@ def main():
             c = line.split('\t')
             if c and c[0].strip():
                 words.append(c[0].strip())
+    # 額外加入 EXTRA 裡的動詞／形容詞
+    import importlib
+    try:
+        m = importlib.import_module('tools.curated.korean')
+        for item in m.EXTRA:
+            if len(item) > 4 and item[1] in ('v', 'adj') and item[4]:
+                words.append(item[4])
+    except Exception:
+        pass
 
     # 只處理還沒有的詞
     existing = set()

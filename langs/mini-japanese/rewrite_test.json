@@ -1,0 +1,80 @@
+{
+  "ok": 2,
+  "total": 6,
+  "rate": 0.3333333333333333,
+  "details": [
+    {
+      "source": "Yesterday I went to the park near my house. The weather was warm and a lot of children were playing football. I sat on a bench and read a book for about an hour. Then I went home and cooked dinner for my family. It was a simple but pleasant day.",
+      "output": "昨日、家の近い場所にある公園へ行きました。天気は暖かいでした。多い子どもがボール（使う道具）を使いました。公園で椅子に座り、1時間くらい本を読みました。それから家へ帰りました。家族のために夜ごはんを作りました。料理は少ないです。楽しい1日でした。",
+      "errors": [
+        "未知詞：「り」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        8,
+        2,
+        1
+      ]
+    },
+    {
+      "source": "The company announced that it will open a new office in Shanghai next year. The office will have about three hundred employees, mostly engineers and designers. People who live in other cities can apply for the positions. The company says it wants to make it easier for people to work together.",
+      "output": "会社は、上海（場所）に新しい場所を開きますと話しました。\nその場所では、300人くらいが働きます。\nその場所では、エンジニア（機械と道具を使う仕事の人）とデザイナー（絵と道具を使う仕事の人）だけが多く働きます。\nほかの町にいる人も、この仕事を希望します。\nほかの町にいる人も来ます。\nみんなと一緒に働きますことが便利になりますことを希望します。",
+      "errors": [],
+      "history": [
+        6,
+        6,
+        0
+      ]
+    },
+    {
+      "source": "Water is essential for life. Every living thing needs water to grow, and plants need it even more than animals. Without clean water, crops will not grow and people will get sick. This is why governments around the world are trying to build better water systems for small villages.",
+      "output": "水は動物と植物に必要です。\n\n動物と植物はみんな、大きくなるために水を必要とします。\n\n植物は動物より水を必要とします。\n\nきれいな水がありませんと、村の外にある米と野菜は大きくなりません。\n\n人は医者が必要になるからです。\n\n世界の国はこのために、小さな村に水を送る場所を作ります。",
+      "errors": [
+        "未知詞：「さ」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        10,
+        9,
+        1
+      ]
+    },
+    {
+      "source": "Once upon a time there was a farmer who had one very clever horse. The horse could do many things, but the farmer never gave him any food. One day the horse ran away and asked a merchant for help. The merchant was surprised but he gave the horse some oats.",
+      "output": "昔、馬と仕事をする人がいました。その人は、頭がいい馬を1頭持ちました。その人は、その馬にご飯を置きませんでした。\n\n1日、馬は逃げました。馬は、米を売る人に助けてくださいと話しました。人は驚きました。人は、馬にオーツ（馬が食べるもの）を送りました。",
+      "errors": [],
+      "history": [
+        2,
+        0
+      ]
+    },
+    {
+      "source": "Scientists have found that sleep is very important for the body. When you sleep, your brain works and your body repairs itself. Students who sleep less than seven hours every night do worse in their tests. Doctors say that adults should sleep between seven and nine hours.",
+      "output": "自然を調べる人たちは、寝ることがとても大切だと知りました。\n\n寝ますと、頭の中が働きます。\n\n人は治ります。\n\n毎日夜、7時間より短い時間で寝ます。\n\n学生は、テストの結果が悪くなります。\n\n医者は、7時間から9時間まで寝るのは子どもではありませんと言いました。",
+      "errors": [
+        "未知詞：「た」不在詞表內（用描述或外來語）",
+        "未知詞：「ち」不在詞表內（用描述或外來語）",
+        "未知詞：「だ」不在詞表內（用描述或外來語）",
+        "未知詞：「り」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        5,
+        5,
+        4
+      ]
+    },
+    {
+      "source": "Buying a car is not easy. First, you need to decide how much money you want to spend. Then you should compare different cars in a shop. Finally, you have to talk with the seller and sign the papers. After that, you will need to buy insurance for the car.",
+      "output": "車を買うのは無理です。はじめに、あなたがいくら使うかを決めます。そして、店で何種類の車があるか調べます。後で、車を売る人と話します。書くための紙に名前を書きます。後で、あなたは車を守るために払うものを買う必要があります。",
+      "errors": [
+        "禁用詞：「して」是禁用詞，改用「します」",
+        "未知詞：「じ」不在詞表內（用描述或外來語）",
+        "未知詞：「め」不在詞表內（用描述或外來語）",
+        "未知詞：「め」不在詞表內（用描述或外來語）"
+      ],
+      "history": [
+        4,
+        4,
+        4
+      ]
+    }
+  ]
+}

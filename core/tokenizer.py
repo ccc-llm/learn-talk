@@ -90,6 +90,11 @@ class KanaTokenizer(Tokenizer):
                 yield i, s, 'foreign'
                 i += len(s)
                 continue
+            # 疊字符號「々」接在前一個字後面
+            if ch == '々' and i > 0:
+                yield i, '々', 'word'
+                i += 1
+                continue
             # 最長匹配
             matched = False
             for L in range(min(10, n - i), 0, -1):

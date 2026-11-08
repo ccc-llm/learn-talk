@@ -1,0 +1,65 @@
+{
+  "ok": 5,
+  "total": 6,
+  "rate": 0.8333333333333334,
+  "details": [
+    {
+      "source": "Yesterday I went to the park near my house. The weather was warm and a lot of children were playing football. I sat on a bench and read a book for about an hour. Then I went home and cooked dinner for my family. It was a simple but pleasant day.",
+      "output": "昨天我去了我家附近可以坐著和玩的地方。天氣很暖，很多小孩在玩一個用腳踢的圓球。我坐在一個可以坐人的長座位，看了一小時左右的書。後來我回家，為家人做晚飯。這是簡單，可是很快樂的一天。",
+      "errors": [
+        "禁用詞：「著」是禁用詞，改用「在、V 在那裡」"
+      ],
+      "history": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "source": "The company announced that it will open a new office in Shanghai next year. The office will have about three hundred employees, mostly engineers and designers. People who live in other cities can apply for the positions. The company says it wants to make it easier for people to work together.",
+      "output": "這家有員工做事的地方說，明年要在上海（中國東邊的城市）開設新的工作地方。\n\n那裡有300名員工左右，多數是工程師和設計師。\n\n住在這城市以外的人，可以來找這幾個工作。\n\n這家有員工做事的地方說，這家想找人一起做事。",
+      "errors": [],
+      "history": [
+        2,
+        0
+      ]
+    },
+    {
+      "source": "Water is essential for life. Every living thing needs water to grow, and plants need it even more than animals. Without clean water, crops will not grow and people will get sick. This is why governments around the world are trying to build better water systems for small villages.",
+      "output": "水是活物不能少的事。\n每個活物少了水就不能長大，花草樹木比動物更不能少了水。\n沒有清水，地裡種的花草樹木就不長，人也會生病。\n這是各地各國管事的人想為住小地方的人做更好的水工程的因。",
+      "errors": [],
+      "history": [
+        6,
+        1,
+        0
+      ]
+    },
+    {
+      "source": "Once upon a time there was a farmer who had one very clever horse. The horse could do many things, but the farmer never gave him any food. One day the horse ran away and asked a merchant for help. The merchant was surprised but he gave the horse some oats.",
+      "output": "從前有個種地的人，他有1頭很會做事的馬。這頭馬會做很多事，可是種地的人從不給他吃的東西。有1天，馬自己走去了，去找1個做買賣的人幫忙。那人很意外，可是他給了馬一些草種子。",
+      "errors": [],
+      "history": [
+        1,
+        0
+      ]
+    },
+    {
+      "source": "Scientists have found that sleep is very important for the body. When you sleep, your brain works and your body repairs itself. Students who sleep less than seven hours every night do worse in their tests. Doctors say that adults should sleep between seven and nine hours.",
+      "output": "做學問工作的人看到，睡覺對身體很重要。你睡覺的時候，腦在活動，身體也會自己修好。天天晚上睡不到7個小時的學生，測試的結果更差。醫生說，大人睡覺要在7到9個小時中間。",
+      "errors": [],
+      "history": [
+        3,
+        0
+      ]
+    },
+    {
+      "source": "Buying a car is not easy. First, you need to decide how much money you want to spend. Then you should compare different cars in a shop. Finally, you have to talk with the seller and sign the papers. After that, you will need to buy insurance for the car.",
+      "output": "買車不容易。先要決定要花多少錢。再要在店裡看不一樣的車，哪個好就選哪個。最後要和賣車的人說話，在文件上寫名字。寫完名字後，還要買車的保險。",
+      "errors": [],
+      "history": [
+        1,
+        0
+      ]
+    }
+  ]
+}
