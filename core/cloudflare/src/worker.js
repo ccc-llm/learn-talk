@@ -62,6 +62,17 @@ export default {
       return json(list);
     }
 
+    if (url.pathname === '/api/rom') {
+      // 各語言的字→羅馬字（中文拼音／日文羅馬字／韓文 RR），供 ruby 標音
+      const data = await loadData(env);
+      if (!data) return json({ error: 'no data' }, 404);
+      const rom = {};
+      for (const code of ['chinese', 'japanese', 'korean']) {
+        if (data[code] && data[code].rom) rom[code] = data[code].rom;
+      }
+      return json(rom);
+    }
+
     if (url.pathname === '/api/data') {
       const code = url.searchParams.get('lang') || 'chinese';
       const data = await loadData(env);

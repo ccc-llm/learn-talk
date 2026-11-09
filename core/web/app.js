@@ -45,6 +45,8 @@ const I18N = {
     miniNames: { chinese: '簡易中文', english: '簡易英文', french: '簡易法文', japanese: '簡易日文', korean: '簡易韓文' },
     miniTargets: { chinese: '母語不是中文的外國人', english: '母語不是英文的外國人', french: '母語不是法文的外國人', japanese: '母語不是日文的外國人', korean: '母語不是韓文的外國人' },
     modeFast: '快速（不檢查，直接回答）', romajiLabel: '標拼音', thinkLabel: '顯示思考', thinkSummary: '思考過程', modeStrict: '嚴格（自動檢查字表，較慢）', tabCharset: '字集', copyBtn: '複製', csCopied: '已複製', ttsFail: '伺服器語音失敗：{msg}\n（請確認有安裝 edge-tts）',
+    csCopy: '複製全部',
+    browserVoice: '瀏覽器語音',
   },
   en: {
     sub: 'Learn to speak with very few words: Mini-Chinese / Mini-English / Mini-French / Mini-Japanese / Mini-Korean',
@@ -79,6 +81,8 @@ const I18N = {
     miniNames: { chinese: 'Simple Chinese', english: 'Simple English', french: 'Simple French', japanese: 'Simple Japanese', korean: 'Simple Korean' },
     miniTargets: { chinese: 'Non-native speakers of Chinese', english: 'Non-native speakers of English', french: 'Non-native speakers of French', japanese: 'Non-native speakers of Japanese', korean: 'Non-native speakers of Korean' },
     modeFast: 'Fast (no checking, direct answer)', romajiLabel: 'Romanization', thinkLabel: 'Show thinking', thinkSummary: 'Thinking', modeStrict: 'Strict (checks the word list, slower)', tabCharset: 'Character set', copyBtn: 'Copy', csCopied: 'Copied', ttsFail: 'Server speech failed: {msg}\n(make sure edge-tts is installed)',
+    csCopy: 'Copy all',
+    browserVoice: 'Browser voice',
   },
   fr: {
     sub: 'Apprenez à parler avec très peu de mots : Mini-Chinois / Mini-Anglais / Mini-Français / Mini-Japonais / Mini-Coréen',
@@ -113,6 +117,8 @@ const I18N = {
     miniNames: { chinese: 'Chinois simplifié', english: 'Anglais simplifié', french: 'Français simplifié', japanese: 'Japonais simplifié', korean: 'Coréen simplifié' },
     miniTargets: { chinese: 'Personnes dont la langue maternelle n\'est pas le chinois', english: 'Personnes dont la langue maternelle n\'est pas l\'anglais', french: 'Personnes dont la langue maternelle n\'est pas le français', japanese: 'Personnes dont la langue maternelle n\'est pas le japonais', korean: 'Personnes dont la langue maternelle n\'est pas le coréen' },
     modeFast: 'Rapide (sans vérification, réponse directe)', romajiLabel: 'Romanisation', thinkLabel: 'Afficher la réflexion', thinkSummary: 'Réflexion', modeStrict: 'Strict (vérifie la liste de mots, plus lent)', tabCharset: 'Ensemble de caractères', copyBtn: 'Copier', csCopied: 'Copié', ttsFail: 'Échec de la voix serveur : {msg}\n(vérifiez que edge-tts est installé)',
+    csCopy: 'Tout copier',
+    browserVoice: 'Voix du navigateur',
   },
   ja: {
     sub: '少ない語彙で話せるようになる：ミニ中国語／ミニ英語／ミニフランス語／ミニ日本語／ミニ韓国語',
@@ -147,6 +153,8 @@ const I18N = {
     miniNames: { chinese: 'やさしい中国語', english: 'やさしい英語', french: 'やさしいフランス語', japanese: 'やさしい日本語', korean: 'やさしい韓国語' },
     miniTargets: { chinese: '中国語を母語としない学習者', english: '英語を母語としない学習者', french: 'フランス語を母語としない学習者', japanese: '日本語を母語としない学習者', korean: '韓国語を母語としない学習者' },
     modeFast: '高速（チェックなし、直接回答）', romajiLabel: 'ローマ字', thinkLabel: '思考を表示', thinkSummary: '思考過程', modeStrict: '厳密（語表を自動チェック、やや遅い）', tabCharset: '文字セット', copyBtn: 'コピー', csCopied: 'コピーしました', ttsFail: 'サーバー音声に失敗：{msg}\n（edge-tts がインストールされているか確認してください）',
+    csCopy: 'すべてコピー',
+    browserVoice: 'ブラウザ音声',
   },
   ko: {
     sub: '적은 단어로 말하기를 배웁니다: 미니 중국어／미니 영어／미니 프랑스어／미니 일본어／미니 한국어',
@@ -181,8 +189,20 @@ const I18N = {
     miniNames: { chinese: '쉬운 중국어', english: '쉬운 영어', french: '쉬운 프랑스어', japanese: '쉬운 일본어', korean: '쉬운 한국어' },
     miniTargets: { chinese: '모국어가 중국어가 아닌 학습자', english: '모국어가 영어가 아닌 학습자', french: '모국어가 프랑스어가 아닌 학습자', japanese: '모국어가 일본어가 아닌 학습자', korean: '모국어가 한국어가 아닌 학습자' },
     modeFast: '빠름(검사 없이 바로 응답)', romajiLabel: '로마자', thinkLabel: '생각 보기', thinkSummary: '생각 과정', modeStrict: '엄격(단어 목록 자동 검사, 느림)', tabCharset: '글자 집합', copyBtn: '복사', csCopied: '복사됨', ttsFail: '서버 음성 실패: {msg}\n(edge-tts 설치를 확인하세요)',
+    csCopy: '모두 복사',
+    browserVoice: '브라우저 음성',
   },
 };
+
+let ROM_ALL = {};          // 各語言的字→羅馬字（中文拼音／日文羅馬字／韓文 RR）
+const UI_CODE = { 'zh-Hant': 'chinese', en: 'english', fr: 'french', ja: 'japanese', ko: 'korean' };
+
+function buildRomAll() {
+  for (const code of Object.keys(LANGS)) {
+    const rom = LANGS[code].rom;
+    if (rom && Object.keys(rom).length) ROM_ALL[code] = rom;
+  }
+}
 
 const t = (key) => (I18N[UILANG] && I18N[UILANG][key]) || I18N['zh-Hant'][key] || key;
 const tf = (key, vars) => Object.entries(vars || {}).reduce(
@@ -198,12 +218,34 @@ function applyUI() {
 
 // ── 輸出的 ruby 標音 ────────────────────────────────────────────────────────
 let trOutText = '';
+let trOutCode = 'chinese';
 
-function withRuby(text) {
-  const rom = (LANGS[LANG] || {}).rom || {};
+// 韓文諺文即時轉 RR（羅馬字），讓字表外的字也有讀音
+const KO_CHO = ['g', 'kk', 'n', 'd', 'tt', 'r', 'm', 'b', 'pp', 's', 'ss', '',
+  'j', 'jj', 'ch', 'k', 't', 'p', 'h'];
+const KO_JUNG = ['a', 'ae', 'ya', 'yae', 'eo', 'e', 'yeo', 'ye', 'o', 'wa', 'wae',
+  'oe', 'yo', 'u', 'wo', 'we', 'wi', 'yu', 'eu', 'ui', 'i'];
+const KO_JONG = ['', 'k', 'k', 'k', 'n', 'n', 'n', 't', 'l', 'l', 'l', 'l', 'l',
+  'l', 'l', 'l', 'm', 'p', 'p', 't', 't', 'ng', 't', 't', 'k', 't', 'p', 't'];
+
+function koreanRom(ch) {
+  const c = ch.charCodeAt(0);
+  if (c < 0xAC00 || c > 0xD7A3) return '';
+  const i = c - 0xAC00;
+  return KO_CHO[Math.floor(i / 588)] + KO_JUNG[Math.floor((i % 588) / 28)] + KO_JONG[i % 28];
+}
+
+// 只有文字才標 ruby（空白、標點不標）
+const RUBYABLE = /[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/;
+
+function withRuby(text, code) {
+  const c = code || LANG;
+  const rom = ROM_ALL[c] || (LANGS[c] || {}).rom || {};
   let out = '';
   for (const ch of String(text)) {
-    const r = romajiOn ? rom[ch] : '';
+    let r = romajiOn ? (rom[ch] || '') : '';
+    if (!r && romajiOn && c === 'korean') r = koreanRom(ch);
+    if (!r || !RUBYABLE.test(ch)) r = '';
     out += r ? `<ruby>${escapeHtml(ch)}<rt>${escapeHtml(r)}</rt></ruby>` : escapeHtml(ch);
   }
   return out;
@@ -211,7 +253,7 @@ function withRuby(text) {
 
 function renderTrOut() {
   const el = $('#tr-out');
-  el.innerHTML = withRuby(trOutText);
+  el.innerHTML = withRuby(trOutText, trOutCode);
 }
 
 // ── 初始化 ─────────────────────────────────────────────────────────────────
@@ -328,6 +370,7 @@ function init() {
     if (await copyText(item.body)) flashCopy(btn, t('csCopied'));
   });
 
+  buildRomAll();
   applyUI();
   onLangChange();
 }
@@ -399,12 +442,14 @@ async function reverseTranslate() {
         let j;
         try { j = JSON.parse(ev.slice(5)); } catch (e) { continue; }
         if (j.type === 'base') {
-          // 規則翻譯先上畫面；LLM 改寫一開始就把它換掉
-          if (!rewrite) { trOutText = j.text; paint(); }
+          // 規則翻譯先上畫面（規則對譯是中文 → 標拼音）
+          if (!rewrite) { trOutText = j.text; trOutCode = 'chinese'; paint(); }
         } else if (j.type === 'content') {
+          // LLM 改寫成介面語言 → 標該語言的羅馬字
           if (!rewrite) trOutText = '';
           rewrite += j.text;
           trOutText = rewrite;
+          trOutCode = UI_CODE[UILANG] || 'chinese';
           paint();
         } else if (j.type === 'error') {
           trOutText = (trOutText ? trOutText + '\n' : '') + '⚠ ' + j.text;

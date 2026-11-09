@@ -1,5 +1,9 @@
 # learn-talk
 
+* 線上版
+  * 靜態 -- https://learn-talk.github.io/learn-talk/core/staticweb/index.html
+  * cloudflare -- https://learn-talk.ccckmit.workers.dev
+
 **用很少的字詞學會說話。** 五個受限語言（Mini-Chinese、Mini-English、Mini-French、Mini-Japanese、Mini-Korean），
 讓外國人學會其中一種語言的日常會話、讀懂受限語言的文章、把一般文章改寫成受限語言。
 

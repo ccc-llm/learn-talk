@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT))
 
 from core import spec as spec_mod  # noqa: E402
-from core.romaji import hangul_romanize, kana_to_romaji  # noqa: E402
+from core.romaji import hangul_romanize, kana_table, kana_to_romaji  # noqa: E402
 from core.web.voices import BROWSER_LANG, TTS_VOICES  # noqa: E402
 
 import re  # noqa: E402
@@ -38,6 +38,31 @@ def rom_map(s, words) -> dict:
                     else kana_to_romaji(c)) for c in chars}
     if s.code == 'korean':
         return {c: hangul_romanize(c) for c in chars}
+    return {}
+
+
+def extra_rom(s, lex) -> dict:
+    """字表以外的讀音，讓「任意文字」也能標 ruby。
+
+    - 中文：詞典「原文」欄會用到的漢字（逆向翻譯的對譯就是這些字）
+    - 日文：完整的假名表（五十音→羅馬字）
+    """
+    if s.code == 'chinese':
+        chars = set()
+        for row in lex:
+            chars |= set(re.findall(r'[\u4e00-\u9fff]', row.get('o', '')))
+        if not chars:
+            return {}
+        try:
+            from pypinyin import Style, pinyin
+        except ImportError:
+            return {}
+        out = {}
+        for ch in sorted(chars):
+            out[ch] = ''.join(x[0] for x in pinyin(ch, style=Style.TONE))
+        return out
+    if s.code == 'japanese':
+        return kana_table()
     return {}
 
 
@@ -104,6 +129,9 @@ def build():
                     'ip': w.ipa,
                 })
         lex, rev = lexicon_data(s)
+        rom = rom_map(s, words)
+        for ch, r in extra_rom(s, lex).items():
+            rom.setdefault(ch, r)
         out[s.code] = {
             'name': s.name,
             'native': s.native,
@@ -113,7 +141,7 @@ def build():
             'target': s.target_reader,
             'browserLang': BROWSER_LANG.get(s.code, 'en-US'),
             'tts': TTS_VOICES.get(s.code, {}),
-            'rom': rom_map(s, words),
+            'rom': rom,
             'rev': rev,
             'lex': lex,
             'sys': system_prompt(s),

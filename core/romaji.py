@@ -57,6 +57,11 @@ for _k, _v in list(_KANA.items()):
         _KANA[chr(ord(_k) + 0x60)] = _v
 
 
+def kana_table() -> dict:
+    """所有假名 → 羅馬字（含片假名、小字、促音）。"""
+    return {k: v for k, v in _KANA.items() if v}
+
+
 def kana_to_romaji(text: str) -> str:
     """把假名（含濁音、拗音、促音）轉成 Hepburn 羅馬字。"""
     out = []

@@ -107,6 +107,11 @@ async function loadLangData(code) {
     });
     sel.value = LANG;
     await loadLangData(LANG);
+    buildRomAll();
+    // 讀音表（中／日／韓）：讓逆翻譯、聊天都能標 ruby
+    try {
+      Object.assign(ROM_ALL, await apiJSON('/api/rom'));
+    } catch (e) { /* 沒有就只用已載入的語言 */ }
     onLangChange();
   } catch (e) {
     $('#langinfo').innerHTML =
