@@ -85,12 +85,40 @@ SKIP = {'a', 'an', 'the', 'is', 'are', 'be', 'of', 'in', 'on', 'and', 'or', 'not
         'he', 'she', 'they', 'we', 'you', 'i'}
 
 
+def _gloss_is_chinese(words) -> bool:
+    """詞表的釋義語言是不是中文（多數釋義含漢字才算）。"""
+    if not words:
+        return False
+    han = sum(1 for w in words if re.search(r'[\u4e00-\u9fff]', w.gloss or ''))
+    return han >= len(words) * 0.5
+
+
 class Reverser:
     """受限語言 → 一般語言：用詞典把描述／外來語換回去。"""
 
     def __init__(self, lexicon: Lexicon, spec):
         self.spec = spec
         table: dict[str, str] = {}
+        # 詞表本身的中文釋義優先（例如 日文 私→我、会社→公司），比較簡潔好讀
+        words = list(getattr(spec, 'words', {}).values())
+        if _gloss_is_chinese(words):
+            for w in words:
+                unit = (w.unit or '').strip()
+                gloss = (w.gloss or '').strip()
+                if not unit or not gloss or unit.lower() in SKIP or unit == gloss:
+                    continue
+                table.setdefault(unit.lower(), gloss)
+        # 活用形也能翻回去（例如 日文 働きます→工作、韓文 만났어요→遇见）
+        for attr in ('ja_forms', 'ko_forms', 'ja_adj_forms'):
+            for unit, forms in (getattr(spec, attr, None) or {}).items():
+                gloss = spec.gloss(unit) if hasattr(spec, 'gloss') else ''
+                if not gloss:
+                    continue
+                for f in forms:
+                    f = (f or '').strip()
+                    if f and f != unit:
+                        table.setdefault(f.lower(), gloss)
+        # 詞典補上描述型與外來語（詞表裡沒有的說法）
         for r in lexicon.rows:
             mini = r['受限說法'].strip()
             src = r['原文'].strip()
@@ -111,7 +139,9 @@ class Reverser:
             return f'\x00{len(notes) - 1}\x00'
 
         text = re.sub(r'\(([^()]*)\)', stash, text)
-        text = self.regex.sub(lambda m: self.table.get(m.group(0).lower(), m.group(0)), text)
+        text = self.regex.sub(
+            lambda m: ' ' + self.table.get(m.group(0).lower(), m.group(0)) + ' ', text)
         for i, n in enumerate(notes):
             text = text.replace(f'\x00{i}\x00', f' ({n})')
-        return text
+        text = re.sub(r'[ \t]{2,}', ' ', text)
+        return text.strip()

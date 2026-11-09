@@ -140,7 +140,8 @@ def load_prompt(code: str) -> str:
 
 
 # ── 反向翻譯成介面語言 ───────────────────────────────────────────────────────
-UI_LANG_NAMES = {'en': 'English', 'fr': 'Français', 'ja': '日本語', 'ko': '한국어'}
+UI_LANG_NAMES = {'zh-Hant': '繁體中文', 'en': 'English', 'fr': 'Français',
+                 'ja': '日本語', 'ko': '한국어'}
 _llm_cache: dict[str, object] = {}
 
 
@@ -318,9 +319,13 @@ class Handler(SimpleHTTPRequestHandler):
             name = UI_LANG_NAMES.get(ui)
             llm = get_ui_llm() if name else None
             if name and llm:
-                prompt = ('下面是把受限語言逐詞對譯成的中文（詞序可能不自然、可能有括號註解）。\n'
-                          f'請把它改寫成通順、自然的{name}，意思不要增減。\n'
-                          '只輸出譯文，不要任何說明。\n\n' + base)
+                prompt = ('下面是把受限語言逐詞對譯的中文對照（詞序不自然、可能有括號註解）。\n'
+                          f'原文（受限語言）：{text}\n'
+                          f'逐詞對譯：{base}\n\n'
+                          f'請把它整句翻譯成通順、自然的{name}（不要逐字對照）。\n'
+                          + ('盡量使用 Mini-Chinese 的常用詞彙，讓學習者看得懂，'
+                             '但不必嚴格限制在字集裡。\n' if ui == 'zh-Hant' else '')
+                          + '只輸出譯文，不要任何說明。\n')
                 try:
                     stream = llm.client.chat.completions.create(
                         model=llm.model,

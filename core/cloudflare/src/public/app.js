@@ -470,22 +470,28 @@ function checkTranslate() {
 async function reverseTranslate() {
   const text = $('#tr-in').value;
   if (!text.trim()) return;
-  if (UILANG !== 'zh-Hant') $('#tr-result').innerHTML = `<span class="hint">${t('thinking')}</span>`;
-  trOutText = localReverse(text);
+  $('#tr-result').innerHTML = `<span class="hint">${t('thinking')}</span>`;
+  const base = localReverse(text);
+  trOutText = base;
   trOutCode = 'chinese';        // 規則對譯是中文 → 標拼音
   renderTrOut();
-  if (UILANG === 'zh-Hant') { $('#tr-result').innerHTML = ''; return; }
   const L = LANGS[LANG];
-  const name = { en: 'English', fr: 'Français', ja: '日本語', ko: '한국어' }[UILANG];
+  const name = { 'zh-Hant': '繁體中文', en: 'English', fr: 'Français',
+                 ja: '日本語', ko: '한국어' }[UILANG];
   let last = 0;
   try {
     let rewrite = '';
     await llmCall([
       { role: 'system', content: '你是翻譯器。只輸出譯文本體。' },
       { role: 'user', content:
-        '下面是把受限語言逐詞對譯成的中文（詞序可能不自然、可能有括號註解）。\n' +
-        `請把它改寫成通順、自然的${name}，意思不要增減。\n` +
-        '只輸出譯文，不要任何說明。\n\n' + trOutText },
+        '下面是把受限語言逐詞對譯的中文對照（詞序不自然、可能有括號註解）。\n' +
+        `原文（受限語言）：${text}\n` +
+        `逐詞對譯：${base}\n\n` +
+        `請把它整句翻譯成通順、自然的${name}（不要逐字對照）。\n` +
+        (UILANG === 'zh-Hant'
+          ? '盡量使用 Mini-Chinese 的常用詞彙，讓學習者看得懂，但不必嚴格限制在字集裡。\n'
+          : '') +
+        '只輸出譯文，不要任何說明。\n' },
     ], null, (kind, tx) => {
       if (kind !== 'content') return;
       rewrite += tx;
@@ -515,10 +521,10 @@ function localReverse(text) {
       const v = rev[seg] || rev[seg.toLowerCase()];
       if (v) { hit = [seg, v]; break; }
     }
-    if (hit) { out += hit[1]; i += hit[0].length; }
+    if (hit) { out += ' ' + hit[1] + ' '; i += hit[0].length; }
     else { out += text[i]; i++; }
   }
-  return out;
+  return out.replace(/[ \t]{2,}/g, ' ').trim();
 }
 
 // ── 檢查器 ─────────────────────────────────────────────────────────────────

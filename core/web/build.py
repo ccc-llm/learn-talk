@@ -66,8 +66,12 @@ def extra_rom(s, lex) -> dict:
     return {}
 
 
-def lexicon_data(s) -> tuple[list, dict]:
-    """詞典列（靜態版查詞典、lookup_word 用）與反向對照表（受限說法 → 原文）。"""
+def lexicon_data(s, words=None) -> tuple[list, dict]:
+    """詞典列（靜態版查詞典、lookup_word 用）與反向對照表（受限說法 → 原文）。
+
+    反向表另外收錄「詞表本身的中文釋義」（日文 私→我、会社→公司），
+    否則常用詞翻不回來，會整句維持受限語言。
+    """
     lex, rev = [], {}
     lp = s.dir / 'lexicon.tsv'
     if lp.exists():
@@ -78,7 +82,28 @@ def lexicon_data(s) -> tuple[list, dict]:
                 if len(col) >= 4:
                     row = {'o': col[0], 'm': col[1], 'w': col[2], 'n': col[3]}
                     lex.append(row)
-                    rev[col[1].lower()] = col[0]
+                    rev.setdefault(col[1].lower(), col[0])
+    # 詞表的中文釋義優先（比較簡潔好讀），詞典的描述型／外來語則保留
+    words = words or []
+    han = sum(1 for w in words if re.search(r'[\u4e00-\u9fff]', w.get('g', '')))
+    if words and han >= len(words) * 0.5:
+        gloss_of = {}
+        for w in words:
+            unit = (w.get('w') or '').strip()
+            gloss = (w.get('g') or '').strip()
+            if unit and gloss and unit != gloss:
+                rev[unit.lower()] = gloss
+                gloss_of[unit] = gloss
+        # 活用形也能翻回去（働きます→工作、만났어요→遇见）
+        for attr in ('ja_forms', 'ko_forms', 'ja_adj_forms'):
+            for unit, forms in (getattr(s, attr, None) or {}).items():
+                gloss = gloss_of.get(unit)
+                if not gloss:
+                    continue
+                for f in forms:
+                    f = (f or '').strip()
+                    if f and f != unit:
+                        rev.setdefault(f.lower(), gloss)
     return lex, rev
 
 
@@ -128,7 +153,7 @@ def build():
                     'ex': w.example,
                     'ip': w.ipa,
                 })
-        lex, rev = lexicon_data(s)
+        lex, rev = lexicon_data(s, words)
         rom = rom_map(s, words)
         for ch, r in extra_rom(s, lex).items():
             rom.setdefault(ch, r)
