@@ -143,26 +143,16 @@ def load_prompt(code: str) -> str:
 UI_LANG_NAMES = {'en': 'English', 'fr': 'Français', 'ja': '日本語', 'ko': '한국어'}
 _llm_cache: dict[str, object] = {}
 
-def to_ui_lang(text: str, ui: str):
-    """把規則反向翻譯的中文對譯改寫成介面語言。失敗時回 None（前端退回中文）。"""
-    name = UI_LANG_NAMES.get(ui)
-    if not name:
-        return None
-    llm = _llm_cache.get('llm')
-    if llm is None:
+
+def get_ui_llm():
+    """翻譯用的 LLM（快取）。沒有金鑰時回 None。"""
+    if 'llm' not in _llm_cache:
         try:
             from core.llm import LLM
-            llm = LLM(provider='nvidia', temperature=0.3, max_tokens=2048)
-            _llm_cache['llm'] = llm
+            _llm_cache['llm'] = LLM(provider='nvidia', temperature=0.3, max_tokens=2048)
         except (Exception, SystemExit):
-            return None
-    prompt = ('下面是把受限語言逐詞對譯成的中文（詞序可能不自然、可能有括號註解）。\n'
-              f'請把它改寫成通順、自然的{name}，意思不要增減。\n'
-              '只輸出譯文，不要任何說明。\n\n' + text)
-    try:
-        return llm.chat(prompt, system='你是翻譯器。只輸出譯文本體。') or None
-    except Exception:      # noqa: BLE001
-        return None
+            _llm_cache['llm'] = None
+    return _llm_cache['llm']
 
 
 # ── 快速模式的系統提示（字表＋外來語規則，不用工具） ─────────────────────────
@@ -170,24 +160,10 @@ _fast_cache: dict[str, str] = {}
 
 
 def fast_system(code: str) -> str:
+    from core.web.build import fast_prompt
     if code in _fast_cache:
         return _fast_cache[code]
-    s = load(code)['spec']
-    by = s.by_category()
-    lines = [f'你是{s.name}老師。當我和你對話時，你必須用{s.name}回答。', '',
-             f'# {s.name}字表', '']
-    for cat in s.categories:
-        ws = by.get(cat, [])
-        units = (''.join(w.unit for w in ws) if s.unit_kind == 'char'
-                 else '、'.join(w.unit for w in ws))
-        lines += [f'## {cat}', units, '']
-    lines += ['# 規則',
-              '- 只有字表內的字（詞）可以直接用。',
-              '- 字表外的通用概念：用「描述＋類頭」說明。',
-              '- 專名、品牌、物種：用外來語（原文寫出），第一次出現時加括號說明。',
-              '- 數字用阿拉伯數字。',
-              '- 不用檢查工具，直接回答。']
-    out = '\n'.join(lines)
+    out = fast_prompt(load(code)['spec'])
     _fast_cache[code] = out
     return out
 
@@ -203,7 +179,15 @@ class Handler(SimpleHTTPRequestHandler):
     def end_headers(self):
         # 網頁與指令碼常常改，要求瀏覽器每次重新驗證，避免用舊快取
         self.send_header('Cache-Control', 'no-cache')
+        # 讓靜態版／Cloudflare 版可以跨站呼叫（例如借用本機的 edge-tts）
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
         super().end_headers()
+
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.end_headers()
 
     def _json(self, obj, code=200):
         body = json.dumps(obj, ensure_ascii=False).encode('utf-8')
@@ -267,14 +251,7 @@ class Handler(SimpleHTTPRequestHandler):
                            for e in errors],
             })
         if path == '/api/translate':
-            code = data.get('lang', 'chinese')
-            text = data.get('text', '')
-            ui = data.get('ui', 'zh-Hant')
-            info = load(code)
-            out = info['reverser'].to_source(text)
-            if ui != 'zh-Hant':
-                out = to_ui_lang(out, ui) or out
-            return self._json({'text': out})
+            return self.do_translate(data)
         if path == '/api/tts':
             return self.do_tts(data)
         if path == '/api/expert':
@@ -317,6 +294,49 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header('Content-Length', str(len(audio)))
         self.end_headers()
         self.wfile.write(audio)
+
+    # ── 反向翻譯（SSE 串流）──────────────────────────────────────────────────
+    def do_translate(self, data):
+        """先送規則翻譯（base），介面語言非中文時串流 LLM 改寫（content）。"""
+        code = data.get('lang', 'chinese')
+        text = data.get('text', '')
+        ui = data.get('ui', 'zh-Hant')
+        info = load(code)
+        base = info['reverser'].to_source(text)
+
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/event-stream; charset=utf-8')
+        self.send_header('Cache-Control', 'no-cache')
+        self.end_headers()
+
+        def send(obj):
+            self.wfile.write(b'data: ' + json.dumps(obj, ensure_ascii=False).encode('utf-8') + b'\n\n')
+            self.wfile.flush()
+
+        try:
+            send({'type': 'base', 'text': base})
+            name = UI_LANG_NAMES.get(ui)
+            llm = get_ui_llm() if name else None
+            if name and llm:
+                prompt = ('下面是把受限語言逐詞對譯成的中文（詞序可能不自然、可能有括號註解）。\n'
+                          f'請把它改寫成通順、自然的{name}，意思不要增減。\n'
+                          '只輸出譯文，不要任何說明。\n\n' + base)
+                try:
+                    stream = llm.client.chat.completions.create(
+                        model=llm.model,
+                        messages=[{'role': 'system', 'content': '你是翻譯器。只輸出譯文本體。'},
+                                  {'role': 'user', 'content': prompt}],
+                        temperature=0.3, max_tokens=2048, stream=True)
+                    for chunk in stream:
+                        if not chunk.choices:
+                            continue
+                        if chunk.choices[0].delta.content:
+                            send({'type': 'content', 'text': chunk.choices[0].delta.content})
+                except Exception as e:      # noqa: BLE001
+                    send({'type': 'error', 'text': f'LLM 失敗：{e}'})
+            send({'type': 'done'})
+        except (Exception, SystemExit):
+            pass  # 客戶端已中斷
 
     # ── LLM 專家 ────────────────────────────────────────────────────────────
     def do_expert(self, data):
@@ -392,35 +412,64 @@ class Handler(SimpleHTTPRequestHandler):
             msgs.append({'role': h['role'], 'content': h['content']})
         msgs.append({'role': 'user', 'content': message})
 
+        # SSE：思考與內容即時推送到瀏覽器
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/event-stream; charset=utf-8')
+        self.send_header('Cache-Control', 'no-cache')
+        self.end_headers()
+
+        def send(obj):
+            self.wfile.write(b'data: ' + json.dumps(obj, ensure_ascii=False).encode('utf-8') + b'\n\n')
+            self.wfile.flush()
+
         try:
             from openai import OpenAI
             kwargs = {'model': llm.model, 'messages': msgs,
-                      'temperature': 0.7, 'max_tokens': 4096}
+                      'temperature': 0.7, 'max_tokens': 4096, 'stream': True}
             if not fast:
                 kwargs['tools'] = tool_list()
                 kwargs['tool_choice'] = 'auto'
-            resp = llm.client.chat.completions.create(**kwargs)
-            msg = resp.choices[0].message
             for _ in range(5):
-                if not getattr(msg, 'tool_calls', None):
+                stream = llm.client.chat.completions.create(**kwargs)
+                tool_calls = {}
+                for chunk in stream:
+                    if not chunk.choices:
+                        continue
+                    delta = chunk.choices[0].delta
+                    rc = getattr(delta, 'reasoning_content', None)
+                    if rc:
+                        send({'type': 'reasoning', 'text': rc})
+                    if delta.content:
+                        send({'type': 'content', 'text': delta.content})
+                    for tc in (getattr(delta, 'tool_calls', None) or []):
+                        slot = tool_calls.setdefault(tc.index, {'id': '', 'name': '', 'args': ''})
+                        if tc.id:
+                            slot['id'] = tc.id
+                        if tc.function and tc.function.name:
+                            slot['name'] = tc.function.name
+                        if tc.function and tc.function.arguments:
+                            slot['args'] += tc.function.arguments
+                if not tool_calls:
                     break
-                msgs.append(msg.model_dump(exclude_none=True))
-                for tc in msg.tool_calls:
-                    import json as _json
+                # 執行工具，把結果送回去再要一次回答
+                msgs.append({'role': 'assistant', 'content': None, 'tool_calls': [
+                    {'id': s['id'], 'type': 'function',
+                     'function': {'name': s['name'], 'arguments': s['args']}}
+                    for s in tool_calls.values()]})
+                for s in tool_calls.values():
                     try:
-                        args = _json.loads(tc.function.arguments or '{}')
+                        args = json.loads(s['args'] or '{}')
                     except Exception:      # noqa: BLE001
                         args = {}
-                    out = run_tool(tc.function.name, args)
-                    msgs.append({'role': 'tool', 'tool_call_id': tc.id, 'content': out})
-                resp = llm.client.chat.completions.create(**kwargs)
-                msg = resp.choices[0].message
-            text = (msg.content or '').strip()
-            if not text and getattr(msg, 'reasoning_content', None):
-                text = msg.reasoning_content.strip()
-            return self._json({'reply': text})
-        except Exception as e:      # noqa: BLE001
-            return self._json({'error': f'LLM 失敗：{e}'}, 500)
+                    out = run_tool(s['name'], args)
+                    send({'type': 'tool', 'name': s['name'], 'ok': '✅' in out})
+                    msgs.append({'role': 'tool', 'tool_call_id': s['id'], 'content': out})
+            send({'type': 'done'})
+        except (Exception, SystemExit) as e:      # noqa: BLE001
+            try:
+                send({'type': 'error', 'text': f'LLM 失敗：{e}'})
+            except Exception:      # noqa: BLE001
+                pass  # 客戶端已中斷
 
 
 def main():

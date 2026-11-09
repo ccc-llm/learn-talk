@@ -9,6 +9,8 @@ let UILANG = 'zh-Hant';
 try { if (UI_LANGS.includes(localStorage.getItem('lt-ui-lang'))) UILANG = localStorage.getItem('lt-ui-lang'); } catch (e) { /* 沒有儲存空間也能用 */ }
 let romajiOn = true;
 try { romajiOn = localStorage.getItem('lt-romaji') !== '0'; } catch (e) { /* 忽略 */ }
+let showThink = true;
+try { showThink = localStorage.getItem('lt-think') !== '0'; } catch (e) { /* 忽略 */ }
 
 const I18N = {
   'zh-Hant': {
@@ -42,7 +44,7 @@ const I18N = {
     noSpeech: '這個瀏覽器不支援語音朗讀。',
     miniNames: { chinese: '簡易中文', english: '簡易英文', french: '簡易法文', japanese: '簡易日文', korean: '簡易韓文' },
     miniTargets: { chinese: '母語不是中文的外國人', english: '母語不是英文的外國人', french: '母語不是法文的外國人', japanese: '母語不是日文的外國人', korean: '母語不是韓文的外國人' },
-    modeFast: '快速（不檢查，直接回答）', romajiLabel: '標拼音', modeStrict: '嚴格（自動檢查字表，較慢）', tabCharset: '字集', csCopy: '複製全部', csCopied: '已複製', ttsFail: '伺服器語音失敗：{msg}\n（請確認有安裝 edge-tts）',
+    modeFast: '快速（不檢查，直接回答）', romajiLabel: '標拼音', thinkLabel: '顯示思考', thinkSummary: '思考過程', modeStrict: '嚴格（自動檢查字表，較慢）', tabCharset: '字集', copyBtn: '複製', csCopied: '已複製', ttsFail: '伺服器語音失敗：{msg}\n（請確認有安裝 edge-tts）',
   },
   en: {
     sub: 'Learn to speak with very few words: Mini-Chinese / Mini-English / Mini-French / Mini-Japanese / Mini-Korean',
@@ -76,7 +78,7 @@ const I18N = {
     noSpeech: 'This browser does not support speech synthesis.',
     miniNames: { chinese: 'Simple Chinese', english: 'Simple English', french: 'Simple French', japanese: 'Simple Japanese', korean: 'Simple Korean' },
     miniTargets: { chinese: 'Non-native speakers of Chinese', english: 'Non-native speakers of English', french: 'Non-native speakers of French', japanese: 'Non-native speakers of Japanese', korean: 'Non-native speakers of Korean' },
-    modeFast: 'Fast (no checking, direct answer)', romajiLabel: 'Romanization', modeStrict: 'Strict (checks the word list, slower)', tabCharset: 'Character set', csCopy: 'Copy all', csCopied: 'Copied', ttsFail: 'Server speech failed: {msg}\n(make sure edge-tts is installed)',
+    modeFast: 'Fast (no checking, direct answer)', romajiLabel: 'Romanization', thinkLabel: 'Show thinking', thinkSummary: 'Thinking', modeStrict: 'Strict (checks the word list, slower)', tabCharset: 'Character set', copyBtn: 'Copy', csCopied: 'Copied', ttsFail: 'Server speech failed: {msg}\n(make sure edge-tts is installed)',
   },
   fr: {
     sub: 'Apprenez à parler avec très peu de mots : Mini-Chinois / Mini-Anglais / Mini-Français / Mini-Japonais / Mini-Coréen',
@@ -110,7 +112,7 @@ const I18N = {
     noSpeech: 'Ce navigateur ne prend pas en charge la synthèse vocale.',
     miniNames: { chinese: 'Chinois simplifié', english: 'Anglais simplifié', french: 'Français simplifié', japanese: 'Japonais simplifié', korean: 'Coréen simplifié' },
     miniTargets: { chinese: 'Personnes dont la langue maternelle n\'est pas le chinois', english: 'Personnes dont la langue maternelle n\'est pas l\'anglais', french: 'Personnes dont la langue maternelle n\'est pas le français', japanese: 'Personnes dont la langue maternelle n\'est pas le japonais', korean: 'Personnes dont la langue maternelle n\'est pas le coréen' },
-    modeFast: 'Rapide (sans vérification, réponse directe)', romajiLabel: 'Romanisation', modeStrict: 'Strict (vérifie la liste de mots, plus lent)', tabCharset: 'Ensemble de caractères', csCopy: 'Tout copier', csCopied: 'Copié', ttsFail: 'Échec de la voix serveur : {msg}\n(vérifiez que edge-tts est installé)',
+    modeFast: 'Rapide (sans vérification, réponse directe)', romajiLabel: 'Romanisation', thinkLabel: 'Afficher la réflexion', thinkSummary: 'Réflexion', modeStrict: 'Strict (vérifie la liste de mots, plus lent)', tabCharset: 'Ensemble de caractères', copyBtn: 'Copier', csCopied: 'Copié', ttsFail: 'Échec de la voix serveur : {msg}\n(vérifiez que edge-tts est installé)',
   },
   ja: {
     sub: '少ない語彙で話せるようになる：ミニ中国語／ミニ英語／ミニフランス語／ミニ日本語／ミニ韓国語',
@@ -144,7 +146,7 @@ const I18N = {
     noSpeech: 'このブラウザは音声合成に対応していません。',
     miniNames: { chinese: 'やさしい中国語', english: 'やさしい英語', french: 'やさしいフランス語', japanese: 'やさしい日本語', korean: 'やさしい韓国語' },
     miniTargets: { chinese: '中国語を母語としない学習者', english: '英語を母語としない学習者', french: 'フランス語を母語としない学習者', japanese: '日本語を母語としない学習者', korean: '韓国語を母語としない学習者' },
-    modeFast: '高速（チェックなし、直接回答）', romajiLabel: 'ローマ字', modeStrict: '厳密（語表を自動チェック、やや遅い）', tabCharset: '文字セット', csCopy: 'すべてコピー', csCopied: 'コピーしました', ttsFail: 'サーバー音声に失敗：{msg}\n（edge-tts がインストールされているか確認してください）',
+    modeFast: '高速（チェックなし、直接回答）', romajiLabel: 'ローマ字', thinkLabel: '思考を表示', thinkSummary: '思考過程', modeStrict: '厳密（語表を自動チェック、やや遅い）', tabCharset: '文字セット', copyBtn: 'コピー', csCopied: 'コピーしました', ttsFail: 'サーバー音声に失敗：{msg}\n（edge-tts がインストールされているか確認してください）',
   },
   ko: {
     sub: '적은 단어로 말하기를 배웁니다: 미니 중국어／미니 영어／미니 프랑스어／미니 일본어／미니 한국어',
@@ -178,7 +180,7 @@ const I18N = {
     noSpeech: '이 브라우저는 음성 합성을 지원하지 않습니다.',
     miniNames: { chinese: '쉬운 중국어', english: '쉬운 영어', french: '쉬운 프랑스어', japanese: '쉬운 일본어', korean: '쉬운 한국어' },
     miniTargets: { chinese: '모국어가 중국어가 아닌 학습자', english: '모국어가 영어가 아닌 학습자', french: '모국어가 프랑스어가 아닌 학습자', japanese: '모국어가 일본어가 아닌 학습자', korean: '모국어가 한국어가 아닌 학습자' },
-    modeFast: '빠름(검사 없이 바로 응답)', romajiLabel: '로마자', modeStrict: '엄격(단어 목록 자동 검사, 느림)', tabCharset: '글자 집합', csCopy: '모두 복사', csCopied: '복사됨', ttsFail: '서버 음성 실패: {msg}\n(edge-tts 설치를 확인하세요)',
+    modeFast: '빠름(검사 없이 바로 응답)', romajiLabel: '로마자', thinkLabel: '생각 보기', thinkSummary: '생각 과정', modeStrict: '엄격(단어 목록 자동 검사, 느림)', tabCharset: '글자 집합', copyBtn: '복사', csCopied: '복사됨', ttsFail: '서버 음성 실패: {msg}\n(edge-tts 설치를 확인하세요)',
   },
 };
 
@@ -248,6 +250,12 @@ function init() {
 
   $('#tr-check').addEventListener('click', checkTranslate);
   $('#tr-rev').addEventListener('click', reverseTranslate);
+  $('#tr-copy').addEventListener('click', async (e) => {
+    const text = trOutText || $('#tr-out').textContent || '';
+    if (!text) return;
+    await copyText(text);
+    flashCopy(e.target, t('csCopied'));
+  });
   $('#tr-speak').addEventListener('click', () => speak($('#tr-in').value));
   $('#tr-out-speak').addEventListener('click', () => speak(trOutText || $('#tr-out').textContent));
 
@@ -290,6 +298,13 @@ function init() {
       rebuildChat();
     });
   });
+  const tt = $('#think-toggle');
+  tt.checked = showThink;
+  tt.addEventListener('change', () => {
+    showThink = tt.checked;
+    try { localStorage.setItem('lt-think', showThink ? '1' : '0'); } catch (e) { /* 忽略 */ }
+    rebuildChat();
+  });
 
   $('#ex-go').addEventListener('click', askExpert);
   $('#cs-copy').addEventListener('click', async (e) => {
@@ -303,6 +318,15 @@ function init() {
     if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) askExpert();
   });
   $('#ex-clear').addEventListener('click', () => { chatHistory = []; chatLog.length = 0; $('#ex-chat').innerHTML = ''; });
+  $('#ex-chat').addEventListener('click', async (e) => {
+    const btn = e.target.closest('.msgcopy');
+    if (!btn) return;
+    const msg = btn.closest('.msg');
+    const idx = Array.prototype.indexOf.call(msg.parentNode.children, msg);
+    const item = chatLog[idx];
+    if (!item) return;
+    if (await copyText(item.body)) flashCopy(btn, t('csCopied'));
+  });
 
   applyUI();
   onLangChange();
@@ -345,8 +369,51 @@ async function reverseTranslate() {
   const text = $('#tr-in').value;
   if (!text.trim()) return;
   if (UILANG !== 'zh-Hant') $('#tr-result').innerHTML = `<span class="hint">${t('thinking')}</span>`;
-  const r = await post('/api/translate', { lang: LANG, text, ui: UILANG });
-  trOutText = r.text || '';
+  trOutText = '';
+  renderTrOut();
+  let last = 0;
+  const paint = () => {
+    if (Date.now() - last > 120) { renderTrOut(); last = Date.now(); }
+  };
+  try {
+    const resp = await fetch('/api/translate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lang: LANG, text, ui: UILANG }),
+    });
+    if (!resp.ok || !resp.body) {
+      const j = await resp.json().catch(() => ({}));
+      throw new Error(j.error || ('HTTP ' + resp.status));
+    }
+    const reader = resp.body.getReader();
+    const dec = new TextDecoder();
+    let buf = '', rewrite = '';
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      const parts = buf.split('\n\n');
+      buf = parts.pop();
+      for (const ev of parts) {
+        if (!ev.startsWith('data:')) continue;
+        let j;
+        try { j = JSON.parse(ev.slice(5)); } catch (e) { continue; }
+        if (j.type === 'base') {
+          // 規則翻譯先上畫面；LLM 改寫一開始就把它換掉
+          if (!rewrite) { trOutText = j.text; paint(); }
+        } else if (j.type === 'content') {
+          if (!rewrite) trOutText = '';
+          rewrite += j.text;
+          trOutText = rewrite;
+          paint();
+        } else if (j.type === 'error') {
+          trOutText = (trOutText ? trOutText + '\n' : '') + '⚠ ' + j.text;
+        }
+      }
+    }
+  } catch (e) {
+    trOutText = '⚠ ' + (e.message || e);
+  }
   renderTrOut();
   $('#tr-result').innerHTML = '';
 }
@@ -384,13 +451,61 @@ if ('speechSynthesis' in window) {
   speechSynthesis.onvoiceschanged = loadVoices;
 }
 
+// 各語言偏好的優質語音（依序遞減；命中越多越好）
+const VOICE_PREF = {
+  'zh-CN': ['Tingting', 'Ting-Ting', 'Microsoft Xiaoxiao', 'Microsoft Yunxi',
+            'Sinji', 'Meijia', 'Google 國語', 'Google Chinese'],
+  'zh-TW': ['Meijia', 'Sinji', 'Microsoft Yunxi', 'Google 國語'],
+  'en-US': ['Samantha', 'Aria', 'Microsoft Aria', 'Microsoft Jenny', 'Microsoft Guy',
+            'Alex', 'Allison', 'Google US English'],
+  'en-GB': ['Daniel', 'Microsoft Libby', 'Serena', 'Google UK English'],
+  'fr-FR': ['Thomas', 'Microsoft Denys', 'Amelie', 'Google français', 'Google French'],
+  'ja-JP': ['Kyoko', 'O-ren', 'Microsoft Haruka', 'Google 日本語', 'Google Japanese'],
+  'ko-KR': ['Yuna', 'Microsoft Heami', 'Google 한국의', 'Google Korean'],
+};
+// 各語言的朗讀語速（稍慢一點比較清楚）
+const RATE = {
+  'zh-CN': 0.88, 'zh-TW': 0.88, 'en-US': 0.96, 'en-GB': 0.96,
+  'fr-FR': 0.96, 'ja-JP': 0.94, 'ko-KR': 0.94,
+};
+
 function pickVoice() {
   const L = LANGS[LANG];
   const want = L.browserLang || 'en-US';
   const vs = loadVoices();
   if (!vs.length) return null;
-  return vs.find(v => v.lang === want) ||
-    vs.find(v => v.lang && v.lang.startsWith(want.slice(0, 2))) || null;
+  const base = want.split('-')[0];
+  const pref = VOICE_PREF[want] || [];
+  const scored = vs.map((v) => {
+    const lang = (v.lang || '').replace('_', '-');
+    let sc = -1;
+    if (lang === want) sc = 100;
+    else if (lang.split('-')[0] === base) sc = 40;
+    if (sc < 0) return null;
+    if (v.localService) sc += 25;                       // 系統語音通常較自然
+    const name = `${v.name || ''} ${v.voiceURI || ''}`;
+    const idx = pref.findIndex((p) => name.toLowerCase().includes(p.toLowerCase()));
+    if (idx >= 0) sc += 60 - idx * 4;                    // 偏好清單越前面越加分
+    if (/natural|neural|enhanced|premium/i.test(name)) sc += 20;
+    if (/microsoft/i.test(name)) sc += 8;
+    if (/google/i.test(name)) sc += 4;
+    if (v.default) sc += 2;
+    return { v, sc };
+  }).filter(Boolean).sort((a, b) => b.sc - a.sc);
+  return scored.length ? scored[0].v : null;
+}
+
+// 逐句朗讀：長句在部分瀏覽器會被截斷，切句比較穩
+function splitSentences(text) {
+  const parts = text.split(/(?<=[。！？!?；;…])|\n+/);
+  const out = [];
+  for (const p of parts) {
+    const t = p.trim();
+    if (!t) continue;
+    if (t.length <= 120) { out.push(t); continue; }
+    for (let i = 0; i < t.length; i += 120) out.push(t.slice(i, i + 120));
+  }
+  return out.length ? out : [text.trim()];
 }
 
 function speak(text) {
@@ -411,13 +526,25 @@ function speakBrowser() {
   if (!text.trim()) return;
   if (!('speechSynthesis' in window)) { alert(t('noSpeech')); return; }
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
   const v = pickVoice();
-  if (v) u.voice = v;
-  u.lang = LANGS[LANG].browserLang;
-  u.rate = parseFloat($('#sp-rate').value) || 1;
-  u.pitch = 1;
-  speechSynthesis.speak(u);
+  const lang = v ? v.lang : (LANGS[LANG].browserLang || 'en-US');
+  const base = RATE[LANGS[LANG].browserLang] || 0.95;
+  const rate = (parseFloat($('#sp-rate').value) || 1) * base;
+  for (const part of splitSentences(text)) {
+    const u = new SpeechSynthesisUtterance(part);
+    if (v) u.voice = v;
+    u.lang = lang;
+    u.rate = rate;
+    u.pitch = 1;
+    speechSynthesis.speak(u);
+  }
+  showVoiceInfo(v);
+}
+
+function showVoiceInfo(v) {
+  const L = LANGS[LANG];
+  const name = v ? `${v.name}（${v.lang}${v.localService ? '' : '・網路'}）` : '（找不到語音）';
+  $('#sp-voices').textContent = `${t('browserVoice')}：${name}　｜　${L.browserLang}`;
 }
 
 function stopSpeak() {
@@ -558,9 +685,49 @@ const chatLog = [];
 function renderMsgEl(m) {
   const d = document.createElement('div');
   d.className = 'msg ' + m.cls;
-  d.innerHTML = `<div class="who">${m.who}</div><div class="body">${withRuby(m.body)}</div>`;
+  d.innerHTML = msgHTML(m);
   return d;
 }
+
+// 複製（只用純文字，不含 ruby 標音）
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch (e) {
+    // 沒有剪貼簿權限時，用舊方法
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch (e2) { ok = false; }
+    ta.remove();
+    return ok;
+  }
+}
+
+function flashCopy(btn, label) {
+  if (!btn) return;
+  const old = btn.textContent;
+  btn.textContent = label;
+  setTimeout(() => { btn.textContent = old; }, 1500);
+}
+
+function msgHTML(m) {
+  let html = `<div class="who">${m.who}<button class="msgcopy" title="${t('copyBtn')}">⧉</button></div>`;
+  if (m.reasoning) {
+    html += `<details class="think"${showThink ? ' open' : ''}>` +
+      `<summary>${t('thinkSummary')}</summary>` +
+      `<div>${escapeHtml(m.reasoning)}</div></details>`;
+  }
+  const body = m.body ? withRuby(m.body) : `<span class="hint">${t('thinking')}</span>`;
+  return html + `<div class="body">${body}</div>`;
+}
+
+function updateMsgEl(d, m) { d.innerHTML = msgHTML(m); }
 
 function addMsg(who, body, cls) {
   const m = { who, body, cls: cls || who };
@@ -584,15 +751,61 @@ async function askExpert() {
   $('#ex-in').value = '';
   addMsg(t('you'), msg, 'user');
   chatHistory.push({ role: 'user', content: msg });
-  const pending = addMsg(t('expert'), t('thinking'), 'assistant');
-  const r = await post('/api/expert', {
-    lang: LANG, message: msg, history: chatHistory.slice(0, -1),
-    provider: $('#ex-provider').value, mode: $('#ex-mode').value,
-  });
-  pending.remove();
-  if (r.error) { addMsg(t('error'), r.error, 'error'); return; }
-  addMsg(t('expert'), r.reply || t('noReply'), 'assistant');
-  chatHistory.push({ role: 'assistant', content: r.reply || '' });
+
+  // 串流中的回答：即時更新畫面
+  const m = { who: t('expert'), body: '', cls: 'assistant', reasoning: '' };
+  chatLog.push(m);
+  const d = renderMsgEl(m);
+  $('#ex-chat').appendChild(d);
+  $('#ex-chat').scrollTop = $('#ex-chat').scrollHeight;
+
+  let last = 0;
+  const refresh = (force) => {
+    if (force || Date.now() - last > 120) {
+      updateMsgEl(d, m);
+      $('#ex-chat').scrollTop = $('#ex-chat').scrollHeight;
+      last = Date.now();
+    }
+  };
+
+  try {
+    const resp = await fetch('/api/expert', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        lang: LANG, message: msg, history: chatHistory.slice(0, -1),
+        provider: $('#ex-provider').value, mode: $('#ex-mode').value,
+      }),
+    });
+    if (!resp.ok || !resp.body) {
+      const j = await resp.json().catch(() => ({}));
+      throw new Error(j.error || ('HTTP ' + resp.status));
+    }
+    const reader = resp.body.getReader();
+    const dec = new TextDecoder();
+    let buf = '';
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      const parts = buf.split('\n\n');
+      buf = parts.pop();
+      for (const ev of parts) {
+        if (!ev.startsWith('data:')) continue;
+        let j;
+        try { j = JSON.parse(ev.slice(5)); } catch (e) { continue; }
+        if (j.type === 'reasoning') { m.reasoning += j.text; refresh(); }
+        else if (j.type === 'content') { m.body += j.text; refresh(); }
+        else if (j.type === 'tool') { m.body += `\n〔${j.name} ${j.ok ? '✓' : '✗'}〕\n`; refresh(); }
+        else if (j.type === 'error') { m.body += (m.body ? '\n' : '') + '⚠ ' + j.text; refresh(true); }
+      }
+    }
+  } catch (e) {
+    m.body += (m.body ? '\n' : '') + '⚠ ' + (e.message || e);
+  }
+  if (!m.body) m.body = t('noReply');
+  refresh(true);
+  chatHistory.push({ role: 'assistant', content: m.body });
 }
 
 // ── 工具 ───────────────────────────────────────────────────────────────────

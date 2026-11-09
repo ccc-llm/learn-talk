@@ -1,0 +1,24 @@
+name = "learn-talk"
+main = "src/worker.js"
+compatibility_date = "2025-09-01"
+
+# 靜態檔案（src/public）
+[assets]
+directory = "./src/public"
+binding = "ASSETS"
+
+# 資料放 KV（免費方案可用）；R2 需要先在後台開通，可改用下面的 R2 綁定
+[[kv_namespaces]]
+binding = "DATA"
+id = "41191d2579554a91a4db2ef306865715"
+
+# [[r2_buckets]]
+# binding = "BUCKET"
+# bucket_name = "learn-talk-data"
+
+# 免費高品質語音：把自架的 edge-tts 服務填在這裡（先取消註解）
+# [vars]
+# TTS_UPSTREAM = "https://your-edge-tts-host/api/tts"
+
+[observability]
+enabled = true

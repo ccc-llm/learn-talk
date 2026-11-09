@@ -151,3 +151,22 @@ audio { width: 100%; margin-top: 12px; max-width: 460px; }
 }
 .outblock:empty::before { content: attr(data-ph); color: var(--muted); }
 .outblock ruby rt, .msg .body ruby rt { font-size: 11px; color: var(--muted); }
+
+/* 思考過程：灰底＋淡色字體 */
+.msg .think {
+  background: var(--line); border-radius: 8px;
+  padding: 6px 10px; margin-bottom: 8px;
+  color: var(--muted); font-size: 12px;
+}
+.msg .think summary { cursor: pointer; color: var(--muted); }
+.msg .think div {
+  white-space: pre-wrap; max-height: 240px; overflow-y: auto;
+  margin-top: 4px; line-height: 1.6;
+}
+
+/* 複製按鈕（訊息右上角） */
+.msgcopy {
+  float: right; border: 0; background: none; cursor: pointer;
+  color: var(--muted); font-size: 13px; line-height: 1; padding: 0 2px;
+}
+.msgcopy:hover { color: var(--accent); }

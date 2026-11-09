@@ -41,6 +41,51 @@ def rom_map(s, words) -> dict:
     return {}
 
 
+def lexicon_data(s) -> tuple[list, dict]:
+    """詞典列（靜態版查詞典、lookup_word 用）與反向對照表（受限說法 → 原文）。"""
+    lex, rev = [], {}
+    lp = s.dir / 'lexicon.tsv'
+    if lp.exists():
+        lines = lp.read_text(encoding='utf-8').splitlines()
+        if lines and lines[0].split('\t')[:2] == ['原文', '受限說法']:
+            for line in lines[1:]:
+                col = line.split('\t')
+                if len(col) >= 4:
+                    row = {'o': col[0], 'm': col[1], 'w': col[2], 'n': col[3]}
+                    lex.append(row)
+                    rev[col[1].lower()] = col[0]
+    return lex, rev
+
+
+def system_prompt(s) -> str:
+    """prompts/system.md 的 --- 主體（嚴格模式提示）。"""
+    p = s.dir / 'prompts' / 'system.md'
+    if not p.exists():
+        return ''
+    text = p.read_text(encoding='utf-8')
+    m = re.search(r'\n---\n(.*?)(?:\n---\n|$)', text, re.S)
+    return (m.group(1) if m else text).strip()
+
+
+def fast_prompt(s, by=None) -> str:
+    """快速模式提示：字表＋外來語規則，不用工具。"""
+    by = by or s.by_category()
+    lines = [f'你是{s.name}老師。當我和你對話時，你必須用{s.name}回答。', '',
+             f'# {s.name}字表', '']
+    for cat in s.categories:
+        ws = by.get(cat, [])
+        units = (''.join(w.unit for w in ws) if s.unit_kind == 'char'
+                 else '、'.join(w.unit for w in ws))
+        lines += [f'## {cat}', units, '']
+    lines += ['# 規則',
+              '- 只有字表內的字（詞）可以直接用。',
+              '- 字表外的通用概念：用「描述＋類頭」說明。',
+              '- 專名、品牌、物種：用外來語（原文寫出），第一次出現時加括號說明。',
+              '- 數字用阿拉伯數字。',
+              '- 不用檢查工具，直接回答。']
+    return '\n'.join(lines)
+
+
 def build():
     out = {}
     for d in spec_mod.all_langs():
@@ -58,6 +103,7 @@ def build():
                     'ex': w.example,
                     'ip': w.ipa,
                 })
+        lex, rev = lexicon_data(s)
         out[s.code] = {
             'name': s.name,
             'native': s.native,
@@ -68,17 +114,22 @@ def build():
             'browserLang': BROWSER_LANG.get(s.code, 'en-US'),
             'tts': TTS_VOICES.get(s.code, {}),
             'rom': rom_map(s, words),
+            'rev': rev,
+            'lex': lex,
+            'sys': system_prompt(s),
+            'fast': fast_prompt(s, s.by_category()),
             'words': words,
             'heads': s.heads,
             'desc': s.desc_templates,
             'replace': s.replace,
             'rules': [{'id': r.rid, 'text': r.text, 'ex': r.example} for r in s.rules],
         }
-    path = ROOT / 'core' / 'web' / 'data.js'
-    path.write_text('const LANGS = ' + json.dumps(out, ensure_ascii=False) + ';\n',
-                    encoding='utf-8')
+    payload = 'const LANGS = ' + json.dumps(out, ensure_ascii=False) + ';\n'
     total = sum(len(v['words']) for v in out.values())
-    print(f'✅ {path}（{len(out)} 個語言、{total} 個詞）')
+    for path in (ROOT / 'core' / 'web' / 'data.js',
+                 ROOT / 'core' / 'staticweb' / 'data.js'):
+        path.write_text(payload, encoding='utf-8')
+        print(f'✅ {path}（{len(out)} 個語言、{total} 個詞）')
 
 
 if __name__ == '__main__':

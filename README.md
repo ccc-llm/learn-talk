@@ -103,6 +103,23 @@ python core/web/server.py
 # → http://localhost:8770/
 ```
 
+### 三種網頁版本
+
+| 版本 | 目錄 | 特色 |
+|---|---|---|
+| 有後端 | `core/web/` | 本機伺服器：金鑰在伺服器、完整檢查器、edge-tts 語音 |
+| 免後端 | `core/staticweb/` | 純靜態：使用者自己填 key，瀏覽器直接呼叫 LLM（串流） |
+| Cloudflare | `core/cloudflare/` | 同上，但詞表與提示詞放在 R2／KV，網站本體只有幾 KB（見該目錄 README） |
+
+資料與前端可由 `tools/build_cloudflare.py` 從 `core/web/` 與 `core/staticweb/` 產生。
+
+語音（全部免費、不用 key）：
+
+- 瀏覽器語音（已強化：挑系統優質語音、逐句朗讀、語速微調）
+- `core/web` 版另有 edge-tts（Azure Neural 音色）
+- 靜態／Cloudflare 版可填「edge-tts 服務網址」借用自架的 edge-tts（`core/web` 的 `/api/tts` 已有 CORS），
+  連不上時自動退回瀏覽器語音
+
 ### 自我檢查（詞表、文件、詞典是否一致）
 
 ```bash
