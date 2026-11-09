@@ -3,8 +3,8 @@ unit	level	pos	gloss	category	example	ipa	stem
 私たち	C	pron	我們	代詞・指示			
 僕たち	E	pron	我們	代詞・指示			
 俺たち	E	pron	我們	代詞・指示			
-あなた	C	pron	你	代詞・指示			
-あなたたち	E	pron	你們	代詞・指示			
+あなた	C	pron	你	代詞・指示		anata	
+あなたたち	E	pron	你們	代詞・指示		anatatachi	
 彼	C	pron	他	代詞・指示			
 彼女	C	pron	她	代詞・指示			
 彼たち	E	pron	他們	代詞・指示			
@@ -14,140 +14,140 @@ unit	level	pos	gloss	category	example	ipa	stem
 何	E	pron	什麼	代詞・指示			
 何者	E	pron	什麼人	代詞・指示			
 何か	E	pron	某事	代詞・指示			
-どれ	E	pron	哪一個	代詞・指示			
-どの	C	pron	哪個	代詞・指示			
-どんな	E	pron	怎樣的	代詞・指示			
-どれか	E	pron	某個	代詞・指示			
-どちら	E	pron	哪一邊	代詞・指示			
-どちらの	E	pron	哪一邊的	代詞・指示			
-どっち	E	pron	哪邊	代詞・指示			
-こっち	E	pron	這邊	代詞・指示			
-そっち	E	pron	那邊	代詞・指示			
-あっち	E	pron	那邊	代詞・指示			
-どっちか	E	pron	哪一邊	代詞・指示			
-こちら	E	pron	這邊	代詞・指示			
-そちら	E	pron	那邊	代詞・指示			
-あちら	E	pron	那邊	代詞・指示			
-どちらこそ	E	pron	哪一方	代詞・指示			
-こっちこそ	E	pron	我這邊	代詞・指示			
-そっちこそ	E	pron	你那邊	代詞・指示			
-あっちこそ	E	pron	對方	代詞・指示			
-ここ	C	pron	這裡	代詞・指示			
-そこ	C	pron	那裡	代詞・指示			
-あそこ	C	pron	那裡	代詞・指示			
-どこか	E	pron	某處	代詞・指示			
-どこそこ	E	pron	到處	代詞・指示			
-ここか	E	pron	這裡嗎	代詞・指示			
-そこか	E	pron	那裡嗎	代詞・指示			
-あそこか	E	pron	那裡嗎	代詞・指示			
-どこから	E	pron	從哪裡	代詞・指示			
-どこへ	E	pron	去哪裡	代詞・指示			
-どこで	E	pron	在哪裡	代詞・指示			
-この	C	pron	這個	代詞・指示			
-その	C	pron	那個	代詞・指示			
-あの	C	pron	那個	代詞・指示			
-これらの	E	pron	這些	代詞・指示			
-それらの	E	pron	那些	代詞・指示			
-あれこれ	E	pron	這那個	代詞・指示			
-あちらこそ	E	pron	對方	代詞・指示			
-こちらこそ	E	pron	我方	代詞・指示			
-そちらこそ	E	pron	您那方	代詞・指示			
-いつ	E	pron	什麼時候	代詞・指示			
+どれ	E	pron	哪一個	代詞・指示		dore	
+どの	C	pron	哪個	代詞・指示		dono	
+どんな	E	pron	怎樣的	代詞・指示		donna	
+どれか	E	pron	某個	代詞・指示		doreka	
+どちら	E	pron	哪一邊	代詞・指示		dochira	
+どちらの	E	pron	哪一邊的	代詞・指示		dochirano	
+どっち	E	pron	哪邊	代詞・指示		docchi	
+こっち	E	pron	這邊	代詞・指示		kocchi	
+そっち	E	pron	那邊	代詞・指示		socchi	
+あっち	E	pron	那邊	代詞・指示		acchi	
+どっちか	E	pron	哪一邊	代詞・指示		docchika	
+こちら	E	pron	這邊	代詞・指示		kochira	
+そちら	E	pron	那邊	代詞・指示		sochira	
+あちら	E	pron	那邊	代詞・指示		achira	
+どちらこそ	E	pron	哪一方	代詞・指示		dochirakoso	
+こっちこそ	E	pron	我這邊	代詞・指示		kocchikoso	
+そっちこそ	E	pron	你那邊	代詞・指示		socchikoso	
+あっちこそ	E	pron	對方	代詞・指示		acchikoso	
+ここ	C	pron	這裡	代詞・指示		koko	
+そこ	C	pron	那裡	代詞・指示		soko	
+あそこ	C	pron	那裡	代詞・指示		asoko	
+どこか	E	pron	某處	代詞・指示		dokoka	
+どこそこ	E	pron	到處	代詞・指示		dokosoko	
+ここか	E	pron	這裡嗎	代詞・指示		kokoka	
+そこか	E	pron	那裡嗎	代詞・指示		sokoka	
+あそこか	E	pron	那裡嗎	代詞・指示		asokoka	
+どこから	E	pron	從哪裡	代詞・指示		dokokara	
+どこへ	E	pron	去哪裡	代詞・指示		dokohe	
+どこで	E	pron	在哪裡	代詞・指示		dokode	
+この	C	pron	這個	代詞・指示		kono	
+その	C	pron	那個	代詞・指示		sono	
+あの	C	pron	那個	代詞・指示		ano	
+これらの	E	pron	這些	代詞・指示		korerano	
+それらの	E	pron	那些	代詞・指示		sorerano	
+あれこれ	E	pron	這那個	代詞・指示		arekore	
+あちらこそ	E	pron	對方	代詞・指示		achirakoso	
+こちらこそ	E	pron	我方	代詞・指示		kochirakoso	
+そちらこそ	E	pron	您那方	代詞・指示		sochirakoso	
+いつ	E	pron	什麼時候	代詞・指示		itsu	
 いつ頃	E	pron	大約什麼時候	代詞・指示			
 どの時	E	pron	什麼時候	代詞・指示			
 この時	E	pron	這個時候	代詞・指示			
 その時	E	pron	那個時候	代詞・指示			
 あの時	E	pron	那個時候	代詞・指示			
-いつでも	E	pron	隨時	代詞・指示			
+いつでも	E	pron	隨時	代詞・指示		itsudemo	
 いったい誰	E	pron	到底是誰	代詞・指示			
 いったい何	E	pron	到底是什麼	代詞・指示			
-もの	E	pron	東西	代詞・指示			
-こと	E	pron	事情	代詞・指示			
-とき	E	pron	時候	代詞・指示			
-ところ	E	pron	地方	代詞・指示			
-かた	E	pron	一方	代詞・指示			
-どおり	E	pron	照樣	代詞・指示			
-ばかり	E	pron	盡是	代詞・指示			
-ように	E	pron	像那樣	代詞・指示			
-それぞれ	E	pron	各自	代詞・指示			
-みんな	C	pron	大家	代詞・指示			
-ひとり	E	pron	一個人	代詞・指示			
-の	C	gram	的	語法（功能詞）			
-に	C	gram	在、往、给、对	語法（功能詞）			
-を	C	gram	把、宾语标记	語法（功能詞）			
-が	C	gram	主语标记、但是	語法（功能詞）			
-で	C	gram	在、用、因为	語法（功能詞）			
-と	C	gram	和、与、引用	語法（功能詞）			
-へ	E	gram	往、向	語法（功能詞）			
-から	E	gram	从、因为	語法（功能詞）			
-まで	E	gram	到、直到	語法（功能詞）			
-より	E	gram	比、从	語法（功能詞）			
-か	E	gram	疑问标记、或者	語法（功能詞）			
-ね	E	gram	确认语气	語法（功能詞）			
-や	E	gram	和、或者	語法（功能詞）			
-こそ	E	gram	正是	語法（功能詞）			
-さえ	E	gram	连、甚至	語法（功能詞）			
-しか	E	gram	只有（后接否定）	語法（功能詞）			
-ずつ	E	gram	每、逐	語法（功能詞）			
-だけ	E	gram	只、仅	語法（功能詞）			
-くらい	E	gram	大约、左右	語法（功能詞）			
-ほど	E	gram	程度、越……越	語法（功能詞）			
-ながら	E	gram	一边……一边	語法（功能詞）			
-ため	E	gram	为了、因为	語法（功能詞）			
+もの	E	pron	東西	代詞・指示		mono	
+こと	E	pron	事情	代詞・指示		koto	
+とき	E	pron	時候	代詞・指示		toki	
+ところ	E	pron	地方	代詞・指示		tokoro	
+かた	E	pron	一方	代詞・指示		kata	
+どおり	E	pron	照樣	代詞・指示		doori	
+ばかり	E	pron	盡是	代詞・指示		bakari	
+ように	E	pron	像那樣	代詞・指示		youni	
+それぞれ	E	pron	各自	代詞・指示		sorezore	
+みんな	C	pron	大家	代詞・指示		minna	
+ひとり	E	pron	一個人	代詞・指示		hitori	
+の	C	gram	的	語法（功能詞）		no	
+に	C	gram	在、往、给、对	語法（功能詞）		ni	
+を	C	gram	把、宾语标记	語法（功能詞）		wo	
+が	C	gram	主语标记、但是	語法（功能詞）		ga	
+で	C	gram	在、用、因为	語法（功能詞）		de	
+と	C	gram	和、与、引用	語法（功能詞）		to	
+へ	E	gram	往、向	語法（功能詞）		he	
+から	E	gram	从、因为	語法（功能詞）		kara	
+まで	E	gram	到、直到	語法（功能詞）		made	
+より	E	gram	比、从	語法（功能詞）		yori	
+か	E	gram	疑问标记、或者	語法（功能詞）		ka	
+ね	E	gram	确认语气	語法（功能詞）		ne	
+や	E	gram	和、或者	語法（功能詞）		ya	
+こそ	E	gram	正是	語法（功能詞）		koso	
+さえ	E	gram	连、甚至	語法（功能詞）		sae	
+しか	E	gram	只有（后接否定）	語法（功能詞）		shika	
+ずつ	E	gram	每、逐	語法（功能詞）		zutsu	
+だけ	E	gram	只、仅	語法（功能詞）		dake	
+くらい	E	gram	大约、左右	語法（功能詞）		kurai	
+ほど	E	gram	程度、越……越	語法（功能詞）		hodo	
+ながら	E	gram	一边……一边	語法（功能詞）		nagara	
+ため	E	gram	为了、因为	語法（功能詞）		tame	
 方で	E	gram	方面、方向	語法（功能詞）			
-として	E	gram	作为、关于	語法（功能詞）			
-について	E	gram	关于、对	語法（功能詞）			
-による	E	gram	通过、由	語法（功能詞）			
+として	E	gram	作为、关于	語法（功能詞）		toshite	
+について	E	gram	关于、对	語法（功能詞）		nitsuite	
+による	E	gram	通过、由	語法（功能詞）		niyoru	
 に対して	E	gram	对于、针对	語法（功能詞）			
-にとって	E	gram	对……来说	語法（功能詞）			
-とともに	E	gram	随着、和……一起	語法（功能詞）			
-および	E	gram	以及	語法（功能詞）			
-または	E	gram	或者	語法（功能詞）			
-あるいは	E	gram	或者	語法（功能詞）			
-だが	E	gram	但是	語法（功能詞）			
-しかし	E	gram	然而、但是	語法（功能詞）			
-また	E	gram	又、也、另方面	語法（功能詞）			
-さらに	E	gram	再、而且	語法（功能詞）			
-だから	E	gram	所以、因为	語法（功能詞）			
-けれど	E	gram	虽然、但是	語法（功能詞）			
-もし	E	gram	如果、也许	語法（功能詞）			
-すると	E	gram	于是、那么	語法（功能詞）			
-そして	E	gram	然后、而且	語法（功能詞）			
-したがって	E	gram	因此、所以	語法（功能詞）			
-ただし	E	gram	但是、不过	語法（功能詞）			
-それに	E	gram	而且、此外	語法（功能詞）			
-なのに	E	gram	虽然、却	語法（功能詞）			
-ので	E	gram	因为、所以	語法（功能詞）			
-のに	E	gram	却、明明	語法（功能詞）			
-なら	E	gram	如果是、就	語法（功能詞）			
-たら	E	gram	如果……就、然后	語法（功能詞）			
-ば	E	gram	如果、假如	語法（功能詞）			
-とも	E	gram	无论、即使	語法（功能詞）			
-うち	E	gram	在……期间、其中	語法（功能詞）			
-あいだ	E	gram	之间、期间	語法（功能詞）			
+にとって	E	gram	对……来说	語法（功能詞）		nitotte	
+とともに	E	gram	随着、和……一起	語法（功能詞）		totomoni	
+および	E	gram	以及	語法（功能詞）		oyobi	
+または	E	gram	或者	語法（功能詞）		mataha	
+あるいは	E	gram	或者	語法（功能詞）		aruiha	
+だが	E	gram	但是	語法（功能詞）		daga	
+しかし	E	gram	然而、但是	語法（功能詞）		shikashi	
+また	E	gram	又、也、另方面	語法（功能詞）		mata	
+さらに	E	gram	再、而且	語法（功能詞）		sarani	
+だから	E	gram	所以、因为	語法（功能詞）		dakara	
+けれど	E	gram	虽然、但是	語法（功能詞）		keredo	
+もし	E	gram	如果、也许	語法（功能詞）		moshi	
+すると	E	gram	于是、那么	語法（功能詞）		suruto	
+そして	E	gram	然后、而且	語法（功能詞）		soshite	
+したがって	E	gram	因此、所以	語法（功能詞）		shitagatte	
+ただし	E	gram	但是、不过	語法（功能詞）		tadashi	
+それに	E	gram	而且、此外	語法（功能詞）		soreni	
+なのに	E	gram	虽然、却	語法（功能詞）		nanoni	
+ので	E	gram	因为、所以	語法（功能詞）		node	
+のに	E	gram	却、明明	語法（功能詞）		noni	
+なら	E	gram	如果是、就	語法（功能詞）		nara	
+たら	E	gram	如果……就、然后	語法（功能詞）		tara	
+ば	E	gram	如果、假如	語法（功能詞）		ba	
+とも	E	gram	无论、即使	語法（功能詞）		tomo	
+うち	E	gram	在……期间、其中	語法（功能詞）		uchi	
+あいだ	E	gram	之间、期间	語法（功能詞）		aida	
 彼ら	E	gram	他们	語法（功能詞）			
-これ	C	gram	这个	語法（功能詞）			
-それ	C	gram	那个	語法（功能詞）			
-あれ	C	gram	那个	語法（功能詞）			
-どこ	C	gram	哪里	語法（功能詞）			
-だれ	C	gram	谁	語法（功能詞）			
-なに	C	gram	什么	語法（功能詞）			
+これ	C	gram	这个	語法（功能詞）		kore	
+それ	C	gram	那个	語法（功能詞）		sore	
+あれ	C	gram	那个	語法（功能詞）		are	
+どこ	C	gram	哪里	語法（功能詞）		doko	
+だれ	C	gram	谁	語法（功能詞）		dare	
+なに	C	gram	什么	語法（功能詞）		nani	
 自分	C	gram	自己	語法（功能詞）			
 皆	E	gram	大家	語法（功能詞）			
-です	E	gram	是	語法（功能詞）			
-でした	E	gram	曾是、是了	語法（功能詞）			
-ですか	E	gram	是……吗	語法（功能詞）			
-ません	E	gram	不、不会	語法（功能詞）			
-ました	E	gram	了、曾做过	語法（功能詞）			
-ない	E	gram	不、没有	語法（功能詞）			
-なかった	E	gram	没有、不再是	語法（功能詞）			
-ありません	E	gram	没有、不存在	語法（功能詞）			
-ある	E	gram	有、存在	語法（功能詞）			
-いる	E	gram	有、在	語法（功能詞）			
-する	E	gram	做、进行	語法（功能詞）			
-できます	E	gram	能够、可以	語法（功能詞）			
-でしょう	E	gram	吧、大概会	語法（功能詞）			
-かも	E	gram	可能、也许	語法（功能詞）			
+です	E	gram	是	語法（功能詞）		desu	
+でした	E	gram	曾是、是了	語法（功能詞）		deshita	
+ですか	E	gram	是……吗	語法（功能詞）		desuka	
+ません	E	gram	不、不会	語法（功能詞）		masen	
+ました	E	gram	了、曾做过	語法（功能詞）		mashita	
+ない	E	gram	不、没有	語法（功能詞）		nai	
+なかった	E	gram	没有、不再是	語法（功能詞）		nakatta	
+ありません	E	gram	没有、不存在	語法（功能詞）		arimasen	
+ある	E	gram	有、存在	語法（功能詞）		aru	
+いる	E	gram	有、在	語法（功能詞）		iru	
+する	E	gram	做、进行	語法（功能詞）		suru	
+できます	E	gram	能够、可以	語法（功能詞）		dekimasu	
+でしょう	E	gram	吧、大概会	語法（功能詞）		deshou	
+かも	E	gram	可能、也许	語法（功能詞）		kamo	
 零	C	num	零	數量・比例			
 一	C	num	一	數量・比例			
 二	C	num	二	數量・比例			
@@ -284,9 +284,9 @@ unit	level	pos	gloss	category	example	ipa	stem
 後	E	n	以后；之后	時間			
 最近	E	adv	最近；不久前	時間			
 昔	E	n	从前；过去	時間			
-もう	E	adv	已经	時間			
-まだ	E	adv	还；尚未	時間			
-すぐ	E	adv	马上；立即	時間			
+もう	E	adv	已经	時間		mou	
+まだ	E	adv	还；尚未	時間		mada	
+すぐ	E	adv	马上；立即	時間		sugu	
 早く	E	adv	早；提早	時間			
 遅く	E	adv	晚	時間			
 上	E	n	上面	方位・地點			
@@ -311,7 +311,7 @@ unit	level	pos	gloss	category	example	ipa	stem
 家	C	n	家	方位・地點			
 部屋	E	n	房间	方位・地點			
 台所	E	n	厨房	方位・地點			
-トイレ	E	n	厕所	方位・地點			
+トイレ	E	n	厕所	方位・地點		toire	
 浴室	E	n	浴室	方位・地點			
 洗面所	E	n	洗手间	方位・地點			
 玄関	E	n	玄关	方位・地點			
@@ -338,9 +338,9 @@ unit	level	pos	gloss	category	example	ipa	stem
 神社	C	n	神社	方位・地點			
 寺	C	n	寺庙	方位・地點			
 教会	E	n	教堂	方位・地點			
-ホテル	C	n	酒店	方位・地點			
+ホテル	C	n	酒店	方位・地點		hoteru	
 旅館	E	n	旅馆	方位・地點			
-レストラン	C	n	餐厅	方位・地點			
+レストラン	C	n	餐厅	方位・地點		resutoran	
 喫茶店	C	n	咖啡店	方位・地點			
 本屋	C	n	书店	方位・地點			
 銀行	C	n	银行	方位・地點			
@@ -443,9 +443,9 @@ unit	level	pos	gloss	category	example	ipa	stem
 行きます	C	v	去	動作			
 来ます	C	v	来	動作			
 帰ります	C	v	回去	動作			
-います	C	v	在；居住	動作			
-なります	C	v	成为	動作			
-あります	C	v	有	動作			
+います	C	v	在；居住	動作		imasu	
+なります	C	v	成为	動作		narimasu	
+あります	C	v	有	動作		arimasu	
 知ります	E	v	知道	動作			
 思います	E	v	想；认为	動作			
 考えます	E	v	考虑	動作			
@@ -557,23 +557,23 @@ unit	level	pos	gloss	category	example	ipa	stem
 近い	C	adj	近的	性質			
 遠い	C	adj	遠的	性質			
 美しい	C	adj	美麗的	性質			
-きれい	C	adj	乾淨漂亮的	性質			
+きれい	C	adj	乾淨漂亮的	性質		kirei	
 正しい	C	adj	正確的	性質			
 上手い	C	adj	擅長的	性質			
 下手い	C	adj	不擅長的	性質			
 面白い	C	adj	有趣的	性質			
-つまらない	C	adj	無聊的	性質			
+つまらない	C	adj	無聊的	性質		tsumaranai	
 忙しい	C	adj	忙碌的	性質			
 眠い	E	adj	睏的	性質			
-おいしい	C	adj	好吃的	性質			
-まずい	E	adj	難吃的	性質			
+おいしい	C	adj	好吃的	性質		oishii	
+まずい	E	adj	難吃的	性質		mazui	
 辛い	E	adj	辣的	性質			
 甘い	E	adj	甜的	性質			
 塩辛い	E	adj	鹹的	性質			
 酸っぱい	E	adj	酸的	性質			
 熱い	C	adj	燙的	性質			
 冷たい	C	adj	冰冷的	性質			
-ぬるい	E	adj	溫吞的	性質			
+ぬるい	E	adj	溫吞的	性質		nurui	
 乾いた	E	adj	乾的	性質			
 湿った	E	adj	濕的	性質			
 細い	C	adj	細的	性質			
@@ -604,10 +604,10 @@ unit	level	pos	gloss	category	example	ipa	stem
 悔しい	E	adj	不甘心的	性質			
 恥ずかしい	E	adj	不好意思的	性質			
 惜しい	E	adj	可惜的	性質			
-びっくり	E	adj	吃驚的	性質			
+びっくり	E	adj	吃驚的	性質		bikkuri	
 嫌い	E	adj	討厭的	性質			
 好き	C	adj	喜歡的	性質			
-すてき	E	adj	極好的	性質			
+すてき	E	adj	極好的	性質		suteki	
 大切	C	adj	珍貴的	性質			
 重要	C	adj	重要的	性質			
 必要	C	adj	必要的	性質			
@@ -645,7 +645,7 @@ unit	level	pos	gloss	category	example	ipa	stem
 眼鏡	C	n	眼鏡	事物			
 帯	E	n	腰帶	事物			
 ご飯	C	n	米飯	事物			
-パン	C	n	麵包	事物			
+パン	C	n	麵包	事物		pan	
 麺	C	n	麵條	事物			
 肉	C	n	肉	事物			
 野菜	C	n	蔬菜	事物			
@@ -656,7 +656,7 @@ unit	level	pos	gloss	category	example	ipa	stem
 油	C	n	油	事物			
 卵	C	n	蛋	事物			
 牛乳	C	n	牛奶	事物			
-チーズ	E	n	起司	事物			
+チーズ	E	n	起司	事物		chizu	
 酒	C	n	酒	事物			
 机	C	n	桌子	事物			
 椅子	C	n	椅子	事物			
@@ -664,19 +664,19 @@ unit	level	pos	gloss	category	example	ipa	stem
 杯	C	n	杯子	事物			
 瓶	E	n	瓶子	事物			
 箸	C	n	筷子	事物			
-スプーン	C	n	湯匙	事物			
-フォーク	E	n	叉子	事物			
-ナイフ	E	n	刀	事物			
+スプーン	C	n	湯匙	事物		supun	
+フォーク	E	n	叉子	事物		fuku	
+ナイフ	E	n	刀	事物		naifu	
 電話	C	n	電話	事物			
 携帯	C	n	手機	事物			
-カメラ	C	n	相機	事物			
-テレビ	C	n	電視	事物			
-ラジオ	C	n	收音機	事物			
+カメラ	C	n	相機	事物		kamera	
+テレビ	C	n	電視	事物		terebi	
+ラジオ	C	n	收音機	事物		rajio	
 紙	C	n	紙	事物			
 本	C	n	書	事物			
-ノート	E	n	筆記本	事物			
+ノート	E	n	筆記本	事物		noto	
 鉛筆	C	n	鉛筆	事物			
-ボールペン	E	n	原子筆	事物			
+ボールペン	E	n	原子筆	事物		borupen	
 絵	C	n	畫	事物			
 写真	C	n	照片	事物			
 音楽	C	n	音樂	事物			
@@ -720,7 +720,7 @@ unit	level	pos	gloss	category	example	ipa	stem
 呼び方	E	n	称呼方式	社交・人			
 言葉	C	n	话语	社交・人			
 話	C	n	谈话	社交・人			
-あいさつ	E	n	打招呼	社交・人			
+あいさつ	E	n	打招呼	社交・人		aisatsu	
 質問	C	n	提问	社交・人			
 答え	C	n	回答	社交・人			
 紹介	C	n	介绍	社交・人			
@@ -734,10 +734,10 @@ unit	level	pos	gloss	category	example	ipa	stem
 夫婦	E	n	夫妻	社交・人			
 趣味	C	n	兴趣	社交・人			
 仲間	E	n	伙伴；同伴	社交・人			
-ちゃん	E	n	昵称；小朋友	社交・人			
+ちゃん	E	n	昵称；小朋友	社交・人		chan	
 様	E	n	敬称	社交・人			
-おばあちゃん	E	n	奶奶	社交・人			
-おじいちゃん	E	n	爷爷	社交・人			
+おばあちゃん	E	n	奶奶	社交・人		obaachan	
+おじいちゃん	E	n	爷爷	社交・人		ojiichan	
 村	E	n	村庄	社交・人			
 都会	E	n	城市	社交・人			
 国	C	n	国家	社交・人			
@@ -816,15 +816,15 @@ unit	level	pos	gloss	category	example	ipa	stem
 協力	E	n	合作	抽象概念			
 反対	E	n	反对	抽象概念			
 平和	C	n	和平	抽象概念			
-は	C	gram	主題助詞	語法（功能詞）			
-も	C	gram	也	語法（功能詞）			
-ます	E	gram	禮貌體動詞句尾	語法（功能詞）			
-ください	E	gram	請	語法（功能詞）			
-でも	E	gram	但是	語法（功能詞）			
-では	E	gram	在…方面	語法（功能詞）			
-します	C	v	做	動作			
-たべます	E	v	吃	動作			
-のみます	E	v	喝	動作			
+は	C	gram	主題助詞	語法（功能詞）		ha	
+も	C	gram	也	語法（功能詞）		mo	
+ます	E	gram	禮貌體動詞句尾	語法（功能詞）		masu	
+ください	E	gram	請	語法（功能詞）		kudasai	
+でも	E	gram	但是	語法（功能詞）		demo	
+では	E	gram	在…方面	語法（功能詞）		deha	
+します	C	v	做	動作		shimasu	
+たべます	E	v	吃	動作		tabemasu	
+のみます	E	v	喝	動作		nomimasu	
 立ちます	C	v	站	動作			
 持ちます	C	v	拿著	動作			
 置きます	C	v	放	動作			
@@ -850,17 +850,17 @@ unit	level	pos	gloss	category	example	ipa	stem
 無理	C	adj	勉強的；不可能的	性質			
 刀	C	n	刀	事物			
 仕事	C	n	工作	事物			
-ほか	E	pron	其他	代詞・指示			
-あ	E	pron	那個	代詞・指示			
+ほか	E	pron	其他	代詞・指示		hoka	
+あ	E	pron	那個	代詞・指示		a	
 希望します	E	v	希望	動作			
 便利に	E	adj	方便的	性質			
 治	E	v	治療	動作			
-エンジニア	E	n	工程師	事物			
-デザイナー	E	n	設計師	事物			
-あした	E	n	明天	時間			
-きょう	E	n	今天	時間			
-いま	E	adv	現在	時間			
-きのう	E	n	昨天	時間			
+エンジニア	E	n	工程師	事物		enjinia	
+デザイナー	E	n	設計師	事物		dezaina	
+あした	E	n	明天	時間		ashita	
+きょう	E	n	今天	時間		kyou	
+いま	E	adv	現在	時間		ima	
+きのう	E	n	昨天	時間		kinou	
 面倒	E	n	麻煩；照料	事物			
 見守	E	v	照看	動作			
 見守ります	E	v	照看	動作			
@@ -904,8 +904,8 @@ unit	level	pos	gloss	category	example	ipa	stem
 書	E	v	寫	動作			
 着	E	v	穿	動作			
 着ます	E	v	穿	動作			
-という	E	gram	「…という」＝叫做…、…的種類	語法（功能詞）			
-ごはん	E	n	飯	事物			
+という	E	gram	「…という」＝叫做…、…的種類	語法（功能詞）		toiu	
+ごはん	E	n	飯	事物		gohan	
 朝ごはん	E	n	早餐	事物			
 昼ごはん	E	n	午餐	事物			
 夜ごはん	E	n	晚餐	事物			
@@ -928,7 +928,7 @@ unit	level	pos	gloss	category	example	ipa	stem
 医者	E	n	醫生	事物			
 警察	E	n	警察	事物			
 百貨店	E	n	百貨公司	事物			
-コンビニ	E	n	便利商店	事物			
+コンビニ	E	n	便利商店	事物		konbini	
 市场	E	n	市場	事物			
 食堂	E	n	食堂	事物			
 風呂	E	n	浴缸；浴室	事物			
@@ -936,48 +936,48 @@ unit	level	pos	gloss	category	example	ipa	stem
 道具	E	n	工具	事物			
 材料	E	n	材料	事物			
 種類	E	n	種類	事物			
-コーヒー	E	n	咖啡	事物			
+コーヒー	E	n	咖啡	事物		kohi	
 お酒	E	n	酒	事物			
-ケーキ	E	n	蛋糕	事物			
-ラーメン	E	n	拉麵	事物			
-パソコン	E	n	電腦	事物			
-メール	E	n	電子郵件	事物			
-インターネット	E	n	網路	事物			
-バス	E	n	公車	事物			
-タクシー	E	n	計程車	事物			
-デパート	E	n	百貨公司	事物			
-メートル	E	n	公尺	事物			
-キロ	E	n	公里	事物			
-グラム	E	n	公克	事物			
-パーセント	E	n	百分比	事物			
-テスト	E	n	考試	事物			
-プール	E	n	游泳池	事物			
+ケーキ	E	n	蛋糕	事物		keki	
+ラーメン	E	n	拉麵	事物		ramen	
+パソコン	E	n	電腦	事物		pasokon	
+メール	E	n	電子郵件	事物		meru	
+インターネット	E	n	網路	事物		intanetto	
+バス	E	n	公車	事物		basu	
+タクシー	E	n	計程車	事物		takushi	
+デパート	E	n	百貨公司	事物		depato	
+メートル	E	n	公尺	事物		metoru	
+キロ	E	n	公里	事物		kiro	
+グラム	E	n	公克	事物		guramu	
+パーセント	E	n	百分比	事物		pasento	
+テスト	E	n	考試	事物		tesuto	
+プール	E	n	游泳池	事物		puru	
 一緒	E	n	一起	事物			
-いっぱい	E	adv	很多；滿滿的	語法（功能詞）			
+いっぱい	E	adv	很多；滿滿的	語法（功能詞）		ippai	
 少し	E	adv	一點點	語法（功能詞）			
-とても	E	adv	非常	語法（功能詞）			
-よく	E	adv	常常	語法（功能詞）			
-ときどき	E	adv	有時	語法（功能詞）			
-たぶん	E	adv	大概	語法（功能詞）			
-ぜんぜん	E	adv	完全不	語法（功能詞）			
-はじめまして	E	gram	初次見面	語法（功能詞）			
-すみません	E	gram	對不起；不好意思	語法（功能詞）			
-ありがとう	E	gram	謝謝	語法（功能詞）			
-こんにちは	E	gram	你好	語法（功能詞）			
-こんばんは	E	gram	晚安	語法（功能詞）			
-さようなら	E	gram	再見	語法（功能詞）			
-はい	E	adv	是	語法（功能詞）			
-いいえ	E	adv	不是	語法（功能詞）			
-そうです	E	gram	是（聽說）	語法（功能詞）			
-いい	E	adj	好的	性質			
+とても	E	adv	非常	語法（功能詞）		totemo	
+よく	E	adv	常常	語法（功能詞）		yoku	
+ときどき	E	adv	有時	語法（功能詞）		tokidoki	
+たぶん	E	adv	大概	語法（功能詞）		tabun	
+ぜんぜん	E	adv	完全不	語法（功能詞）		zenzen	
+はじめまして	E	gram	初次見面	語法（功能詞）		hajimemashite	
+すみません	E	gram	對不起；不好意思	語法（功能詞）		sumimasen	
+ありがとう	E	gram	謝謝	語法（功能詞）		arigatou	
+こんにちは	E	gram	你好	語法（功能詞）		konnichiha	
+こんばんは	E	gram	晚安	語法（功能詞）		konbanha	
+さようなら	E	gram	再見	語法（功能詞）		sayounara	
+はい	E	adv	是	語法（功能詞）		hai	
+いいえ	E	adv	不是	語法（功能詞）		iie	
+そうです	E	gram	是（聽說）	語法（功能詞）		soudesu	
+いい	E	adj	好的	性質		ii	
 多岁	E	num	幾歲	數量・比例			
 何時	E	pron	幾點	代詞・指示			
 何日	E	pron	幾號	代詞・指示			
 何ヶ月	E	pron	幾個月	代詞・指示			
 何人	E	pron	幾個人	代詞・指示			
-いくら	E	pron	多少錢	代詞・指示			
-いくつ	E	pron	幾個	代詞・指示			
-それは	E	pron	那個（主題）	代詞・指示			
+いくら	E	pron	多少錢	代詞・指示		ikura	
+いくつ	E	pron	幾個	代詞・指示		ikutsu	
+それは	E	pron	那個（主題）	代詞・指示		soreha	
 日本語	E	n	日語	事物			
 英語	E	n	英語	事物			
 中国語	E	n	中文	事物			

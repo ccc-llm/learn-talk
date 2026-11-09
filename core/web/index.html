@@ -3,15 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>learn-talk：各國小字集語言</title>
+<title>learn-talk</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <h1>learn-talk</h1>
-  <p class="sub">用很少的字詞學會說話：Mini-Chinese／Mini-English／Mini-French／Mini-Japanese／Mini-Korean</p>
+  <p class="sub" data-i18n="sub"></p>
   <div class="langbar">
-    <label>語言
+    <label><span data-i18n="uiLang"></span>
+      <select id="uilang">
+        <option value="zh-Hant">繁體中文</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+      </select>
+    </label>
+    <label><span data-i18n="learnLang"></span>
       <select id="lang"></select>
     </label>
     <span id="langinfo" class="langinfo"></span>
@@ -19,33 +28,56 @@
 </header>
 
 <nav class="tabs">
-  <button class="tab active" data-tab="translate">翻譯器</button>
-  <button class="tab" data-tab="check">檢查器</button>
-  <button class="tab" data-tab="speak">唸出來</button>
-  <button class="tab" data-tab="lexicon">詞典</button>
-  <button class="tab" data-tab="words">詞表</button>
-  <button class="tab" data-tab="rules">語法</button>
-  <button class="tab" data-tab="expert">LLM 專家</button>
+  <button class="tab" data-tab="expert" data-i18n="tabExpert"></button>
+  <button class="tab active" data-tab="translate" data-i18n="tabTranslate"></button>
+  <button class="tab" data-tab="check" data-i18n="tabCheck"></button>
+  <button class="tab" data-tab="speak" data-i18n="tabSpeak"></button>
+  <button class="tab" data-tab="lexicon" data-i18n="tabLexicon"></button>
+  <button class="tab" data-tab="words" data-i18n="tabWords"></button>
+  <button class="tab" data-tab="charset" data-i18n="tabCharset"></button>
+  <button class="tab" data-tab="rules" data-i18n="tabRules"></button>
 </nav>
 
 <main>
+  <!-- 專家 -->
+  <section id="tab-expert" class="panel">
+    <div class="btnrow">
+      <select id="ex-mode">
+        <option value="fast" data-i18n="modeFast"></option>
+        <option value="strict" data-i18n="modeStrict"></option>
+      </select>
+      <select id="ex-provider">
+        <option value="minimax" selected>MiniMax（M3.1 Flash）</option>
+        <option value="nvidia">NVIDIA（GLM 5.3 Flash）</option>
+      </select>
+      <label class="inline"><input type="checkbox" id="rom-expert" class="rom-toggle" checked> <span data-i18n="romajiLabel"></span></label>
+      <button id="ex-clear" class="btn" data-i18n="exClear"></button>
+    </div>
+    <div id="ex-chat" class="chat"></div>
+    <div class="btnrow">
+      <textarea id="ex-in" rows="3" data-i18n-ph="exInPh"></textarea>
+      <button id="ex-go" class="btn" data-i18n="btnSend"></button>
+    </div>
+  </section>
+
   <!-- 翻譯器 -->
   <section id="tab-translate" class="panel active">
     <div class="row">
       <div class="col">
-        <label>受限語言（Mini-X）</label>
-        <textarea id="tr-in" rows="10" placeholder="例如：昨天我和朋友一起去買東西。"></textarea>
+        <label data-i18n="trInLabel"></label>
+        <textarea id="tr-in" rows="10" data-i18n-ph="trInPh"></textarea>
         <div class="btnrow">
-          <button id="tr-check" class="btn">檢查</button>
-          <button id="tr-speak" class="btn">🔊 唸出來</button>
+          <button id="tr-check" class="btn" data-i18n="btnCheck"></button>
+          <button id="tr-speak" class="btn" data-i18n="btnSpeak"></button>
         </div>
       </div>
       <div class="col">
-        <label>一般語言</label>
-        <textarea id="tr-out" rows="10" readonly placeholder="反向翻譯的結果會出現在這裡"></textarea>
+        <label data-i18n="trOutLabel"></label>
+        <div id="tr-out" class="outblock"></div>
         <div class="btnrow">
-          <button id="tr-rev" class="btn">反向翻譯</button>
-          <button id="tr-out-speak" class="btn">🔊 唸出來</button>
+          <button id="tr-rev" class="btn" data-i18n="btnReverse"></button>
+          <button id="tr-out-speak" class="btn" data-i18n="btnSpeak"></button>
+          <label class="inline"><input type="checkbox" id="rom-trans" class="rom-toggle" checked> <span data-i18n="romajiLabel"></span></label>
         </div>
       </div>
     </div>
@@ -54,37 +86,34 @@
 
   <!-- 檢查器 -->
   <section id="tab-check" class="panel">
-    <label>貼一段文字，看它是不是合法的受限語言</label>
-    <textarea id="ck-in" rows="8" placeholder="把 Mini-X 的文字貼在這裡"></textarea>
+    <label data-i18n="ckLabel"></label>
+    <textarea id="ck-in" rows="8" data-i18n-ph="ckInPh"></textarea>
     <div class="btnrow">
-      <button id="ck-go" class="btn">檢查</button>
-      <button id="ck-file" class="btn">讀檔案</button>
+      <button id="ck-go" class="btn" data-i18n="btnCheck"></button>
+      <button id="ck-file" class="btn" data-i18n="btnFile"></button>
       <input type="file" id="ck-file-input" accept=".txt,.md" hidden>
-      <button id="ck-speak" class="btn">🔊 唸出來</button>
+      <button id="ck-speak" class="btn" data-i18n="btnSpeak"></button>
     </div>
     <div id="ck-result" class="result"></div>
   </section>
 
   <!-- 唸出來 -->
   <section id="tab-speak" class="panel">
-    <h2>唸出來（文字轉語音）</h2>
-    <p class="hint">
-      兩種方式：<b>瀏覽器語音</b>（免金鑰、離線可用）與
-      <b>伺服器語音</b>（edge-tts，音色較自然，需要本機有 edge-tts）。
-    </p>
-    <label>要唸的文字</label>
-    <textarea id="sp-in" rows="8" placeholder="貼上任何段落"></textarea>
+    <h2 data-i18n="spTitle"></h2>
+    <p class="hint" data-i18n="spHint"></p>
+    <label data-i18n="spTextLabel"></label>
+    <textarea id="sp-in" rows="8" data-i18n-ph="spInPh"></textarea>
     <div class="btnrow">
-      <button id="sp-browser" class="btn">🔊 瀏覽器唸</button>
-      <button id="sp-server" class="btn">🔊 伺服器唸（mp3）</button>
-      <button id="sp-stop" class="btn">⏹ 停止</button>
-      <label class="inline"><input type="range" id="sp-rate" min="0.5" max="1.5" step="0.1" value="1"> 速度</label>
+      <button id="sp-browser" class="btn" data-i18n="spBrowser"></button>
+      <button id="sp-server" class="btn" data-i18n="spServer"></button>
+      <button id="sp-stop" class="btn" data-i18n="spStop"></button>
+      <label class="inline"><span data-i18n="spRate"></span> <input type="range" id="sp-rate" min="0.5" max="1.5" step="0.1" value="1"></label>
     </div>
     <p class="hint" id="sp-voices"></p>
     <audio id="sp-audio" controls></audio>
     <div class="row2">
       <div class="col">
-        <label>中文拼音</label>
+        <label data-i18n="spPinyin"></label>
         <div id="sp-pinyin" class="pinyin"></div>
       </div>
     </div>
@@ -92,10 +121,10 @@
 
   <!-- 詞典 -->
   <section id="tab-lexicon" class="panel">
-    <label>查一個詞，看它在受限語言怎麼說</label>
+    <label data-i18n="lxLabel"></label>
     <div class="btnrow">
-      <input type="text" id="lx-q" placeholder="輸入詞（中／英／法／日／韓）">
-      <button id="lx-go" class="btn">查</button>
+      <input type="text" id="lx-q" data-i18n-ph="lxPh">
+      <button id="lx-go" class="btn" data-i18n="btnLookup"></button>
     </div>
     <div id="lx-result" class="result"></div>
   </section>
@@ -103,40 +132,34 @@
   <!-- 詞表 -->
   <section id="tab-words" class="panel">
     <div class="btnrow">
-      <input type="text" id="wd-q" placeholder="搜尋">
-      <select id="wd-cat"><option value="">全部類別</option></select>
+      <input type="text" id="wd-q" data-i18n-ph="wdPh">
+      <select id="wd-cat"><option value="" data-i18n="wdAllCat"></option></select>
       <select id="wd-lv">
-        <option value="">全部</option>
-        <option value="C">核心層</option>
-        <option value="E">擴充層</option>
+        <option value="" data-i18n="wdAll"></option>
+        <option value="C" data-i18n="wdCore"></option>
+        <option value="E" data-i18n="wdExt"></option>
       </select>
-      <button id="wd-speak" class="btn">🔊 唸這一列</button>
+      <button id="wd-speak" class="btn" data-i18n="btnSpeakRow"></button>
     </div>
     <div id="wd-count" class="hint"></div>
     <div id="wd-result" class="words"></div>
   </section>
 
+  <!-- 字集 -->
+  <section id="tab-charset" class="panel">
+    <div class="btnrow">
+      <span id="cs-count" class="hint"></span>
+      <button id="cs-copy" class="btn ghost" data-i18n="csCopy"></button>
+    </div>
+    <div id="cs-list" class="charset"></div>
+  </section>
+
   <!-- 語法 -->
   <section id="tab-rules" class="panel">
-    <h2 id="rules-title">語法規則</h2>
+    <h2 id="rules-title"></h2>
     <div id="rules" class="rules"></div>
   </section>
 
-  <!-- 專家 -->
-  <section id="tab-expert" class="panel">
-    <div class="btnrow">
-      <select id="ex-provider">
-        <option value="nvidia">NVIDIA（GLM 5.3 Flash）</option>
-        <option value="minimax">MiniMax（M3.1 Flash）</option>
-      </select>
-      <button id="ex-clear" class="btn">清除對話</button>
-    </div>
-    <div id="ex-chat" class="chat"></div>
-    <div class="btnrow">
-      <textarea id="ex-in" rows="3" placeholder="問問題，或請它把中文翻成 Mini-X"></textarea>
-      <button id="ex-go" class="btn">送出</button>
-    </div>
-  </section>
 </main>
 
 <script src="data.js"></script>

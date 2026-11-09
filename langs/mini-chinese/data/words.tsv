@@ -16,7 +16,7 @@ unit	level	pos	gloss	category	example	ipa
 每	C	pron	every	代詞・指示	每天、每個人	měi
 的	C	gram	's, of	語法	我的、好的	de
 了	C	gram	(done / change)	語法	吃了、好了	le
-過	C	gram	pass; ever	語法	去過、過來	guò / guo
+過	C	gram	pass; ever	語法	去過、過來	guò
 嗎	C	gram	(yes/no question)	語法	好嗎、是嗎	ma
 呢	C	gram	and…?	語法	你呢	ne
 吧	C	gram	let's; right?	語法	走吧、好吧	ba
@@ -66,7 +66,7 @@ unit	level	pos	gloss	category	example	ipa
 點	C	num	dot; o'clock; a bit	數量	3點、一點、快點	diǎn
 塊	C	num	yuan; piece	數量	10塊、一塊	kuài
 歲	C	num	years old	數量	10歲、幾歲	suì
-數	C	num	number; count	數量	數字、數學、數一數	shù / shǔ
+數	C	num	number; count	數量	數字、數學、數一數	shù
 量	C	num	amount	數量	重量、大量	liàng
 年	C	time	year	時間	今年、明年、去年	nián
 月	C	time	month; moon	時間	一月、這個月	yuè
@@ -101,7 +101,7 @@ unit	level	pos	gloss	category	example	ipa
 北	C	place	north	方位	北邊	běi
 邊	C	place	side	方位	這邊、那邊、左邊	biān
 方	C	place	direction; place	方位	地方	fāng
-地	C	place	ground; (adverb)	方位	地方、地上、慢慢地	dì / de
+地	C	place	ground; (adverb)	方位	地方、地上、慢慢地	dì
 來	C	v	come	動作	回來、起來、進來	lái
 去	C	v	go	動作	回去、出去、去年	qù
 走	C	v	walk; leave	動作	走路、走吧	zǒu
@@ -133,7 +133,7 @@ unit	level	pos	gloss	category	example	ipa
 道	C	v	way	動作	知道	dào
 懂	C	v	understand	動作	看懂、聽懂	dǒng
 記	C	v	remember	動作	記得、記住	jì
-覺	C	v	feel; sleep	動作	覺得、睡覺	jué / jiào
+覺	C	v	feel; sleep	動作	覺得、睡覺	jué
 喜	C	v	joy	動作	喜歡	xǐ
 歡	C	v	glad	動作	喜歡、歡迎	huān
 愛	C	v	love	動作	愛人、可愛	ài
@@ -263,7 +263,7 @@ unit	level	pos	gloss	category	example	ipa
 土	C	n	soil	事物	土地	tǔ
 樹	C	n	tree	事物	大樹、樹木	shù
 草	C	n	grass	事物	草地、花草	cǎo
-空	C	n	sky; empty; free time	事物	天空、空氣、有空	kōng / kòng
+空	C	n	sky; empty; free time	事物	天空、空氣、有空	kōng
 金	C	n	gold	事物	金子、金色	jīn
 鳥	C	n	bird	事物	小鳥	niǎo
 魚	C	n	fish	事物	魚肉	yú
@@ -278,7 +278,7 @@ unit	level	pos	gloss	category	example	ipa
 牙	C	n	tooth	事物	門牙	yá
 鼻	C	n	nose	事物	鼻子	bí
 髮	C	n	hair	事物	頭髮	fà
-血	C	n	blood	事物	出血	xuè / xiě
+血	C	n	blood	事物	出血	xuè
 物	C	n	thing	事物	動物、人物	wù
 球	C	n	ball	事物	打球、地球	qiú
 紙	C	n	paper	事物	白紙	zhǐ
@@ -296,155 +296,155 @@ unit	level	pos	gloss	category	example	ipa
 請	C	gram	please	社交	請問、請坐、請進	qǐng
 謝	C	gram	thank	社交	謝謝、不用謝	xiè
 迎	C	gram	welcome	社交	歡迎	yíng
-各	C	adj	每一個	性質		
-附	C	v	附上	動作		
-踢	C	v	踢	動作		
-圖	C	n	圖	事物		
-容	C	adj	容易容納	性質		
-易	C	adj	容易	性質		
-才	C	adv	才	語法		
-需	C	v	需要	動作		
-正	C	adv	正好	語法		
-讓	C	v	讓	動作		
-修	C	v	修理	動作		
-目	C	n	眼睛	事物		
-低	C	adj	低的	性質		
-保	C	v	保證；保護	動作		
-險	C	adj	危險的	性質		
-規	C	n	規則	事物		
-則	C	gram	規則	語法		
-標	C	n	標記	事物		
-確	C	adj	確定	性質		
-實	C	adj	真實	性質		
-際	C	n	時候	時間		
-遇	C	v	遇見	動作		
-選	C	v	選擇	動作		
-擇	C	v	選擇	動作		
-試	C	v	試試	動作		
-驗	C	v	驗證	動作		
-環	C	n	環境	事物		
-境	C	n	環境	事物		
-衛	C	n	衛生	事物		
-費	C	n	費用	事物		
-料	C	n	材料	事物		
-資	C	n	資料	事物		
-訊	C	n	訊息	事物		
-息	C	n	休息	時間		
-影	C	n	影像	事物		
-響	C	v	影響	動作		
-優	C	adj	優秀	性質		
-劣	C	adj	不好	性質		
-豐	C	adj	豐富	性質		
-簡	C	adj	簡單	性質		
-複	C	adj	複雜	性質		
-雜	C	adj	複雜	性質		
-純	C	adj	單純	性質		
-潔	C	adj	清潔	性質		
-淨	C	adj	乾淨	性質		
-隨	C	v	跟著	動作		
-狀	C	n	狀態	事物		
-態	C	n	狀態	事物		
-壓	C	n	壓力	事物		
-迫	C	adj	逼迫	性質		
-願	C	v	願意	動作		
-望	C	v	希望	動作		
-努	C	v	努力	動作		
-極	C	adj	極端	性質		
-端	C	n	端點	事物		
-信	C	n	訊息；相信	事物		
-集	C	v	集合	動作		
-廣	C	adj	廣	性質		
-場	C	n	地方	事物		
-設	C	n	設施	事物		
-施	C	v	施行	動作		
-備	C	v	準備	動作		
-準	C	adj	準備好的	性質		
-達	C	v	到達	動作		
-產	C	n	生產	事物		
-效	C	n	效果	事物		
-益	C	adj	有益	性質		
-負	C	v	負擔	動作		
-擔	C	n	擔子	事物		
-職	C	n	工作	事物		
-務	C	n	事務	事物		
-員	C	n	人（工作者）	事物		
-傭	C	n	薪水	事物		
-源	C	n	水源	事物		
-居	C	v	居住	動作		
-宿	C	n	住宿	事物		
-舍	C	n	房子	事物		
-孫	C	n	孫子	事物		
-婚	C	n	婚禮	社交		
-禮	C	n	禮物	社交		
-葬	C	n	葬禮	社交		
-儀	C	n	儀式	社交		
-式	C	n	方式	事物		
-祝	C	v	祝賀	社交		
-賀	C	v	祝賀	社交		
-慶	C	v	慶祝	社交		
-旅	C	n	旅行	事物		
-行	C	v	旅行	動作		
-客	C	n	客人	社交		
-滿	C	adj	滿的	性質		
-座	C	n	座位	事物		
-位	C	n	位置	事物		
-置	C	v	放置	動作		
-細	C	adj	細的	性質		
-終	C	v	結束	動作		
-始	C	v	開始	動作		
-維	C	v	維持	動作		
-持	C	v	維持	動作		
-營	C	v	經營	動作		
-運	C	v	運送	動作		
-輸	C	v	運送	動作		
-成	C	v	成為	動作		
-功	C	n	功效	事物		
-足	C	n	腳	事物		
-單	C	adj	單一	性質		
-又	C	adv	又	語法		
-群	C	n	一群人	事物		
-市	C	n	城市	事物		
-清	C	adj	乾淨	性質		
-管	C	v	管理	動作		
-周	C	n	周圍	方位		
-旁	C	adj	旁邊	方位		
-器	C	n	工具	事物		
-具	C	n	工具	事物		
-獲	C	v	獲得	動作		
-求	C	v	要求	動作		
-供	C	v	提供	動作		
-將	C	adv	將要	語法		
-已	C	adv	已經	語法		
-經	C	adv	已經	語法		
-超	C	v	超過	動作		
-克	C	v	克服	動作		
-素	C	n	要素	事物		
-質	C	n	品質	事物		
-課	C	n	課	事物		
-程	C	n	過程	事物		
-度	C	n	程度	事物		
-級	C	n	等級	事物		
-類	C	n	種類	事物		
-型	C	n	類型	事物		
-勢	C	n	勢頭	事物		
-增	C	v	增加	動作		
-減	C	v	減少	動作		
-加	C	v	增加	動作		
-顧	C	v	照顧	動作		
-戶	C	n	門（戶數）	事物		
-族	C	n	家族	事物		
-親	C	n	親戚	社交		
-齡	C	n	年齡	事物		
-件	C	num	件	數量		
-種	C	n	種類	事物		
-暖	C	adj	暖和	性質		
-計	C	v	計算	動作		
-造	C	v	建造	動作		
-鄉	C	n	家鄉	事物		
-堂	C	n	大廳	事物		
-測	C	v	測量	動作		
-結	C	v	結束	動作		
-差	C	adj	差	性質		
-決	C	v	決定	動作		
-定	C	v	決定	動作		
-屆	C	num	屆	數量		
+各	C	adj	每一個	性質		gè
+附	C	v	附上	動作		fù
+踢	C	v	踢	動作		tī
+圖	C	n	圖	事物		tú
+容	C	adj	容易容納	性質		róng
+易	C	adj	容易	性質		yì
+才	C	adv	才	語法		cái
+需	C	v	需要	動作		xū
+正	C	adv	正好	語法		zhèng
+讓	C	v	讓	動作		ràng
+修	C	v	修理	動作		xiū
+目	C	n	眼睛	事物		mù
+低	C	adj	低的	性質		dī
+保	C	v	保證；保護	動作		bǎo
+險	C	adj	危險的	性質		xiǎn
+規	C	n	規則	事物		guī
+則	C	gram	規則	語法		zé
+標	C	n	標記	事物		biāo
+確	C	adj	確定	性質		què
+實	C	adj	真實	性質		shí
+際	C	n	時候	時間		jì
+遇	C	v	遇見	動作		yù
+選	C	v	選擇	動作		xuǎn
+擇	C	v	選擇	動作		zé
+試	C	v	試試	動作		shì
+驗	C	v	驗證	動作		yàn
+環	C	n	環境	事物		huán
+境	C	n	環境	事物		jìng
+衛	C	n	衛生	事物		wèi
+費	C	n	費用	事物		fèi
+料	C	n	材料	事物		liào
+資	C	n	資料	事物		zī
+訊	C	n	訊息	事物		xùn
+息	C	n	休息	時間		xī
+影	C	n	影像	事物		yǐng
+響	C	v	影響	動作		xiǎng
+優	C	adj	優秀	性質		yōu
+劣	C	adj	不好	性質		liè
+豐	C	adj	豐富	性質		fēng
+簡	C	adj	簡單	性質		jiǎn
+複	C	adj	複雜	性質		fù
+雜	C	adj	複雜	性質		zá
+純	C	adj	單純	性質		chún
+潔	C	adj	清潔	性質		jié
+淨	C	adj	乾淨	性質		jìng
+隨	C	v	跟著	動作		suí
+狀	C	n	狀態	事物		zhuàng
+態	C	n	狀態	事物		tài
+壓	C	n	壓力	事物		yā
+迫	C	adj	逼迫	性質		pò
+願	C	v	願意	動作		yuàn
+望	C	v	希望	動作		wàng
+努	C	v	努力	動作		nǔ
+極	C	adj	極端	性質		jí
+端	C	n	端點	事物		duān
+信	C	n	訊息；相信	事物		xìn
+集	C	v	集合	動作		jí
+廣	C	adj	廣	性質		guǎng
+場	C	n	地方	事物		chǎng
+設	C	n	設施	事物		shè
+施	C	v	施行	動作		shī
+備	C	v	準備	動作		bèi
+準	C	adj	準備好的	性質		zhǔn
+達	C	v	到達	動作		dá
+產	C	n	生產	事物		chǎn
+效	C	n	效果	事物		xiào
+益	C	adj	有益	性質		yì
+負	C	v	負擔	動作		fù
+擔	C	n	擔子	事物		dān
+職	C	n	工作	事物		zhí
+務	C	n	事務	事物		wù
+員	C	n	人（工作者）	事物		yuán
+傭	C	n	薪水	事物		yōng
+源	C	n	水源	事物		yuán
+居	C	v	居住	動作		jū
+宿	C	n	住宿	事物		sù
+舍	C	n	房子	事物		shě
+孫	C	n	孫子	事物		sūn
+婚	C	n	婚禮	社交		hūn
+禮	C	n	禮物	社交		lǐ
+葬	C	n	葬禮	社交		zàng
+儀	C	n	儀式	社交		yí
+式	C	n	方式	事物		shì
+祝	C	v	祝賀	社交		zhù
+賀	C	v	祝賀	社交		hè
+慶	C	v	慶祝	社交		qìng
+旅	C	n	旅行	事物		lǚ
+行	C	v	旅行	動作		xíng
+客	C	n	客人	社交		kè
+滿	C	adj	滿的	性質		mǎn
+座	C	n	座位	事物		zuò
+位	C	n	位置	事物		wèi
+置	C	v	放置	動作		zhì
+細	C	adj	細的	性質		xì
+終	C	v	結束	動作		zhōng
+始	C	v	開始	動作		shǐ
+維	C	v	維持	動作		wéi
+持	C	v	維持	動作		chí
+營	C	v	經營	動作		yíng
+運	C	v	運送	動作		yùn
+輸	C	v	運送	動作		shū
+成	C	v	成為	動作		chéng
+功	C	n	功效	事物		gōng
+足	C	n	腳	事物		zú
+單	C	adj	單一	性質		dān
+又	C	adv	又	語法		yòu
+群	C	n	一群人	事物		qún
+市	C	n	城市	事物		shì
+清	C	adj	乾淨	性質		qīng
+管	C	v	管理	動作		guǎn
+周	C	n	周圍	方位		zhōu
+旁	C	adj	旁邊	方位		páng
+器	C	n	工具	事物		qì
+具	C	n	工具	事物		jù
+獲	C	v	獲得	動作		huò
+求	C	v	要求	動作		qiú
+供	C	v	提供	動作		gōng
+將	C	adv	將要	語法		jiāng
+已	C	adv	已經	語法		yǐ
+經	C	adv	已經	語法		jīng
+超	C	v	超過	動作		chāo
+克	C	v	克服	動作		kè
+素	C	n	要素	事物		sù
+質	C	n	品質	事物		zhì
+課	C	n	課	事物		kè
+程	C	n	過程	事物		chéng
+度	C	n	程度	事物		dù
+級	C	n	等級	事物		jí
+類	C	n	種類	事物		lèi
+型	C	n	類型	事物		xíng
+勢	C	n	勢頭	事物		shì
+增	C	v	增加	動作		zēng
+減	C	v	減少	動作		jiǎn
+加	C	v	增加	動作		jiā
+顧	C	v	照顧	動作		gù
+戶	C	n	門（戶數）	事物		hù
+族	C	n	家族	事物		zú
+親	C	n	親戚	社交		qīn
+齡	C	n	年齡	事物		líng
+件	C	num	件	數量		jiàn
+種	C	n	種類	事物		zhǒng
+暖	C	adj	暖和	性質		nuǎn
+計	C	v	計算	動作		jì
+造	C	v	建造	動作		zào
+鄉	C	n	家鄉	事物		xiāng
+堂	C	n	大廳	事物		táng
+測	C	v	測量	動作		cè
+結	C	v	結束	動作		jié
+差	C	adj	差	性質		chà
+決	C	v	決定	動作		jué
+定	C	v	決定	動作		dìng
+屆	C	num	屆	數量		jiè

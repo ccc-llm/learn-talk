@@ -13,6 +13,32 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT))
 
 from core import spec as spec_mod  # noqa: E402
+from core.romaji import hangul_romanize, kana_to_romaji  # noqa: E402
+from core.web.voices import BROWSER_LANG, TTS_VOICES  # noqa: E402
+
+import re  # noqa: E402
+
+
+def rom_map(s, words) -> dict:
+    """每個「字」的羅馬字（中文拼音、日文羅馬字、韓文 RR），給前端標 ruby。"""
+    if s.script == 'latin':
+        return {}
+    if s.code == 'chinese':
+        return {w['w']: w['ip'] for w in words if w['ip']}
+    chars = sorted(set(''.join(w['w'] for w in words)))
+    if s.code == 'japanese':
+        readings: dict[str, str] = {}
+        rp = s.dir / 'data' / 'readings.tsv'
+        if rp.exists():
+            for line in rp.read_text(encoding='utf-8').splitlines():
+                if '\t' in line:
+                    k, r = line.split('\t', 1)
+                    readings[k] = r.strip()
+        return {c: (readings.get(c, '') if re.match(r'[\u4e00-\u9fff]', c)
+                    else kana_to_romaji(c)) for c in chars}
+    if s.code == 'korean':
+        return {c: hangul_romanize(c) for c in chars}
+    return {}
 
 
 def build():
@@ -30,6 +56,7 @@ def build():
                     'g': w.gloss,
                     'cat': cat,
                     'ex': w.example,
+                    'ip': w.ipa,
                 })
         out[s.code] = {
             'name': s.name,
@@ -38,6 +65,9 @@ def build():
             'script': s.script,
             'romanization': s.romanization,
             'target': s.target_reader,
+            'browserLang': BROWSER_LANG.get(s.code, 'en-US'),
+            'tts': TTS_VOICES.get(s.code, {}),
+            'rom': rom_map(s, words),
             'words': words,
             'heads': s.heads,
             'desc': s.desc_templates,

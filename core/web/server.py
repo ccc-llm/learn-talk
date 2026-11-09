@@ -39,21 +39,7 @@ from core.lexicon import Lexicon, Reverser  # noqa: E402
 
 WEB = Path(__file__).resolve().parent
 
-# ── 語言設定 ─────────────────────────────────────────────────────────────────
-TTS_VOICES = {
-    'chinese': {'zh-CN': ['zh-CN-XiaoxiaoNeural', 'zh-CN-YunxiNeural',
-                          'zh-TW-HsiaoChenNeural', 'zh-TW-YunJheNeural']},
-    'english': {'en-US': ['en-US-AriaNeural', 'en-US-GuyNeural',
-                          'en-GB-SoniaNeural']},
-    'french': {'fr-FR': ['fr-FR-DeniseNeural', 'fr-FR-HenriNeural']},
-    'japanese': {'ja-JP': ['ja-JP-NanamiNeural', 'ja-JP-KeitaNeural']},
-    'korean': {'ko-KR': ['ko-KR-SunHiNeural', 'ko-KR-InJoonNeural']},
-}
-# 瀏覽器 SpeechSynthesis 用的語言標籤
-BROWSER_LANG = {
-    'chinese': 'zh-CN', 'english': 'en-US', 'french': 'fr-FR',
-    'japanese': 'ja-JP', 'korean': 'ko-KR',
-}
+from core.web.voices import BROWSER_LANG, TTS_VOICES  # noqa: E402
 
 # 中文拼音表（mini-chinese/data 內的 pinyin.tsv 沒有移植過來，這裡用最小的表）
 PINYIN = {
@@ -153,6 +139,59 @@ def load_prompt(code: str) -> str:
     return m.group(1).strip() if m else text
 
 
+# ── 反向翻譯成介面語言 ───────────────────────────────────────────────────────
+UI_LANG_NAMES = {'en': 'English', 'fr': 'Français', 'ja': '日本語', 'ko': '한국어'}
+_llm_cache: dict[str, object] = {}
+
+def to_ui_lang(text: str, ui: str):
+    """把規則反向翻譯的中文對譯改寫成介面語言。失敗時回 None（前端退回中文）。"""
+    name = UI_LANG_NAMES.get(ui)
+    if not name:
+        return None
+    llm = _llm_cache.get('llm')
+    if llm is None:
+        try:
+            from core.llm import LLM
+            llm = LLM(provider='nvidia', temperature=0.3, max_tokens=2048)
+            _llm_cache['llm'] = llm
+        except (Exception, SystemExit):
+            return None
+    prompt = ('下面是把受限語言逐詞對譯成的中文（詞序可能不自然、可能有括號註解）。\n'
+              f'請把它改寫成通順、自然的{name}，意思不要增減。\n'
+              '只輸出譯文，不要任何說明。\n\n' + text)
+    try:
+        return llm.chat(prompt, system='你是翻譯器。只輸出譯文本體。') or None
+    except Exception:      # noqa: BLE001
+        return None
+
+
+# ── 快速模式的系統提示（字表＋外來語規則，不用工具） ─────────────────────────
+_fast_cache: dict[str, str] = {}
+
+
+def fast_system(code: str) -> str:
+    if code in _fast_cache:
+        return _fast_cache[code]
+    s = load(code)['spec']
+    by = s.by_category()
+    lines = [f'你是{s.name}老師。當我和你對話時，你必須用{s.name}回答。', '',
+             f'# {s.name}字表', '']
+    for cat in s.categories:
+        ws = by.get(cat, [])
+        units = (''.join(w.unit for w in ws) if s.unit_kind == 'char'
+                 else '、'.join(w.unit for w in ws))
+        lines += [f'## {cat}', units, '']
+    lines += ['# 規則',
+              '- 只有字表內的字（詞）可以直接用。',
+              '- 字表外的通用概念：用「描述＋類頭」說明。',
+              '- 專名、品牌、物種：用外來語（原文寫出），第一次出現時加括號說明。',
+              '- 數字用阿拉伯數字。',
+              '- 不用檢查工具，直接回答。']
+    out = '\n'.join(lines)
+    _fast_cache[code] = out
+    return out
+
+
 # ── 伺服器 ───────────────────────────────────────────────────────────────────
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *a, **kw):
@@ -160,6 +199,11 @@ class Handler(SimpleHTTPRequestHandler):
 
     def log_message(self, fmt, *args):
         pass
+
+    def end_headers(self):
+        # 網頁與指令碼常常改，要求瀏覽器每次重新驗證，避免用舊快取
+        self.send_header('Cache-Control', 'no-cache')
+        super().end_headers()
 
     def _json(self, obj, code=200):
         body = json.dumps(obj, ensure_ascii=False).encode('utf-8')
@@ -225,8 +269,12 @@ class Handler(SimpleHTTPRequestHandler):
         if path == '/api/translate':
             code = data.get('lang', 'chinese')
             text = data.get('text', '')
+            ui = data.get('ui', 'zh-Hant')
             info = load(code)
-            return self._json({'text': info['reverser'].to_source(text)})
+            out = info['reverser'].to_source(text)
+            if ui != 'zh-Hant':
+                out = to_ui_lang(out, ui) or out
+            return self._json({'text': out})
         if path == '/api/tts':
             return self.do_tts(data)
         if path == '/api/expert':
@@ -276,6 +324,7 @@ class Handler(SimpleHTTPRequestHandler):
         message = data.get('message', '')
         history = data.get('history', [])
         provider = data.get('provider', 'nvidia')
+        fast = data.get('mode', 'strict') == 'fast'
         try:
             from core.llm import LLM
         except ImportError:
@@ -285,7 +334,7 @@ class Handler(SimpleHTTPRequestHandler):
         except Exception as e:      # noqa: BLE001
             return self._json({'error': str(e)}, 503)
         info = load(code)
-        system = load_prompt(code)
+        system = fast_system(code) if fast else load_prompt(code)
 
         def tool_list():
             return [{
@@ -345,9 +394,12 @@ class Handler(SimpleHTTPRequestHandler):
 
         try:
             from openai import OpenAI
-            resp = llm.client.chat.completions.create(
-                model=llm.model, messages=msgs, temperature=0.7,
-                max_tokens=4096, tools=tool_list(), tool_choice='auto')
+            kwargs = {'model': llm.model, 'messages': msgs,
+                      'temperature': 0.7, 'max_tokens': 4096}
+            if not fast:
+                kwargs['tools'] = tool_list()
+                kwargs['tool_choice'] = 'auto'
+            resp = llm.client.chat.completions.create(**kwargs)
             msg = resp.choices[0].message
             for _ in range(5):
                 if not getattr(msg, 'tool_calls', None):
@@ -361,9 +413,7 @@ class Handler(SimpleHTTPRequestHandler):
                         args = {}
                     out = run_tool(tc.function.name, args)
                     msgs.append({'role': 'tool', 'tool_call_id': tc.id, 'content': out})
-                resp = llm.client.chat.completions.create(
-                    model=llm.model, messages=msgs, temperature=0.7,
-                    max_tokens=4096, tools=tool_list(), tool_choice='auto')
+                resp = llm.client.chat.completions.create(**kwargs)
                 msg = resp.choices[0].message
             text = (msg.content or '').strip()
             if not text and getattr(msg, 'reasoning_content', None):
